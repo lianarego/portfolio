@@ -206,43 +206,42 @@ body {
 /* Typography */
 
 h1, h2, h3, h4 {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.75em;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 1.75em;
-  font-weight: 700;
+  font-size: 1.4em;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 400;
   margin:0;
   padding-bottom: 5px;
 }
 
 h4 {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 300;
   margin: 0;
   padding-bottom: 10px;
 }
 
 h5 {
-  font-size: 1em;
-  font-weight: 300;
-  text-transform: uppercase;
+  font-size: .8em;
+  font-weight: 200;
   margin: 0 0 3px 0;
   letter-spacing: .08em;
 }
 
 h6 {
-  font-size: .5em;
+  font-size: .7em;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0 0 3px 0;
@@ -796,10 +795,10 @@ nav > ul > li {
   animation-iteration-count: infinite;
 }
 .plane3 {
-  width: 125px;
+  width: 100px;
   position: absolute;
   top: 20%;
-  left: -30%;
+  left: -35%;
   display: block;
   animation-name: plane-fly;
   animation-duration: 7s;
