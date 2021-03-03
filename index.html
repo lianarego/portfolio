@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Paper Plane Designs</title>
+
+    <!-- Normalize CSS and link to CSS stylesheet-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Code for viewport to do responsive web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Lato font embedded -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800">
+
+    <!-- Favicon -->
+    <link href="img/favicon/favicon.ico" rel="shortcut icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+  </head>
+
+  <body id="home">
+
+    <!-- Header Section Here -->
+    <header>
+      <div>
+        <!-- Logo/Name -->
+          <a href="index.html">
+            <img class="logo" src="img/paper-plane-logo.svg" alt="Paper Plane Logo">
+          </a>
+
+        <!-- Navigation links -->
+
+          <nav>
+            <ul>
+              <li><a href="index.html" class="nav-link">Work</a></li>
+              <li><a href="about.html" class="nav-link">About</a></li>
+              <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <!-- HTML Main Section Here -->
+
+    <main>
+      <div class="planes">
+        <img src="img/paper-plane.svg" class="plane1 plane" />
+        <img src="img/paper-plane.svg" class="plane2 plane" />
+        <img src="img/paper-plane.svg" class="plane3 plane" />
+        <img src="img/paper-plane.svg" class="plane4 plane" />
+        <img src="img/paper-plane.svg" class="plane5 plane" />
+      </div>
+	  <div class="grid-container">
+		<!-- Hero Section Here -->
+        <div id="hero-section">
+          <div class="container">
+            <h1 class="slide-up-fade-in-2">I love to design high-performing and delightful digital interfaces using simplicity, collaboration, and a sprinkle of wonder.</h1>
+            <h5 class="slide-up-fade-in-3">I’m so happy to see you here  — I hope you find something that'll make you say "woah".</h5>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+
+		<!-- Project Intros Here -->
+        <!-- Container for  project #1 -->
+        <div class="parent row">
+          <!-- Project picture -->
+            <picture>
+              <source srcset="img/Retro_Games/RetroGames_1x.png" media="(max-width:767px)">
+              <img class="masthead" src="img/Retro_Games/RetroGames_2x.png" alt="Retro Games Masthead">
+            </picture>
+          <!-- Project info -->
+          <div class="project-info">
+            <h5>UX // UI // Branding</h5>
+            <h3>Retro Games</h3>
+            <a href="index.html" class="explore-button">Explore more</a>
+          </div>
+        </div>
+
+        <!-- Container for project #2 -->
+        <div class="parent row">
+          <!-- Project picture -->
+            <picture>
+              <source srcset="img/StreamBuff/StreamBuff_1x.png" media="(max-width:767px)">
+              <img class="masthead" src="img/StreamBuff/StreamBuff_2x.png" alt="StreamBuff Masthead">
+            </picture>
+          <!-- Project info -->
+          <div class="project-info">
+            <h5>UX  //  UI  //  iOS & Android Designs</h5>
+            <h3>StreamBuff</h3>
+            <a href="index.html" class="explore-button">Explore more</a>
+          </div>
+        </div>
+
+        <!-- Container for project #3 -->
+        <div class="parent row">
+          <!-- Project picture -->
+            <picture>
+              <source srcset="img/TerraCare/breakpoints_1x.png" media="(max-width:767px)">
+              <img class="masthead" src="img/TerraCare/breakpoints_2x.png" alt="TerraCare Masthead">
+            </picture>
+          <!-- Project info -->
+          <div class="project-info">
+            <h5>UX  //  UI  //  Visual Design // Branding</h5>
+            <h3>TerraCare</h3>
+            <a href="terracare.html" class="explore-button">Explore more</a>
+          </div>
+        </div>
+
+        <!-- Container for project #4 -->
+        <div class="parent row">
+          <!--  Project picture -->
+            <picture>
+              <source srcset="img/Busy_Bee/BusyBee_1x.png" media="(max-width:767px)">
+              <img class="masthead" src="img/Busy_Bee/BusyBee_2x.png" alt="Busy Bee Masthead">
+            </picture>
+          <!-- Project info -->
+          <div class="project-info">
+            <h5>UI // Visual Design</h5>
+            <h3>Busy Bee</h3>
+            <a href="index.html" class="explore-button">Explore more</a>
+          </div>
+        </div>
+
+		<!-- Empty div to add an extra column of blank space on grid -->
+		<div></div>
+
+	  <!-- End of grid container -->
+	  </div>
+    </main>
+
+    <!-- Footer Section Here -->
+    <footer>
+      <!-- Copyright Section -->
+      <div id="copyright" class="container">
+        <h6> © 2021 Liana Rego</h6>
+      </div>
+    </footer>
+
+	<!-- Horizontal scrolling, using jQuery Mousewheel plugin.
+         Code adapted from https://designedbyaturtle.com/horizontal-scrolling-with-jquery/ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/jquery.mousewheel.js"></script>
+    <script>
+    $(document).ready(function() {
+      // $('html, body, *').mousewheel(function(e, delta) {
+	  $('div').mousewheel(function(e, delta) { // Apply only to div elements
+          // Multiplication by 60 is the sensitivity;
+          // increase to scroll faster.
+          this.scrollLeft -= (delta * 60);
+          console.log('delta =', delta);
+
+          // Disable vertical scrolling
+          e.preventDefault();
+      });
+    });
+    </script>
+
+  <script src="js/script.js"></script>
+
+  </body>
+</html>
