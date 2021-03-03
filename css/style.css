@@ -9,6 +9,14 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   box-sizing: border-box;
 }
 
+/* Disable vertical scrolling */
+html, body {
+  overflow-y: hidden;
+}
+body {
+  position: relative;
+}
+
 .button.contact {
   margin-bottom: 25px;
   text-align: center;
