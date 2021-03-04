@@ -154,7 +154,6 @@ main {
 }
 
 header {
-  text-align: left;
   padding: 10px 0 0 0;
   position: fixed;
   z-index: 5;
@@ -162,7 +161,6 @@ header {
 }
 
 nav {
-  display: inline-block;
   float: right;
   padding: 0;
   margin: 0;
@@ -171,14 +169,44 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 1em 0;
 }
 
 nav > ul > li {
-  display: inline-block;
   padding: 0 10px;
   text-transform: capitalize;
   font-weight: 700;
   color: #4a4a4a;
+}
+
+.navtoggle li:not(:last-child) { /* hides all the menu items except for the hamburger menu icon */
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 25px;
+  top: 2px;
+  font-size: 40px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive nav {
+  padding: 0;
+}
+
+.navtoggle.responsive li  { /* override  previous code and shows the complete menu when .responsive class is toggled */
+  display: block;
+  padding: 15px 135px;
+  text-align: center;
+  background-color: #DDF7FB;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0;
 }
 
 nav > ul > li > a:hover {
@@ -254,8 +282,8 @@ h6 {
 .nav-link {   /* styling for navigation links (Work, About, Contact) */
   color: #df8244;
   text-decoration: none;
-  font-size: 1em;
-  font-weight: 400;
+  font-size: 1.2em;
+  font-weight: 600;
   transition-duration: 0.2s;
 }
 
@@ -524,12 +552,27 @@ img  {
   }
 }
 
-/* ========== Media Queries for responsive web ============ */
+/* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
+/* ----------------------------------------------------------------------------------------------- */
+/*------------------------------------------------------------------------------------------------ */
 
 @media only screen and (min-width: 640px) { /* this is for any screen at least 640px wide */
 
   #css-animation-picture {
     max-width: none;
+  }
+
+  nav > ul > li {
+    padding: 0 20px;
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) { /* reveals navigation links */
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child { /* hides the hamburger menu icon */
+    display: none;
   }
 
 }
@@ -542,6 +585,15 @@ nav {
 
 nav > ul > li {
   padding: 0 20px;
+  display: inline-block;
+}
+
+.navtoggle li:not(:last-child) { /* reveals navigation links */
+  display: inline-block;
+}
+
+.navtoggle li:last-child { /* hides the hamburger menu icon */
+  display: none;
 }
 
   h1 {
@@ -617,6 +669,15 @@ nav > ul > li {
 
   nav > ul > li {
     padding: 0 25px;
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) { /* reveals navigation links */
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child { /* hides the hamburger menu icon */
+    display: none;
   }
 
   h1 {
@@ -733,7 +794,7 @@ nav > ul > li {
 }
 
 #hero-section {
-  padding: 0 0 0 0;
+  padding: 100px 0 0 0;
   padding-left: 0vw;
   text-align: center;
 }
