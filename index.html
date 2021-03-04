@@ -7,6 +7,7 @@
     <!-- Normalize CSS and link to CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/ed915deea8.js" crossorigin="anonymous"></script>
 
     <!-- Code for viewport to do responsive web -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +29,10 @@
 
   <body id="home">
 
-    <!-- Header Section Here -->
-    <header>
-      <div>
+  <!-- Header Section Here -->
+  <header>
+    <div>
+      <div class="navtoggle" id="myNavtoggle">
         <!-- Logo/Name -->
           <a href="index.html">
             <img class="logo" src="img/paper-plane-logo.svg" alt="Paper Plane Logo">
@@ -43,9 +45,11 @@
               <li><a href="index.html" class="nav-link">Work</a></li>
               <li><a href="about.html" class="nav-link">About</a></li>
               <li><a href="contact.html" class="nav-link">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li> <!-- List item for hamburger menu icon -->
             </ul>
           </nav>
         </div>
+      </div>
     </header>
 
     <!-- HTML Main Section Here -->
@@ -70,7 +74,7 @@
 
 		<!-- Project Intros Here -->
         <!-- Container for  project #1 -->
-        <div class="parent row">
+        <div class="parent row" id="retro-games">
           <!-- Project picture -->
             <picture>
               <source srcset="img/Retro_Games/RetroGames_1x.png" media="(max-width:767px)">
@@ -162,7 +166,7 @@
       });
     });
     </script>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 
   </body>
