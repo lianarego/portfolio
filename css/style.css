@@ -200,9 +200,7 @@ nav > ul > li {
 
 .navtoggle.responsive li  { /* override  previous code and shows the complete menu when .responsive class is toggled */
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  padding: 15px 135px;
   text-align: center;
   background-color: #DDF7FB;
 }
