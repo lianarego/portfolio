@@ -68,6 +68,7 @@ footer {
   text-align: left;
   margin-top: 10px;
   margin-bottom: 0px;
+  padding-left: 15px;
   position: fixed;
   bottom: 0;
 }
@@ -133,6 +134,11 @@ main {
   margin: 0;
 }
 
+.navtoggle > a {
+  display: inline-block;
+  height: 55px;
+}
+
 .profile-pic {
   max-width: 300px;
   margin: auto;
@@ -164,12 +170,13 @@ nav {
   float: right;
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-  margin: 1em 0;
+  margin: 0;
 }
 
 nav > ul > li {
@@ -186,12 +193,14 @@ nav > ul > li {
 .navtoggle li .icon {
   position: absolute;
   right: 25px;
-  top: 2px;
+  top: -4px;
+  height: 53px;
   font-size: 40px;
 }
 
 .navtoggle, .navtoggle.responsive {
   position: relative;
+  height: 55px;
 }
 
 .navtoggle.responsive nav {
@@ -200,9 +209,12 @@ nav > ul > li {
 
 .navtoggle.responsive li  { /* override  previous code and shows the complete menu when .responsive class is toggled */
   display: block;
-  padding: 15px 135px;
+  padding: 15px 50px;
   text-align: center;
   background-color: #DDF7FB;
+  border-style: solid;
+  border-color: #DDF7FB;
+  border-width: 3px;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -230,6 +242,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #000000;
+  overflow-y: hidden; /* Disable vertical scrolling */
 }
 
 /* Typography */
@@ -556,31 +569,23 @@ img  {
 /* ----------------------------------------------------------------------------------------------- */
 /*------------------------------------------------------------------------------------------------ */
 
-@media only screen and (min-width: 640px) { /* this is for any screen at least 640px wide */
-
-  #css-animation-picture {
-    max-width: none;
-  }
-
-  nav > ul > li {
-    padding: 0 20px;
-    display: inline-block;
-  }
-
-  .navtoggle li:not(:last-child) { /* reveals navigation links */
-    display: inline-block;
-  }
-
-  .navtoggle li:last-child { /* hides the hamburger menu icon */
-    display: none;
-  }
-
-}
-
 @media only screen and (min-width: 640px) and (max-width: 1023px) {  /*this is for "col-med" classes */
 
+.navtoggle > a {
+  display: inline-block;
+  float: left;
+}
+
 nav {
-  margin-top: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  float: right;
+  width: 50%;
+}
+
+nav > ul {
+  display: inline-block;
+  float: right;
 }
 
 nav > ul > li {
@@ -747,7 +752,25 @@ nav > ul > li {
     display: table;
   }
 
+  @keyframes plane-fly {
+    0% {
+      left: -10%;
+      transform: translate(0, 0);
+    }
+    30% {
+      transform: translate(0, -300px) rotate(30deg);
+    }
+    60% {
+      transform: translate(0, 0) rotate(60deg);
+    }
+    100% {
+      left: 110%;
+      transform: translate(0, -300px) rotate(30deg);
+    }
+  }
+}
 
+@media only screen and (orientation: landscape) { /* Media query for landscape (any screen size) */
   .grid-container {
     display: grid;
     overflow-x: scroll;
@@ -787,38 +810,16 @@ nav > ul > li {
     top: 50%;
     transform: translateY(-70%);
     left: 85%;
-    width: 17em;
+    width: 20em;
     animation: animateleft 1.2s;
     animation-timing-function: ease-in-out;
     box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.10);
 }
 
 #hero-section {
-  padding: 100px 0 0 0;
-  padding-left: 0vw;
+  padding: 0 0 0 0;
   text-align: center;
 }
-
-@keyframes plane-fly {
-  0% {
-    left: -10%;
-    transform: translate(0, 0);
-  }
-  30% {
-    transform: translate(0, -300px) rotate(30deg);
-  }
-  60% {
-    transform: translate(0, 0) rotate(60deg);
-  }
-  100% {
-    left: 110%;
-    transform: translate(0, -300px) rotate(30deg);
-  }
-}
-
-}
-@media only screen and (min-width: 1440px) {  /* this is for "col-xl" classes */
-
 }
 
 
