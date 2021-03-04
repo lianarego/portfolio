@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/ed915deea8.js" crossorigin="anonymous"></script>
+    
     <!-- Code for viewport to do responsive web -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -30,22 +31,25 @@
     <!-- Header Section Here -->
     <header>
       <div>
-        <!-- Logo/Name -->
-          <a href="index.html">
-            <img class="logo" src="img/paper-plane-logo.svg" alt="Paper Plane Logo">
-          </a>
+        <div class="navtoggle" id="myNavtoggle">
+          <!-- Logo/Name -->
+            <a href="index.html">
+              <img class="logo" src="img/paper-plane-logo.svg" alt="Paper Plane Logo">
+            </a>
 
-        <!-- Navigation links -->
+          <!-- Navigation links -->
 
-          <nav>
-            <ul>
-              <li><a href="index.html" class="nav-link">Work</a></li>
-              <li><a href="about.html" class="nav-link">About</a></li>
-              <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-          </nav>
+            <nav>
+              <ul>
+                <li><a href="index.html" class="nav-link">Work</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars" id="menu-icon"></i></a></li> <!-- List item for hamburger menu icon -->
+              </ul>
+            </nav>
+          </div>
         </div>
-    </header>
+      </header>
 
   <!-- Main Section with My Story and Skills/Tools -->
   <main>
