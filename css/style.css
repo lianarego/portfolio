@@ -265,7 +265,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.25em;
   font-weight: 600;
 }
 
@@ -287,7 +287,7 @@ h5 {
   font-size: .8em;
   font-weight: 200;
   margin: 0 0 3px 0;
-  letter-spacing: .08em;
+  letter-spacing: .15em;
 }
 
 h6 {
@@ -506,6 +506,8 @@ img  {
     -ms-animation-fill-mode:forwards; /*IE 10+*/
     opacity:0;
     opacity: 1\9;
+    margin: 0 0 20px 0;
+    padding: 0;
 }
 
 [class$="in-2"]{
