@@ -37,6 +37,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   width: 100%;
   margin-top: 60px;
   color: rgba(0,0,0,0.8);
+  font-weight: 600;
 }
 
 /* Layout styling */
@@ -121,7 +122,7 @@ main {
   font-size: 0.75em;
   padding-left: 15px;
   padding-bottom: 4px;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.7);
 }
 
 .role {
@@ -132,10 +133,10 @@ main {
 .logo {
   max-width: 60px;
   background-color: #ff7f50;
-  padding: 10px 10px 10px 15px;
+  padding: 4px 6px 4px 20px;
   text-align: left;
   display: inline-block;
-  margin: 0;
+  margin: 8px 0 0 0;
 }
 
 .navtoggle > a {
@@ -197,9 +198,9 @@ nav > ul > li {
 .navtoggle li .icon {
   position: absolute;
   right: 25px;
-  top: -4px;
+  top: -7px;
   height: 53px;
-  font-size: 40px;
+  font-size: 43px;
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -312,6 +313,7 @@ h6 {
   font-size: 1.2em;
   font-weight: 600;
   transition-duration: 0.2s;
+  margin-top: 2px;
 }
 
 .nav-link:visited {
