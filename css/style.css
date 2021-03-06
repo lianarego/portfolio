@@ -118,13 +118,6 @@ main {
   display: block;
 }
 
-#copyright {
-  font-size: 0.75em;
-  padding-left: 15px;
-  padding-bottom: 4px;
-  color: rgba(0,0,0,0.7);
-}
-
 .role {
   display: inline;
   text-align: center;
@@ -300,10 +293,16 @@ h5 {
 h6 {
   font-size: .7em;
   font-weight: 300;
-  text-transform: uppercase;
   margin: 0 0 3px 0;
   letter-spacing: .08em;
   line-height: 2;
+}
+
+#copyright {
+  font-size: 0.75em;
+  padding-left: 15px;
+  padding-bottom: 4px;
+  color: rgba(0,0,0,0.7);
 }
 
 /* CSS for hyperlink states (default, hover, active, etc) */
