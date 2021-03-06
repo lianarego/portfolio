@@ -247,7 +247,8 @@ body {
 #greeting > h1 {
   text-align: center;
   font-size: 2em;
-  padding: 0 20px;
+  padding: 0;
+  margin: 20px 0 15px 0;
 }
 
 /* Typography */
@@ -387,13 +388,13 @@ h6 {
 .button-primary-container {
   margin-right: 30px;
   float: right;
-  padding: 20px 5px 30px 0;
+  padding: 20px 0 40px 0;
   display: inline-block;
 }
 
 .button-secondary-container {
   margin-left: 30px;
-  padding: 20px 5px 30px 0;
+  padding: 20px 0 40px 0;
   display: inline-block;
 }
 
