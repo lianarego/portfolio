@@ -32,6 +32,13 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   padding-top: 0px;
 }
 
+.scrolldown {
+  text-align: right;
+  width: 100%;
+  margin-top: 50px;
+  color: rgba(0,0,0,0.8);
+}
+
 /* Layout styling */
 
 .container { /* container for header, hero section, work section, and footer */
