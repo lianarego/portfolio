@@ -35,7 +35,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 .scrolldown {
   text-align: right;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 60px;
   color: rgba(0,0,0,0.8);
 }
 
@@ -289,7 +289,7 @@ h4 {
 }
 
 h5 {
-  font-size: .8em;
+  font-size: .9em;
   font-weight: 200;
   margin: 0 0 3px 0;
   letter-spacing: .13em;
