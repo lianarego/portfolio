@@ -121,6 +121,7 @@ main {
   font-size: 0.75em;
   padding-left: 15px;
   padding-bottom: 4px;
+  color: rgba(0,0,0,0.5);
 }
 
 .role {
