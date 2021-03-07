@@ -1869,7 +1869,7 @@ animation-timing-function: linear;
   }
 
   #aboutme > h3 {
-    font-size: 2.2em;
+    font-size: 2.1em;
   }
 
   #aboutme > ul {
@@ -1878,7 +1878,7 @@ animation-timing-function: linear;
 
   #aboutme > ul > li {
     padding: 4px 0;
-    font-size: 1.3em;
+    font-size: 1em;
   }
 
   .button-primary {
@@ -2051,9 +2051,29 @@ animation-timing-function: linear;
 
   */
 
+@media only screen and (min-width:736px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */
 
-@media only screen and (min-width:736px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */ }
+  /* ---- About Me page for screen size 736px ----- */
 
+  #aboutme {
+    width: 67%;
+    margin: auto;
+  }
+
+  .button-primary-container {
+    margin-right: 60px;
+    float: right;
+    padding: 25px 0 40px 0;
+    display: inline-block;
+  }
+
+  .button-secondary-container {
+    margin-left: 60px;
+    padding: 25px 0 40px 0;
+    display: inline-block;
+  }
+
+}
 
 @media only screen and (min-width:812px)  { /* --- landscape mode for iPhone X --- */
 
@@ -3378,11 +3398,11 @@ animation-timing-function: linear;
     animation-timing-function: linear;
   }
 
-  }
+}
 
+@media only screen and (min-width:1366px)  { /* --- landscape mode for iPad Pro --- */
 
-@media only screen and (min-width:1366px)  { /* --- landscape mode for iPad Pro --- */ }
-
+}
 
 @media only screen and (orientation: landscape) { /* Media query for landscape (any screen size) */
   .grid-container {
