@@ -161,24 +161,33 @@ main {
   /* height: 55px; */
 }
 
-.profile-pic {
-  max-width: 300px;
+#profile {
+  width: 88%;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+
+#aboutme {
+  width: 88%;
   margin: auto;
 }
 
-.aboutme > ul {
+#aboutme > ul {
   margin: 2px 0;
 }
 
-.aboutme > ul > li {
+#aboutme > ul > li {
   padding: 3px 0;
   margin: 0;
 }
 
-.aboutme > h3 {
+#aboutme > h3 {
   font-weight: 700;
   color: #ff7f50;
-  margin-top: 25px;
+  margin-top: 15px;
+  font-size: 1.5em;
 }
 
 header {
@@ -1743,137 +1752,371 @@ animation-timing-function: linear;
 /* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /*------------------------------------------------------------------------------------------------ */
-@media only screen and (min-width:375px)  { /* --- portrait mode for iPhone 6/7/8 and X --- */ }
+@media only screen and (min-width:375px)  { /* --- portrait mode for iPhone 6/7/8 and X --- */
 
+  /* ---- Header section for screen size 375px ----- */
+  main {
+    padding-top: 70px;
+  }
 
-@media only screen and (min-width:414px)  { /* --- portrait mode for iPhone 6/7/8 Plus --- */ }
+  .navtoggle li .icon {
+    font-size: 50px;
+  }
 
+  .logo {
+    max-width: 65px;
+    padding: 6px 8px 6px 22px;
+    margin: 9px 0 0 0;
+  }
 
-@media only screen and (min-width:568px)  { /* --- landscape mode for iPhone 5/SE --- */ }
+  /* ---- About Me page for screen size 375px ----- */
 
+  #greeting {
+    font-size: 1.2em;
+  }
+
+  #aboutme > h3 {
+    margin-top: 15px;
+    font-size: 2em;
+  }
+
+  #aboutme > ul {
+    margin: 2px 0;
+  }
+
+  #aboutme > ul > li {
+    padding: 4px 0;
+    font-size: 1.2em;
+  }
+
+  .button-primary {
+    font-size: 1.2em;
+  }
+
+  .button-secondary {
+    font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (min-width:414px)  { /* --- portrait mode for iPhone 6/7/8 Plus --- */
+
+  /* ---- Header section for screen size 414px ----- */
+  main {
+    padding-top: 80px;
+  }
+
+  .navtoggle li .icon {
+    font-size: 55px;
+  }
+
+  .logo {
+    max-width: 70px;
+    padding: 6px 8px 6px 22px;
+    margin: 10px 0 0 0;
+  }
+
+  /* ---- About Me page for screen size 414px ----- */
+
+  #greeting {
+    font-size: 1.3em;
+  }
+
+  #aboutme > h3 {
+    font-size: 2.2em;
+  }
+
+  #aboutme > ul {
+    margin: 2px 0;
+  }
+
+  #aboutme > ul > li {
+    padding: 4px 0;
+    font-size: 1.3em;
+  }
+
+  .button-primary {
+    font-size: 1.35em;
+  }
+
+  .button-secondary {
+    font-size: 1.35em;
+  }
+
+}
+
+@media only screen and (min-width:568px)  { /* --- landscape mode for iPhone 5/SE --- */
+
+  /* ---- Header section for screen size 568px ----- */
+  main {
+    padding-top: 80px;
+  }
+
+  .navtoggle li .icon {
+    font-size: 55px;
+  }
+
+  .logo {
+    max-width: 70px;
+    padding: 6px 8px 6px 22px;
+    margin: 10px 0 0 0;
+  }
+
+  /* ---- About Me page for screen size 568px ----- */
+
+  #greeting {
+    font-size: 1.3em;
+  }
+
+  #aboutme > h3 {
+    font-size: 2.2em;
+  }
+
+  #aboutme > ul {
+    margin: 2px 0;
+  }
+
+  #aboutme > ul > li {
+    padding: 4px 0;
+    font-size: 1.3em;
+  }
+
+  .button-primary {
+    font-size: 1.35em;
+  }
+
+  .button-secondary {
+    font-size: 1.35em;
+  }
+}
 
 @media only screen and (min-width: 640px) and (max-width: 1023px) {  /* /* --- landscape mode for iPhone 6/7/8 --- */
 
-    .logo {
-      max-width: 65px;
-      margin-top: 0px;
+  /* ---- Header section for screen size 640 ----- */
+  main {
+    padding-top: 80px;
+  }
+
+  nav {
+    margin-top: 12px;
+    display: inline-block;
+    float: right;
+    width: 50%;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 15px;
+    padding: 0 20px;
+    font-size: 1.2em;
+  }
+
+  nav > ul {
+    display: inline-block;
+    float: right;
+  }
+
+  nav > ul > li {
+    padding: 0 15px;
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) { /* reveals navigation links */
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child { /* hides the hamburger menu icon */
+    display: none;
+  }
+
+
+  .logo {
+    max-width: 70px;
+    padding: 6px 8px 6px 22px;
+    margin: 10px 0 0 0;
+  }
+
+  /* ---- About Me page for screen size 640px ----- */
+
+  #greeting {
+    font-size: 1.2em;
+  }
+
+  #aboutme {
+    width: 75%;
+  }
+
+  #aboutme > h3 {
+    font-size: 2em;
+  }
+
+  #aboutme > ul {
+    margin: 2px 0;
+  }
+
+  #aboutme > ul > li {
+    padding: 4px 0;
+    font-size: 1.1em;
+  }
+
+  .button-primary {
+    font-size: 1.35em;
+    margin-right: 54px;
+  }
+
+  .button-secondary {
+    font-size: 1.35em;
+    margin-left: 54px;
+  }
+
+  .logo {
+    max-width: 80px;
+    margin-top: 0px;
+  }
+
+  .navtoggle > a {
+    display: inline-block;
+    float: left;
+  }
+
+  h1 {
+      font-size: 3em;
     }
 
-    .navtoggle > a {
-      display: inline-block;
-      float: left;
+  .container {
+    text-align: left;
+    width: 100%;
+    padding-left: 0 500px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .masthead {
+    opacity: 1;
+    transition: 0.5s ease;
+  }
+
+  .masthead:hover {
+    opacity: 0;
+  }
+
+  .project-info {
+    display: none;
+  }
+
+  header {
+    background-color: #DDF7FB;
+  }
+
+  }
+
+  /*
+    header {
+      text-align: unset;
+        padding: 20px 0 10px;
+        font-size: 18px;
     }
 
     nav {
-      margin-top: 12px;
-      display: inline-block;
       float: right;
-      width: 50%;
+      margin-top: 7px;
+      padding: 0 15px;
     }
 
-    nav > ul {
-      display: inline-block;
+    #hero-section span {
+      display: block;
+    }
+
+    [class*="col-med"]{
+      width: 0%;
+    }
+
+    [class^="col-"][class*="med"][class$="-left"]{
+      float: left;
+      padding-right: 0;
+    }
+
+    [class^="col-"][class*="med"][class$="-right"]{
       float: right;
+      padding-left: 0;
     }
 
-    nav > ul > li {
-      padding: 0 20px;
-      display: inline-block;
-    }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-    .navtoggle li:not(:last-child) { /* reveals navigation links */
-      display: inline-block;
-    }
-
-    .navtoggle li:last-child { /* hides the hamburger menu icon */
-      display: none;
-    }
-
-    h1 {
-        font-size: 3em;
-      }
-
-    .aboutme {
-      text-align: left;
-      width: 100%;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .container {
-      text-align: left;
-      width: 100%;
-      padding-left: 0 500px;
-      display: inline-block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .masthead {
-      opacity: 1;
-      transition: 0.5s ease;
-    }
-
-    .masthead:hover {
-      opacity: 0;
-    }
-
-    .project-info {
-      display: none;
-    }
-
-    header {
-      background-color: #DDF7FB;
-    }
-
-    }
-
-    /*
-      header {
-        text-align: unset;
-          padding: 20px 0 10px;
-          font-size: 18px;
-      }
-
-      nav {
-        float: right;
-        margin-top: 7px;
-        padding: 0 15px;
-      }
-
-      #hero-section span {
-        display: block;
-      }
-
-      [class*="col-med"]{
-        width: 0%;
-      }
-
-      [class^="col-"][class*="med"][class$="-left"]{
-        float: left;
-        padding-right: 0;
-      }
-
-      [class^="col-"][class*="med"][class$="-right"]{
-        float: right;
-        padding-left: 0;
-      }
-
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    */
+  */
 
 
 @media only screen and (min-width:736px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */ }
 
 
-@media only screen and (min-width:812px)  { /* --- landscape mode for iPhone X --- */ }
+@media only screen and (min-width:812px)  { /* --- landscape mode for iPhone X --- */
 
+  main {
+    padding-top: 90px;
+  }
+
+  /* ----- About Me for 812px ---- */
+  #greeting {
+    display: none;
+  }
+
+  #profile {
+    max-width: 40%;
+    float: left;
+    margin-left: 35px;
+    margin-right: 3px;
+    padding-top: 20px;
+  }
+
+  #aboutme {
+    margin: 0;
+    width: 52%;
+    float: right;
+    padding: 2px 0 0 0;
+  }
+
+  #aboutme > h3 {
+    font-size: 1.4em;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+
+  #aboutme > ul {
+    margin: 1px 0;
+  }
+
+  #aboutme > ul > li {
+    padding: 1.5px 0;
+    font-size: 0.8em;
+  }
+
+  .button-primary {
+    font-size: 1em;
+    margin-right: 10px;
+  }
+
+  .button-secondary {
+    font-size: 1em;
+    margin-left: 5px;
+  }
+
+  .button-primary-container {
+    margin-right: 10px;
+    padding: 20px 20px 20px 0;
+  }
+
+  .button-secondary-container {
+    margin-left: 25px;
+    padding: 20px 0 20px 0;
+  }
+
+}
 
 @media only screen and (min-width: 1024px) { /* this is for "col-lg" classes */
   .container {
@@ -1885,8 +2128,8 @@ animation-timing-function: linear;
 
   header {
       text-align: unset;
-        padding: 20px 0 10px;
-        font-size: 18px;
+      padding: 20px 0 10px;
+      font-size: 18px;
     }
 
   .logo {
@@ -1924,7 +2167,6 @@ animation-timing-function: linear;
 
   #greeting {
     width: 50%;
-    float: right;
     text-align: left;
   }
 
@@ -1932,12 +2174,7 @@ animation-timing-function: linear;
     margin-top: 40px;
   }
 
-  .profile-pic {
-    width: 50%;
-    min-width: 40%;
-  }
-
-  .aboutme-container {
+  .col-lg-right-6 {
     width: 50%;
     float: right;
     padding: 0;
@@ -1950,6 +2187,12 @@ animation-timing-function: linear;
 
   .aboutme > h3 {
     padding: 0;
+  }
+
+  .aboutme-container::after {
+    content: "";
+    clear: both;
+    display: table;
   }
 
   .button-containers {
