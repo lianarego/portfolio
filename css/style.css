@@ -26,7 +26,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   /* height: 100vh; */
   /* margin-top: 25px; */
   top: 75px;
-  bottom: 75px;
+  bottom: 25px;
   left: 0;
   right: 0;
 }
