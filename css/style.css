@@ -14,7 +14,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 }
 
 .grid-container {
-  position: absolute;
+  position: fixed;
   display: grid;
   overflow-x: scroll;
   overflow-y: auto;
@@ -960,7 +960,6 @@ h1 {
 }
 #home .grid-container {
   z-index: 1;
-  position: absolute;
 }
 .plane1 {
   width: 75px;
