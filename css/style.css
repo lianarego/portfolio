@@ -25,8 +25,8 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   align-items: center;
   /* height: 100vh; */
   /* margin-top: 25px; */
-  top: 0;
-  bottom: 0;
+  top: 75px;
+  bottom: 75px;
   left: 0;
   right: 0;
 }
@@ -666,13 +666,18 @@ img  {
 
 @media only screen and (min-width: 640px) and (max-width: 1023px) {  /*this is for "col-med" classes */
 
+.logo {
+  max-width: 65px;
+  margin-top: 0px;
+}
+
 .navtoggle > a {
   display: inline-block;
   float: left;
 }
 
 nav {
-  margin-top: 20px;
+  margin-top: 12px;
   display: inline-block;
   float: right;
   width: 50%;
@@ -730,6 +735,10 @@ h1 {
   display: none;
 }
 
+header {
+  background-color: #DDF7FB;
+}
+
 }
 
 /*
@@ -779,7 +788,7 @@ h1 {
     padding: 0;
   }
 
-  header {
+header {
     text-align: unset;
       padding: 20px 0 10px;
       font-size: 18px;
@@ -787,65 +796,71 @@ h1 {
 
 .logo {
   max-width: 75px;
+  margin-top: 0px;
 }
 
-  nav {
-    width: auto;
-    float: right;
-    padding: 0 20px;
-    font-size: 1.2em;
-  }
+nav {
+  width: auto;
+  float: right;
+  margin-top: 12px;
+  padding: 0 20px;
+  font-size: 1.2em;
+}
 
-  nav > ul > li {
-    padding: 0 25px;
-    display: inline-block;
-  }
+nav > ul > li {
+  padding: 0 25px;
+  display: inline-block;
+}
 
-  .navtoggle li:not(:last-child) { /* reveals navigation links */
-    display: inline-block;
-  }
+.navtoggle li:not(:last-child) { /* reveals navigation links */
+  display: inline-block;
+}
 
-  .navtoggle li:last-child { /* hides the hamburger menu icon */
-    display: none;
-  }
+.navtoggle li:last-child { /* hides the hamburger menu icon */
+  display: none;
+}
 
-  h1 {
-    font-size: 4.7em;
-    margin: 0 0 50px 0;
-  }
+h1 {
+  font-size: 4.7em;
+  margin: 0 0 50px 0;
+}
 
-  h2 {
-    font-size: 3em;
-    font-weight: 700;
-  }
+h2 {
+  font-size: 3em;
+  font-weight: 700;
+}
 
-  h3 {
-    font-size: 2.5em;
-    font-weight: 300;
-    margin:0;
-    padding-bottom: 50px;
-    line-height: 1.7;
-    letter-spacing: 1px;
-  }
+h3 {
+  font-size: 2.5em;
+  font-weight: 300;
+  margin:0;
+  padding-bottom: 50px;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
 
-  h4 {
-    font-size: 2em;
-    font-weight: 300;
-    margin: 0;
-    letter-spacing: 1px;
-    line-height: 1.7;
-  }
+h4 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
 
-  h5 {
-    font-size: 1em;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0 0 3px 0;
-    letter-spacing: .08em;
-  }
+h5 {
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0 0 3px 0;
+  letter-spacing: .08em;
+}
 
   .project-info {
     display: none;
+  }
+
+  header {
+    background-color: #DDF7FB;
   }
 
 /*  #hero-section span {
