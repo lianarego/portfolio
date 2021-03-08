@@ -291,7 +291,13 @@ body {
   text-align: center;
   font-size: 2em;
   padding: 0;
-  margin: 20px 0 15px 0;
+  margin: 20px 0 0 0;
+}
+
+
+#greeting > #namewave {
+  margin: 0 0 10px 0;
+  padding: 0;
 }
 
 /* ----- MOBILE Typography styles ------ */
@@ -1946,7 +1952,7 @@ animation-timing-function: linear;
   /* ---- About Me page for screen size 640px ----- */
 
   #greeting {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   #aboutme {
@@ -2147,12 +2153,12 @@ animation-timing-function: linear;
 
   .button-primary-container {
     float: none;
-    margin-left: 5em;
+    margin-left: 5em; /* spacing between primary and secondary buttons */
     padding: 20px 20px 20px 0;
   }
 
   .button-secondary-container {
-    margin-left: 2em;
+    margin-left: 2em;  /* spacing to the left of secondary button */
     padding: 20px 0 20px 0;
   }
 
@@ -2161,7 +2167,12 @@ animation-timing-function: linear;
 @media only screen and (min-width: 1024px) { /* this is for "col-lg" classes */
 
   main {
-    padding-top: 120px;
+    padding-top: 110px;
+  }
+
+  #about-main {
+    max-width: 1024px;
+    margin: auto;
   }
 
   .container {
@@ -2178,7 +2189,7 @@ animation-timing-function: linear;
     }
 
   .logo {
-    max-width: 75px;
+    max-width: 80px;
     margin-top: 0px;
   }
 
@@ -2211,7 +2222,7 @@ animation-timing-function: linear;
   }
 
   #profile {
-    max-width: 43%;
+    width: 45%;
     float: left;
     margin-left: 35px;
     margin-right: 3px;
@@ -2220,13 +2231,13 @@ animation-timing-function: linear;
 
   #aboutme {
     margin: 0;
-    width: 52%;
+    width: 48%;
     float: right;
-    padding: 2px 0 0 0;
+    padding: 2px 25px 0 0;
   }
 
   #aboutme > h3 {
-    font-size: 1.8em;
+    font-size: 2em;
     padding-bottom: 0;
     margin-top: 10px;
   }
@@ -2237,7 +2248,7 @@ animation-timing-function: linear;
 
   #aboutme > ul > li {
     padding: 3px 0;
-    font-size: 1em;
+    font-size: 0.95em;
   }
 
   .button-primary {
@@ -2249,12 +2260,12 @@ animation-timing-function: linear;
   }
 
   .button-primary-container {
-    margin-left: 3em;
+    margin-left: 3em; /* spacing between primary and secondary buttons */
     padding: 20px 20px 20px 0;
   }
 
   .button-secondary-container {
-    margin-left: 5.5em;
+    margin-left: 5.5em; /* spacing to the left of secondary button */
     padding: 20px 0 20px 0;
   }
 
@@ -3437,40 +3448,57 @@ animation-timing-function: linear;
 
 @media only screen and (min-width:1366px)  { /* --- landscape mode for iPad Pro --- */
 
+  #about-main {
+    max-width: 1366px;
+    margin: auto;
+  }
+
   #greeting {
-    font-size: 1.3em;
     display: inline;
     float: right;
-    width: 55%;
-    padding: 0 0 0 30px;
+    width: 50%;
+    padding: 15px 0 0 30px;
     margin: 0;
   }
 
   #greeting > h1 {
+    font-size: 2em;
     text-align: left;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 0;
+  }
+
+  #greeting > #meetya {
+    display: inline-block;
+  }
+
+  #greeting > #namewave {
+    display: inline-block;
+  }
+
+  #who {
+    padding-top: 0;
   }
 
   #profile {
-    max-width: 37%;
+    max-width: 42%;
     float: left;
     margin-left: 90px;
     margin-right: 3px;
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   #aboutme {
     margin: 0;
-    width: 55%;
+    width: 50%;
     float: right;
     padding: 2px 20px 0 30px;
   }
 
   #aboutme > h3 {
-    font-size: 2em;
+    font-size: 1.9em;
     padding-bottom: 0;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   #aboutme > ul {
@@ -3482,9 +3510,8 @@ animation-timing-function: linear;
     font-size: 1.3em;
   }
 
-  .button-primary-container {
-    margin-right: 250px;
-    padding: 20px 20px 20px 0;
+  .button-secondary-container {
+    margin-left: 8em;
   }
 
 }
