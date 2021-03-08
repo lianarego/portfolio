@@ -104,7 +104,7 @@
         <!-- Container for  project #2 -->
         <div class="parent row"  style="background-image: url(img/Retro_Games/RetroGames1.Masthead.2x.png);">
           <!-- Project picture -->
-          <a href="retro-games.html">
+          <a href="retrogames.html">
             <picture>
               <source srcset="img/Retro_Games/RetroGames2.Masthead.1x.png" media="(max-width:767px)">
               <img class="masthead" src="img/Retro_Games/RetroGames2.Masthead.2x.png" alt="Retro Games Masthead">
@@ -136,7 +136,7 @@
         <!-- Container for project #4 -->
         <div class="parent row"  style="background-image: url(img/Busy_Bee/BusyBee1.Masthead.2x.png);">
           <!--  Project picture -->
-          <a href="busy-bee.html">
+          <a href="busybee.html">
             <picture>
               <source srcset="img/Busy_Bee/BusyBee2.Masthead.1x.png" media="(max-width:767px)">
               <img class="masthead" src="img/Busy_Bee/BusyBee2.Masthead.2x.png" alt="Busy Bee Masthead">
@@ -145,7 +145,7 @@
           <!-- Project info -->
           <div class="project-info">
             <h5>UI // VISUAL DESIGN</h5>
-            <a href="index.html" class="explore-button">Explore more</a>
+            <a href="busybee.html" class="explore-button">Explore more</a>
           </div>
         </div>
 
@@ -169,18 +169,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script>
-    $(document).ready(function() {
-      // $('html, body, *').mousewheel(function(e, delta) {
-	  $('div').mousewheel(function(e, delta) { // Apply only to div elements
-          // Multiplication by 60 is the sensitivity;
-          // increase to scroll faster.
-          this.scrollLeft -= (delta * 60);
-          console.log('delta =', delta);
+   var doit = null;
+   $(document).ready(function() {
+     // $('html, body, *').mousewheel(function(e, delta) {
+   $('div').mousewheel(function(e, delta) { // Apply only to div elements
+    var parentObject = this;
 
-          // Disable vertical scrolling
-          e.preventDefault();
-      });
-    });
+    // Clear the "do it" time-out
+         clearTimeout(doit);
+
+         // Only update scroll if last updated was more than 10 milliseconds ago
+         doit = setTimeout(updateScroll, 15);
+
+         function updateScroll() {
+           // Multiplication by 60 is the sensitivity;
+           // increase to scroll faster.
+parentObject.scrollLeft -= (delta * 60);
+           console.log('delta =', delta);
+         };
+
+         // Disable vertical scrolling
+         e.preventDefault();
+     });
+   });
     </script>
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
   <script src="js/script.js"></script>
