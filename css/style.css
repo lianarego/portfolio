@@ -131,12 +131,6 @@ main {
   border-bottom: 1px solid #4a4a4a;
 }
 
-#email-address {
-  font-size: 2em;
-  text-align: center;
-  width: 100%;
-  display: block;
-}
 
 .masthead {
   opacity: 0;
@@ -474,6 +468,28 @@ h6 {
   margin-bottom: 25px;
   text-align: center;
   display: inline-block;
+}
+
+#email-address { /* button styling for "Explore more" of project */
+  display: inline-block;
+  max-width: 25%;
+  color: #ff7f50;
+  float: right;
+  text-decoration: none;
+  font-size: 1.7em;
+  font-weight: 400;
+  margin-top: 100px;
+  margin-right: 250px;
+  padding-bottom: 2px;
+  border-bottom: 4px solid #ff7f50; /* width of the border, type, color */
+  transition-duration: 0.2s;
+  text-align: center;
+}
+
+#email-adress:hover {
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
 img  {
@@ -3448,6 +3464,7 @@ animation-timing-function: linear;
 
 @media only screen and (min-width:1366px)  { /* --- landscape mode for iPad Pro --- */
 
+  /* ----- About Me page for 1366px ----- */
   #about-main {
     max-width: 1366px;
     margin: auto;
@@ -3512,6 +3529,14 @@ animation-timing-function: linear;
 
   .button-secondary-container {
     margin-left: 8em;
+  }
+
+  /* ----- Contact page for 1366px ----- */
+  #contact-header {
+    font-size: 4em;
+    margin-left: 150px;
+    width: 55%;
+    display: inline-block;
   }
 
 }
