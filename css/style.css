@@ -3456,8 +3456,8 @@ animation-timing-function: linear;
   #greeting {
     display: inline;
     float: right;
-    width: 50%;
-    padding: 15px 0 0 30px;
+    width: 52%;
+    padding: 15px 0 0 25px;
     margin: 0;
   }
 
@@ -3481,16 +3481,16 @@ animation-timing-function: linear;
   }
 
   #profile {
-    max-width: 42%;
+    max-width: 43%;
     float: left;
-    margin-left: 90px;
+    margin-left: 15px;
     margin-right: 3px;
     padding-top: 30px;
   }
 
   #aboutme {
     margin: 0;
-    width: 50%;
+    width: 52%;
     float: right;
     padding: 2px 20px 0 30px;
   }
