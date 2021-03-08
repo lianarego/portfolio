@@ -9,6 +9,34 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   box-sizing: border-box;
 }
 
+/* ===============   STYLING for PROJECT PAGES   ============== */
+  .masthead {
+    margin-top: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  #role {
+    display: inline;
+    text-align: center;
+    width: 100%;
+  }
+
+  #role > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .dividerline {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid grey;
+  }
+
+/* ===============   LAYOUT and STYLING for HOME SCREEN   ============== */
+
+
 ::-webkit-scrollbar {
   display: none; /* Hide all scrollbars */
 }
@@ -134,11 +162,6 @@ main {
 
 .masthead {
   opacity: 0;
-}
-
-.role {
-  display: inline;
-  text-align: center;
 }
 
 .logo {
@@ -308,6 +331,7 @@ h1 {
 h2 {
   font-size: 1.25em;
   font-weight: 600;
+  margin: 20px 0 0 0;
 }
 
 h3 {
@@ -337,6 +361,10 @@ h6 {
   margin: 0 0 3px 0;
   letter-spacing: .08em;
   line-height: 2;
+}
+
+p {
+  margin: 0 0 0 0;
 }
 
 #copyright {
