@@ -17,6 +17,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 
   #busybee-main {
     background-color: white;
+    padding-top: 80px;
   }
 
   .masthead {
@@ -36,12 +37,9 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     margin-bottom: 0;
   }
 
-  #overview {
-
-  }
-
-  #context {
-
+  .width90auto {
+    width: 90%;
+    margin: auto;
   }
 
   .dividerline-bottom {
@@ -56,7 +54,6 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    padding-top: 20px;
     border-top: 0.5px solid grey;
   }
 
@@ -359,7 +356,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.25em;
+  font-size: 1.4em;
   font-weight: 600;
   margin: 20px 0 0 0;
 }
@@ -395,6 +392,7 @@ h6 {
 
 p {
   margin: 0 0 0 0;
+  font-size: 0.95em;
 }
 
 #copyright {
