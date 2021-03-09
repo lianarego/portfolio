@@ -26,7 +26,7 @@
     <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body>
+  <body class="projectbodycolor">
 
     <!-- Header Section Here -->
     <header id="busybee-header">
@@ -40,10 +40,10 @@
             <!-- Navigation links -->
             <nav>
               <ul>
-                <li><a href="index.html" class="nav-link">Work</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars" id="menu-icon"></i></a></li> <!-- List item for hamburger menu icon -->
+                <li style="background-color: #ffffff; border-color: #ffffff"><a href="index.html" class="nav-link">Work</a></li>
+                <li style="background-color: #ffffff; border-color: #ffffff"><a href="about.html" class="nav-link">About</a></li>
+                <li style="background-color: #ffffff; border-color: #ffffff"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li style="background-color: #ffffff; border-color: #ffffff"><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars" id="menu-icon"></i></a></li> <!-- List item for hamburger menu icon -->
               </ul>
             </nav>
         </div>
@@ -51,7 +51,7 @@
     </header>
 
     <main id="busybee-main">
-      <div class="container"> <!-- Container for Masthead) -->
+      <div class="width90auto"> <!-- Container for Masthead) -->
         <div>
             <picture>
               <source srcset="img/Busy_Bee/BusyBee1.Masthead.1x.png" media="(max-width:767px)">
@@ -60,29 +60,26 @@
         </div>
       </div>
 
-      <div class="width90auto" id="role"><!-- Container for Role, Timeline, and Tools-->
-        <div> <!--container for Role-->
-          <h2>Role:</h2>
-          <p>UI & Visual Designer</p>
+      <div id="role" class="width90auto"><!-- Container for Role, Timeline, and Tools-->
+        <div>
+          </br>
+          <h3><b>Role:</b> UI & Visual Designer</h3>
         </div>
 
-        <div><!--container for Timeline-->
-          <h2>Timeline:</h2>
-          <p>June 2020</p>
+        <div>
+          <h3><b>Timeline:</b> June 2020</h3>
         </div>
 
-        <div><!--container for Tools-->
-          <h2>Tools:</h2>
-          <p>Sketch, InVision</p>
+        <div>
+          <h3><b>Tools:</b> Sketch, InVision</h3>
         </div>
-        </br>
       </div>
 
         <div class="dividerline-top width90auto"><!--container for Overview-->
           <h2>Overview</h2>
           <p>Life is busy, and sometimes we need a little help to keep it organized and manageable. Here comes Busy Bee, a comprehensive productivity app that allows users to accomplish their goals in a simple, convenient, and fun way.</p>
           </br>
-          <p>The app features three key functionalities: to-do lists, event planning, and personalized labels and filters.</p>
+          <p>The app features three key functionalities: to-do lists, event planning, and personalized labels/filters.</p>
         </div>
 
         <div class="width90auto"><!--container for Context-->
@@ -101,9 +98,10 @@
       <div class="width90auto"><!-- Container Define Goals header and text)-->
             <h2>Define Goals</h2>
             <p>After completing a competitive analysis of existing productivity apps to identify pain points, I used Jakob Nielsen's usability heuristics of efficiency, learnability, and satisfaction to develop key functionalities and UI patterns for my mobile app.</p>
+            </br>
       </div>
 
-      <div class="width90auto"><!-- Container for wireframe header and image)-->
+      <div class="dividerline-top width90auto"><!-- Container for wireframe header and image)-->
         <div> <!-- container for title and text -->
             <h2>Ideate - Wireframes</h2>
             </br>
@@ -139,15 +137,17 @@
       <div class="container"> <!-- container for Typography header, image, and text -->
           <h3>Typography</h3>
           <p>I used Brandon Text, a rounded terminal sans-serif typeface, for its friendly and playful style. This also complemented perfectly with the Comfortaa font used for the Busy Bee logo.</p>
+          </br>
           <div id="typography"> <!-- container for image -->
             <picture>
               <source srcset="img/Busy_Bee/Typography.1x.png" media="(max-width:767px)">
                 <img src="img/Busy_Bee/Typography.2x.png" alt="Typography">
             </picture>
+            </br>
           </div>
       </div>
 
-      <div class="container"> <!-- container for Final Showcase images for MOBILE-->
+      <div class="dividerline-top container"> <!-- container for Final Showcase images for MOBILE-->
           <h2>Final Showcase</h2>
           <div id="showcasemobile"> <!-- container for image -->
             <picture>
@@ -206,12 +206,15 @@
                 <img src="img/Busy_Bee/final showcase mockups2.png" alt="Sign Up Screen">
             </picture>
           </div>
-
-          </div>
-
       </div>
 
-      </main>
+      <div class="projectnav">
+          <!-- Section for next/prev links -->
+          <a id="nextproject" href="terracare.html" class="next-project-button">Next project</a>
+          <a id="prevproject" href="streambuff.html" class="previous-project-button">Prev project</a>
+          <div class="clearfix"></div>
+      </div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>

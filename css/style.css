@@ -20,6 +20,10 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     padding-top: 80px;
   }
 
+  .projectbodycolor {
+    background-color: white;
+  }
+
   .masthead {
     margin-top: 30px;
     max-width: 1200px;
@@ -27,19 +31,18 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   }
 
   #role {
-    display: inline;
-    text-align: center;
-    width: 100%;
+    display: block;
+    text-align: left;
   }
 
-  #role > h2 {
-    margin-top: 0;
-    margin-bottom: 0;
+  #role > h3 {
+    padding: 10px 0;
   }
 
   .width90auto {
     width: 90%;
     margin: auto;
+    max-width: 1200px;
   }
 
   .dividerline-bottom {
@@ -59,6 +62,28 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 
   #showcasedesktop {
     display: none;
+  }
+
+  .projectnav {
+    padding: 0;
+    background-color: white;
+    width: 100%;
+  }
+
+  .projectnav > #nextproject {
+    float: right;
+    color: #ff7f50;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: white;
+  }
+
+  .projectnav > #prevproject {
+    float: left;
+    color: #ff7f50;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: white;
   }
 
 /* ===============   LAYOUT and STYLING for HOME SCREEN   ============== */
@@ -150,7 +175,7 @@ footer {
   width: 100%
 }
 
-main {
+#index-main {
   background-color: #DDF7FB;
 }
 
@@ -365,7 +390,7 @@ h3 {
   font-size: 1.25em;
   font-weight: 400;
   margin:0;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 h4 {
