@@ -166,34 +166,11 @@
 
 	<!-- Horizontal scrolling, using jQuery Mousewheel plugin.
          Code adapted from https://designedbyaturtle.com/horizontal-scrolling-with-jquery/ -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/jquery.mousewheel.js"></script>
-    <script>
-   var doit = null;
-   $(document).ready(function() {
-     // $('html, body, *').mousewheel(function(e, delta) {
-   $('div').mousewheel(function(e, delta) { // Apply only to div elements
-    var parentObject = this;
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-    // Clear the "do it" time-out
-         clearTimeout(doit);
-
-         // Only update scroll if last updated was more than 10 milliseconds ago
-         doit = setTimeout(updateScroll, 15);
-
-         function updateScroll() {
-           // Multiplication by 60 is the sensitivity;
-           // increase to scroll faster.
-parentObject.scrollLeft -= (delta * 60);
-           console.log('delta =', delta);
-         };
-         // Disable vertical scrolling
-         e.preventDefault();
-     });
-   });
-    </script>
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
   <script src="js/flight-path-generator.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/script.js"></script>
 
     <!-- Overlay container to close hamburger menu when the user clicks anywhere on screen -->
