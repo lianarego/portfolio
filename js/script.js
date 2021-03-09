@@ -16,4 +16,18 @@ function menuToggle() {
     y.className = 'fas fa-bars';
     $('.navtoggle li .icon').css("font-size" , "40px");
   }
+    
+  var z = document.getElementById('overlay');
+  if (z.style.display === 'none' || z.style.display === '') {
+    z.style.display = 'block';
+  } else {
+	z.style.display = 'none';
+  }
+  
+  var w = document.getElementById('header');
+  if (w.style.backgroundColor === 'transparent' || w.style.backgroundColor === '') {
+    w.style.backgroundColor = '#DDF7FB';
+  } else {
+	w.style.backgroundColor = 'transparent';
+  }
 }
