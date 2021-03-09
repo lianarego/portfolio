@@ -18,30 +18,38 @@ function menuToggle() {
   }
     
   var overlay = document.getElementById('overlay');
-  if (overlay.style.display === 'none' || overlay.style.display === '') {
-    overlay.style.display = 'block';
-  } else {
-	overlay.style.display = 'none';
+  if (overlay !== null) {
+    if (overlay.style.display === 'none' || overlay.style.display === '') {
+      overlay.style.display = 'block';
+    } else {
+  	overlay.style.display = 'none';
+    }
   }
 	
   var projectOverlay = document.getElementById('project-overlay');
-  if (projectOverlay.style.display === 'none' || projectOverlay.style.display === '') {
-    projectOverlay.style.display = 'block';
-  } else {
-	projectOverlay.style.display = 'none';
+  if (projectOverlay !== null) {
+    if (projectOverlay.style.display === 'none' || projectOverlay.style.display === '') {
+      projectOverlay.style.display = 'block';
+    } else {
+  	projectOverlay.style.display = 'none';
+    }
   }
   
   var header = document.getElementById('header');
-  if (header.style.backgroundColor === 'transparent' || header.style.backgroundColor === '') {
-    header.style.backgroundColor = '#DDF7FB';
-  } else {
-	header.style.backgroundColor = 'transparent';
+  if (header !== null) {
+    if (header.style.backgroundColor === 'transparent' || header.style.backgroundColor === '') {
+      header.style.backgroundColor = '#DDF7FB';
+    } else {
+  	header.style.backgroundColor = 'transparent';
+    }
   }
 	
   var projectHeader = document.getElementById('project-header');
-  if (projectHeader.style.backgroundColor === 'transparent' || projectHeader.style.backgroundColor === '') {
-    projectHeader.style.backgroundColor = '#FFFFFF';
-  } else {
-	projectHeader.style.backgroundColor = 'transparent';
+  if (projectHeader !== null) {
+    if (projectHeader.style.backgroundColor === 'transparent' || projectHeader.style.backgroundColor === '') {
+      projectHeader.style.backgroundColor = '#FFFFFF';
+    } else {
+  	projectHeader.style.backgroundColor = 'transparent';
+    }
   }
 }
