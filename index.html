@@ -55,21 +55,21 @@
 
     <main>
       <div id="planes">
-        <img src="img/whiteplane.svg" class="plane1 plane" />
-        <img src="img/whiteplane.svg" class="plane2 plane" />
-        <img src="img/whiteplane.svg" class="plane3 plane" />
-        <img src="img/whiteplane.svg" class="plane4 plane" />
-        <img src="img/whiteplane.svg" class="plane5 plane" />
-        <img src="img/whiteplane.svg" class="plane6 plane" />
-        <img src="img/whiteplane.svg" class="plane7 plane" />
-        <img src="img/whiteplane.svg" class="plane8 plane" />
-        <img src="img/whiteplane.svg" class="plane9 plane" />
-        <img src="img/whiteplane.svg" class="plane10 plane" />
-        <img src="img/whiteplane.svg" class="plane11 plane" />
+        <img src="img/whiteplane.svg" class="plane" id="plane1"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane2"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane3"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane4"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane5"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane6"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane7"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane8"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane9"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane10"/>
+        <img src="img/whiteplane.svg" class="plane" id="plane11"/>
 
 
       </div>
-	  <div class="grid-container">
+	  <div class="grid-container" id="grid-container">
 		<!-- Hero Section Here -->
         <div id="hero-section">
           <div class="container">
@@ -194,7 +194,10 @@ parentObject.scrollLeft -= (delta * 60);
    });
     </script>
   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+  <script src="js/flight-path-generator.js"></script>
   <script src="js/script.js"></script>
 
+    <!-- Overlay container to close hamburger menu when the user clicks anywhere on screen -->
+	  <div id="overlay" onclick="menuToggle()"></div>
   </body>
 </html>
