@@ -1,33 +1,40 @@
 console.log("Hello world")
 
 function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
-  if (x.className === 'navtoggle') {
-    x.className += ' responsive';
+  var myNavToggle = document.getElementById('myNavtoggle');
+  if (myNavToggle.className === 'navtoggle') {
+    myNavToggle.className += ' responsive';
   } else {
-    x.className = 'navtoggle';
+    myNavToggle.className = 'navtoggle';
   }
 
-  var y = document.getElementById('menu-icon');
-  if (y.className === 'fas fa-bars') {
-    y.className = 'fas fa-times';
+  var menuIcon = document.getElementById('menu-icon');
+  if (menuIcon.className === 'fas fa-bars') {
+    menuIcon.className = 'fas fa-times';
     $('.navtoggle li .icon').css("font-size" , "50px");
   } else {
-    y.className = 'fas fa-bars';
+    menuIcon.className = 'fas fa-bars';
     $('.navtoggle li .icon').css("font-size" , "40px");
   }
     
-  var z = document.getElementById('overlay');
-  if (z.style.display === 'none' || z.style.display === '') {
-    z.style.display = 'block';
+  var overlay = document.getElementById('overlay');
+  if (overlay.style.display === 'none' || overlay.style.display === '') {
+    overlay.style.display = 'block';
   } else {
-	z.style.display = 'none';
+	overlay.style.display = 'none';
   }
   
-  var w = document.getElementById('header');
-  if (w.style.backgroundColor === 'transparent' || w.style.backgroundColor === '') {
-    w.style.backgroundColor = '#DDF7FB';
+  var header = document.getElementById('header');
+  if (header.style.backgroundColor === 'transparent' || header.style.backgroundColor === '') {
+    header.style.backgroundColor = '#DDF7FB';
   } else {
-	w.style.backgroundColor = 'transparent';
+	header.style.backgroundColor = 'transparent';
+  }
+	
+  var projectHeader = document.getElementById('project-header');
+  if (projectHeader.style.backgroundColor === 'transparent' || projectHeader.style.backgroundColor === '') {
+    projectHeader.style.backgroundColor = '#FFFFFF';
+  } else {
+	projectHeader.style.backgroundColor = 'transparent';
   }
 }
