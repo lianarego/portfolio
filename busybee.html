@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Paper Plane Designs - TerraCare</title>
+    <title>Paper Plane Designs - Busy Bee</title>
 
     <!-- Normalize CSS and link to CSS stylesheet-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -29,7 +29,7 @@
   <body>
 
     <!-- Header Section Here -->
-    <header>
+    <header id="busybee-header">
       <div>
         <div class="navtoggle" id="myNavtoggle">
           <!-- Logo/Name -->
@@ -50,8 +50,8 @@
       </div>
     </header>
 
-    <main>
-      <div class="masthead"> <!-- Container for Masthead) -->
+    <main id="busybee-main">
+      <div class="container"> <!-- Container for Masthead) -->
         <div>
             <picture>
               <source srcset="img/Busy_Bee/BusyBee1.Masthead.1x.png" media="(max-width:767px)">
@@ -71,20 +71,20 @@
           <p>June 2020</p>
         </div>
 
-        <div class="dividerline"><!--container for Tools-->
+        <div class="dividerline-bottom"><!--container for Tools-->
           <h2>Tools:</h2>
           <p>Sketch, InVision</p>
         </div>
       </div>
 
-        <div class="container"><!--container for Overview-->
+        <div id="overview" class="container"><!--container for Overview-->
           <h2>Overview</h2>
           <p>Life is busy, and sometimes we need a little help to keep it organized and manageable. Here comes Busy Bee, a comprehensive productivity app that allows users to accomplish their goals in a simple, convenient, and fun way.</p>
           </br>
           <p>The app features three key functionalities: to-do lists, event planning, and personalized labels and filters.</p>
         </div>
 
-        <div class="container"><!--container for Context-->
+        <div id="context" class="container"><!--container for Context-->
           <h2>Context</h2>
           <p>Busy Bee is a native mobile app that I developed for my UI Design certification. The project brief asked for a mobile user interface that is simple and engaging. With this in mind, I designed a clean and fun interface that invokes the feeling of happiness in users as they accomplish their goals.</p>
         </br> <!-- For space between Contect and image below it -->
@@ -115,7 +115,7 @@
         </div>
       </div>
 
-      <div class="container"> <!-- container for Visual Design header, image, and text -->
+      <div class="container dividerline-top"> <!-- container for Visual Design header, image, and text -->
           <h2>Visual Design</h2>
           <h3>Color Palette</h3>
           <p>I decided to use a yellow monochromatic color scheme because it's a color associated with happiness and vitality — feelings that I wanted users to experience while using my app and accomplishing their goals. </p>
@@ -123,7 +123,7 @@
           <p>Since yellow can also be associated as a warning color, I made sure to select the subtle shade of yellow that's not intrusive.</p>
           </br>
           <p>I created a secondary color palette made up of different hues of grey to complement the yellow color palette. These neutral colors were primarily used as headers and body text in the app.</p>
-          <div> <!-- container for image -->
+          <div id="colorpalette"> <!-- container for image -->
             <picture>
               <source srcset="img/Busy_Bee/Color palette.1x.png" media="(max-width:767px)">
                 <img src="img/Busy_Bee/Color palette.2x.png" alt="Color Palette">
@@ -134,24 +134,77 @@
       <div class="container"> <!-- container for Typography header, image, and text -->
           <h3>Typography</h3>
           <p>I used Brandon Text, a rounded terminal sans-serif typeface, for its friendly and playful style. This also complemented perfectly with the Comfortaa font used for the Busy Bee logo.</p>
-          <div> <!-- container for image -->
+          <div id="typography"> <!-- container for image -->
             <picture>
-              <source srcset="img/Busy_Bee/Color palette.1x.png" media="(max-width:767px)">
-                <img src="img/Busy_Bee/Color palette.2x.png" alt="Color Palette">
+              <source srcset="img/Busy_Bee/Typography.1x.png" media="(max-width:767px)">
+                <img src="img/Busy_Bee/Typography.2x.png" alt="Typography">
             </picture>
           </div>
       </div>
 
-      <div class="container"> <!-- container for Final Showcase images-->
-          <div> <!-- container for image -->
+      <div class="container"> <!-- container for Final Showcase images for MOBILE-->
+          <h2>Final Showcase</h2>
+          <div id="showcasemobile"> <!-- container for image -->
             <picture>
-              <source srcset="img/Busy_Bee/Color palette.1x.png" media="(max-width:767px)">
-                <img src="img/Busy_Bee/Color palette.2x.png" alt="Color Palette">
+              <source srcset="img/Busy_Bee/splashscreen.png" media="(max-width:767px)">
+                <img src="img/Busy_Bee/splashscreen.png" alt="Splash Screen">
+            </picture>
+          </div>
+
+          <div id="showcasemobile"> <!-- container for image -->
+            <picture>
+              <source srcset="img/Busy_Bee/signup.png" media="(max-width:767px)">
+                <img src="img/Busy_Bee/signup.png" alt="Sign Up Screen">
+
+            </picture>
+          </div>
+
+          <div id="showcasemobile"> <!-- container for image -->
+            <picture>
+              <source srcset="img/Busy_Bee/home.png" media="(max-width:767px)">
+                <img src="img/Busy_Bee/home.png" alt="Home Screen">
+            </picture>
+          </div>
+
+          <div id="showcasemobile"> <!-- container for image -->
+            <picture>
+              <source srcset="img/Busy_Bee/addchecklist.png" media="(max-width:767px)">
+                <img src="img/Busy_Bee/addchecklist.png" alt="Add Checklist Screen">
+            </picture>
+          </div>
+
+          <div id="showcasemobile"> <!-- container for image -->
+            <picture>
+              <source srcset="img/Busy_Bee/addevent.png" media="(max-width:767px)">
+                <img src="img/Busy_Bee/addevent.png" alt="Add Event Screen">
+            </picture>
+          </div>
+
+          <div id="showcasemobile"> <!-- container for image -->
+            <picture>
+              <source srcset="img/Busy_Bee/Calendar.png" media="(max-width:767px)">
+                <img src="img/Busy_Bee/Calendar.png" alt="Calendar Screen">
             </picture>
           </div>
 
       </div>
 
+      <div class="container"> <!-- container for Final Showcase images for TABLET/DESKTOP (screen greater than 568px)-->
+          <div id="showcasedesktop"> <!-- container for image -->
+            <picture>
+                <img src="img/Busy_Bee/final showcase mockups1.png" alt="Mockups 1">
+            </picture>
+          </div>
+
+          <div id="showcasedesktop"> <!-- container for image -->
+            <picture>
+                <img src="img/Busy_Bee/final showcase mockups2.png" alt="Sign Up Screen">
+            </picture>
+          </div>
+
+          </div>
+
+      </div>
 
       </main>
 

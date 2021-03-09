@@ -10,6 +10,15 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 }
 
 /* ===============   STYLING for PROJECT PAGES   ============== */
+
+  #busybee-header {
+    background-color: white;
+  }
+
+  #busybee-main {
+    background-color: white;
+  }
+
   .masthead {
     margin-top: 30px;
     max-width: 1200px;
@@ -27,11 +36,32 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     margin-bottom: 0;
   }
 
-  .dividerline {
+  #overview {
+
+  }
+
+  #context {
+
+  }
+
+  .dividerline-bottom {
     width: 90%;
+    max-width: 1200px;
     margin: auto;
     padding-bottom: 20px;
     border-bottom: 0.5px solid grey;
+  }
+
+  .dividerline-top {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+    border-top: 0.5px solid grey;
+  }
+
+  #showcasedesktop {
+    display: none;
   }
 
 /* ===============   LAYOUT and STYLING for HOME SCREEN   ============== */
@@ -80,7 +110,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 /* Layout styling */
 
 .container { /* container for header, hero section, work section, and footer */
-  padding: 0 21px;
+  padding: 0 20px;
 }
 
 .row {
@@ -1718,6 +1748,7 @@ img  {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 .plane5 {
   width: 25px;
   position: absolute;
@@ -1744,14 +1775,14 @@ img  {
 }
 
 .plane7 {
-width: 40px;
-position: absolute;
-display: block;
-top: 50%;
-left: -30%;
-animation-name: plane-fly-4_1;
-animation-iteration-count: infinite;
-animation-timing-function: linear;
+  width: 40px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: -30%;
+  animation-name: plane-fly-4_1;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .plane8 {
@@ -1944,6 +1975,16 @@ animation-timing-function: linear;
   .button-secondary {
     font-size: 1.35em;
   }
+
+  /* ---- Busy Bee project page for screen size 568px ----- */
+  #showcasemobile {
+    display: none;
+  }
+
+  #showcasedesktop {
+    display: inline-block;
+  }
+
 }
 
 @media only screen and (min-width: 640px) and (max-width: 1023px) {  /* /* --- landscape mode for iPhone 6/7/8 --- */
