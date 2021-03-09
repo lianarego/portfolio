@@ -20,6 +20,17 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     padding-top: 80px;
   }
 
+  #project-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+  }
+
   .projectbodycolor {
     background-color: white;
   }
