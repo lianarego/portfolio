@@ -23,6 +23,13 @@ function menuToggle() {
   } else {
 	overlay.style.display = 'none';
   }
+	
+  var projectOverlay = document.getElementById('project-overlay');
+  if (projectOverlay.style.display === 'none' || projectOverlay.style.display === '') {
+    projectOverlay.style.display = 'block';
+  } else {
+	projectOverlay.style.display = 'none';
+  }
   
   var header = document.getElementById('header');
   if (header.style.backgroundColor === 'transparent' || header.style.backgroundColor === '') {
