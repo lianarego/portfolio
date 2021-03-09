@@ -87,6 +87,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     text-decoration: none;
     font-weight: 400;
     background-color: white;
+    padding: 0 15px 15px 0;
   }
 
   .projectnav > #prevproject {
@@ -95,6 +96,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     text-decoration: none;
     font-weight: 400;
     background-color: white;
+    padding: 0 0 15px 15px;
   }
 
 /* ===============   LAYOUT and STYLING for HOME SCREEN   ============== */
