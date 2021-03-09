@@ -11,11 +11,11 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 
 /* ===============   STYLING for PROJECT PAGES   ============== */
 
-  #busybee-header {
+  #project-header {
     background-color: white;
   }
 
-  #busybee-main {
+  #project-main {
     background-color: white;
     padding-top: 80px;
   }
