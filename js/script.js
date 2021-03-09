@@ -16,7 +16,7 @@ function menuToggle() {
     menuIcon.className = 'fas fa-bars';
     $('.navtoggle li .icon').css("font-size" , "40px");
   }
-    
+
   var overlay = document.getElementById('overlay');
   if (overlay !== null) {
     if (overlay.style.display === 'none' || overlay.style.display === '') {
@@ -25,7 +25,7 @@ function menuToggle() {
   	overlay.style.display = 'none';
     }
   }
-	
+
   var projectOverlay = document.getElementById('project-overlay');
   if (projectOverlay !== null) {
     if (projectOverlay.style.display === 'none' || projectOverlay.style.display === '') {
@@ -34,7 +34,7 @@ function menuToggle() {
   	projectOverlay.style.display = 'none';
     }
   }
-  
+
   var header = document.getElementById('header');
   if (header !== null) {
     if (header.style.backgroundColor === 'transparent' || header.style.backgroundColor === '') {
@@ -43,7 +43,7 @@ function menuToggle() {
   	header.style.backgroundColor = 'transparent';
     }
   }
-	
+
   var projectHeader = document.getElementById('project-header');
   if (projectHeader !== null) {
     if (projectHeader.style.backgroundColor === 'transparent' || projectHeader.style.backgroundColor === '') {
@@ -53,3 +53,6 @@ function menuToggle() {
     }
   }
 }
+$( document ).ready(function() {
+    $("#grid-container").niceScroll();
+});
