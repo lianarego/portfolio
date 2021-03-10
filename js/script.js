@@ -58,7 +58,7 @@ function activateNiceScroll() {
   // Console log
   console.log('activateNiceScroll(): Window width =', window.innerWidth);
 
-  if (window.innerWidth >= 1024) {
+  if (window.innerWidth >= 414) {
     // Console log
     console.log('  niceScroll(): Window width =', window.innerWidth);
 
