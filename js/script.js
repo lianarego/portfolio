@@ -53,10 +53,26 @@ function menuToggle() {
     }
   }
 }
-$(document).ready(function() {
-  if (window.innerWidth > 1024) {
+
+function activateNiceScroll() {
+  // Console log
+  console.log('activateNiceScroll(): Window width =', window.innerWidth);
+
+  if (window.innerWidth >= 1024) {
+    // Console log
+    console.log('  niceScroll(): Window width =', window.innerWidth);
+
     $("#grid-container").niceScroll({
-    cursorcolor:"#ff7f50",
-    cursorwidth:"5px"})
+    cursorcolor: "#ff7f50",
+    cursorwidth: "5px"})
+  } else {
+    // Console log
+    console.log('  getNiceScroll().remove(): Window width =', window.innerWidth);
+
+    $("#grid-container").getNiceScroll().remove();
   }
-});
+}
+activateNiceScroll();
+
+// Callback function when window is resized
+window.onresize = activateNiceScroll;
