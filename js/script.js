@@ -64,7 +64,8 @@ function activateNiceScroll() {
 
     $("#grid-container").niceScroll({
     cursorcolor: "#ff7f50",
-    cursorwidth: "5px"})
+    cursorwidth: "5px",
+    cursorborder: "0"})
   } else {
     // Console log
     console.log('  getNiceScroll().remove(): Window width =', window.innerWidth);
