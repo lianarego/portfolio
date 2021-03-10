@@ -53,9 +53,10 @@ function menuToggle() {
     }
   }
 }
-$( document ).ready(function() {
+$(document).ready(function() {
+  if (window.innerWidth > 1024) {
     $("#grid-container").niceScroll({
     cursorcolor:"#ff7f50",
-    cursorwidth:"5px"
-  })
+    cursorwidth:"5px"})
+  }
 });
