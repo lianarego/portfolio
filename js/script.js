@@ -54,5 +54,8 @@ function menuToggle() {
   }
 }
 $( document ).ready(function() {
-    $("#grid-container").niceScroll();
+    $("#grid-container").niceScroll({
+    cursorcolor:"#ff7f50",
+    cursorwidth:"5px"
+  })
 });
