@@ -63,7 +63,7 @@ function activateNiceScroll() {
     console.log('  niceScroll(): Window width =', window.innerWidth);
 
     $("#grid-container").niceScroll({
-    cursorcolor: "#ff7f50",
+    cursorcolor: "rgba(255,130, 68,0.8)",
     cursorwidth: "5px",
     cursorborder: "0"})
   } else {
@@ -76,4 +76,4 @@ function activateNiceScroll() {
 activateNiceScroll();
 
 // Callback function when window is resized
-window.onresize = activateNiceScroll;
+window.onresize = function() { activateNiceScroll(); resetAnimation(); };

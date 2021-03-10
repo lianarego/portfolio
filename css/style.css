@@ -1750,7 +1750,7 @@ img  {
 }
 
 #plane1 {
-  width: 40px;
+  width: 50px;
   position: absolute;
   display: block;
   left: -30%;
@@ -1762,28 +1762,28 @@ img  {
 }
 
 #plane2 {
-  width: 45px;
+  width: 60px;
   position: absolute;
   display: block;
   left: -30%;
 }
 
 #plane3 {
-  width: 45px;
+  width: 55px;
   position: absolute;
   display: block;
   left: -30%;
 }
 
 #plane4 {
-  width: 25px;
+  width: 35px;
   position: absolute;
   display: block;
   left: -30%;
 }
 
 #plane5 {
-  width: 25px;
+  width: 60px;
   position: absolute;
   display: block;
   top: 50%;
@@ -1791,22 +1791,6 @@ img  {
 }
 
 #plane6 {
-  width: 20px;
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: -30%;
-}
-
-#plane7 {
-  width: 40px;
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: -30%;
-}
-
-#plane8 {
   width: 30px;
   position: absolute;
   display: block;
@@ -1814,6 +1798,23 @@ img  {
   left: -30%;
 }
 
+#plane7 {
+  width: 50px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: -30%;
+}
+
+#plane8 {
+  width: 40px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: -30%;
+}
+
+/*
 #plane9 {
   width: 35px;
   position: absolute;
@@ -1829,6 +1830,7 @@ img  {
   top: 50%;
   left: -30%;
 }
+*/
 
 #plane11 {
   width: 40px;
@@ -1842,6 +1844,7 @@ img  {
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
+
 
 /* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -3454,32 +3457,33 @@ img  {
   }
 
   #plane2 {
-    width: 35px;
+    width: 100px;
   }
 
   #plane3 {
-    width: 65px;
+    width: 70px;
   }
 
   #plane4 {
-    width: 45px;
+    width: 60px;
   }
   #plane5 {
-    width: 85px;
+    width: 105px;
   }
 
   #plane6 {
-    width: 40px;
+    width: 45px;
   }
 
   #plane7 {
-    width: 60px;
+    width: 65px;
   }
 
   #plane8 {
-    width: 50px;
+    width: 60px;
   }
 
+/*
   #plane9 {
     width: 55px;
   }
@@ -3487,6 +3491,7 @@ img  {
   #plane10 {
     width: 45px;
   }
+*/
 
   #plane11 {
     width: 60px;

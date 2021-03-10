@@ -29,7 +29,11 @@ function startAnimation() {
 
   // Show all planes
   for (i = 1; i <= 11; i++) {
-    document.getElementById('plane' + i).style.display = 'block';
+    elem = document.getElementById('plane' + i);
+    if (elem !== null) { // If this plane exists
+      elem.style.display = 'block'; // Show it
+      console.log('startAnimation():', elem.id, elem.style.display)
+    }
   }
 
   /* animateFlight_1();
@@ -56,11 +60,11 @@ function startAnimation() {
   setTimeout(() => {animateFlight_8();
     intervals.push(setInterval(animateFlight_8, duration)); }, duration*7/11);
 
-  setTimeout(() => {animateFlight_9();
+  /* setTimeout(() => {animateFlight_9();
     intervals.push(setInterval(animateFlight_9, duration)); }, duration*8/11);
 
   setTimeout(() => {animateFlight_10();
-    intervals.push(setInterval(animateFlight_10, duration)); }, duration*9/11);
+    intervals.push(setInterval(animateFlight_10, duration)); }, duration*9/11); */ // PLANE 9 & 10 DELETED FROM index.html
 
   /* setTimeout(() => {animateFlight_11();
     intervals.push(setInterval(animateFlight_11, duration)); }, duration*10/11); */ // PLANE 11 SWIRL DEFINED BY CSS ANIMATION (KEYFRAMES)
@@ -70,7 +74,11 @@ function startAnimation() {
 function stopAnimation() {
   // Hide all planes immediately upon window resize
   for (i = 1; i <= 11; i++) {
-    document.getElementById('plane' + i).style.display = 'none';
+    elem = document.getElementById('plane' + i);
+    if (elem !== null) { // If this plane exists
+      elem.style.display = 'none'; // Hide it
+      console.log('stopAnimation():', elem.id, elem.style.display)
+    }
   }
 
   // Clear all intervals
