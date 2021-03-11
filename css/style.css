@@ -1869,25 +1869,24 @@ img  {
     margin: 9px 0 0 0;
   }
 
-  }
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 1.75em;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     line-height: 1.6;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     font-size: 1.05em;
     line-height: 1.6;
   }
 
   .scrolldown {
-    font-size: .9em;
+    font-size: 1.05em;
   }
 
-  #copyright > h6{
+  #copyright > h6 {
     font-size: .85em;
   }
 
@@ -2257,7 +2256,7 @@ img  {
     background-color: #DDF7FB;
   }
 
-  }
+}
 
   /*
     header {
@@ -3846,4 +3845,4 @@ img  {
     text-align: left;
     max-width: 90vw;
   }
-  }
+}
