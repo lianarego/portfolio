@@ -150,7 +150,9 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   width: 100%;
   margin-top: 60px;
   color: rgba(0,0,0,0.8);
+  font-size: .9em;
 }
+
 
 .scrolldown > h6 {
   font-weight: 400;
@@ -2134,7 +2136,6 @@ img  {
     display: none;
   }
 
-
   .logo {
     max-width: 70px;
     padding: 6px 8px 6px 22px;
@@ -2175,7 +2176,7 @@ img  {
   content: "";
   clear: both;
   display: table;
-}
+  }
 
   .projectnav > #nextproject {
     font-size: 1.3em;
@@ -2227,8 +2228,8 @@ img  {
   }
 
   h1 {
-      font-size: 3em;
-    }
+    font-size: 3em;
+  }
 
   .container {
     text-align: left;
@@ -2293,9 +2294,7 @@ img  {
     content: "";
     clear: both;
     display: table;
-  }
-
-  */
+  } */
 
 @media only screen and (min-width:736px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */
 
@@ -2625,10 +2624,6 @@ img  {
     header {
       background-color: #DDF7FB;
     }
-
-  /*  #hero-section span {
-      display: block;
-    } */
 
   /*
     [class*="lg-5"]{
@@ -3624,6 +3619,7 @@ img  {
   #plane4 {
     width: 60px;
   }
+
   #plane5 {
     width: 105px;
   }
