@@ -1872,19 +1872,19 @@ img  {
   }
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 2.1em;
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
-    margin-bottom: 40px;
-    font-size: 1.2em;
-    line-height: 1.7;
+    margin-bottom: 35px;
+    font-size: 1.1em;
+    line-height: 1.45;
   }
 
   .scrolldown {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   #copyright > h6{
