@@ -150,7 +150,10 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   width: 100%;
   margin-top: 60px;
   color: rgba(0,0,0,0.8);
-  font-weight: 600;
+}
+
+.scrolldown > h6 {
+  font-weight: 400;
 }
 
 /* Layout styling */
@@ -426,7 +429,7 @@ h4 {
 
 h5 {
   font-size: .85em;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0 0 3px 0;
   letter-spacing: .13em;
 }
@@ -1868,19 +1871,19 @@ img  {
 
   }
   .container > h2 {       /* --- used for "I love to design..." --- */
-    font-size: 1.7em;
+    font-size: 2.1em;
     margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
+    margin-bottom: 20px;
+    font-size: 1.2em;
     line-height: 1.7;
   }
 
-  h5 {       /* --- used for "I'm so happy to see you..." --- */
-    font-size: 1em;
-    line-height: 1.8;
-
-  }
-
   .scrolldown {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   /* ---- Busy Bee project for screen size 375px ----- */
@@ -3818,7 +3821,7 @@ img  {
 
   #hero-section {
     padding: 0 0 0 0;
-    text-align: center;
+    text-align: left;
     max-width: 90vw;
   }
   }
