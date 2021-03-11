@@ -2118,6 +2118,23 @@ img  {
     display: table;
   }
 
+  .typographytext {
+    padding-top: 140px;
+    text-align: right;
+    width: 40%;
+    float: right;
+  }
+
+  .typographyimage{
+    width: 60%;
+    float: left;
+  }
+
+  .typographytext::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
   .projectnav > #nextproject {
     font-size: 1.3em;
@@ -3627,18 +3644,40 @@ img  {
     padding-bottom: 5px;
   }
 
+  .typographytext {
+    padding-top: 300px;
+    text-align: right;
+    width: 30%;
+    float: right;
+  }
+
+  .typographyimage{
+    width: 50%;
+    float: left;
+  }
+
+  .typographytext::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
  .projectnav {
-   width: 95%;
+   width: 70%;
    margin: auto;
  }
 
  .projectnav > #nextproject {
-   font-size: 1.4em;
+   font-size: 1.6em;
+   padding: 30px 15px 75px 0;
  }
 
  .projectnav > #prevproject {
-   font-size: 1.4em;
+   font-size: 1.6em;
+   padding: 30px 0 75px 15px;
  }
+
 
   /* ----- About Me page for 1366px ----- */
   #about-main {
