@@ -2100,6 +2100,27 @@ img  {
     margin: 10px 0 0 0;
   }
 
+  /* ---- Busy Bee project for screen size 640px ----- */
+
+  .colorpaletteimage {
+    width: 50%;
+    float: right;
+  }
+
+  .colorpalettetext {
+    display: inline-block;
+    width: 50%;
+    float: left;
+  }
+
+  .projectnav > #nextproject {
+    font-size: 1.3em;
+  }
+
+  .projectnav > #prevproject {
+    font-size: 1.3em;
+  }
+
   /* ---- About Me page for screen size 640px ----- */
 
   #greeting {
