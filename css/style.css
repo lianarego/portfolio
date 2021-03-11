@@ -1866,6 +1866,23 @@ img  {
     margin: 9px 0 0 0;
   }
 
+  }
+  .container > h2 {       /* --- used for "I love to design..." --- */
+    font-size: 1.7em;
+    margin-bottom: 40px;
+    line-height: 1.7;
+  }
+
+  h5 {       /* --- used for "I'm so happy to see you..." --- */
+    font-size: 1em;
+    line-height: 1.8;
+
+  }
+
+  .scrolldown {
+    font-size: 1.2em;
+  }
+
   /* ---- Busy Bee project for screen size 375px ----- */
 
   h2 {
