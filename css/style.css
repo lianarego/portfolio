@@ -2317,14 +2317,14 @@ img  {
 
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 2.9em;
-    margin-top: 40px;
-    margin-bottom: 120px;
+    margin-top: 50px;
+    margin-bottom: 110px;
     line-height: 1.6;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
     margin-bottom: 140px;
-    font-size: 1.75em;
+    font-size: 1.85em;
     line-height: 1.6;
   }
 
@@ -2333,7 +2333,7 @@ img  {
   }
 
   #copyright > h6 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   /* ---- About Me page for screen size 736px ----- */
