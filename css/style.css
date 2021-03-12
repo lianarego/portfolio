@@ -2317,13 +2317,13 @@ img  {
 
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 3em;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 150px;
     line-height: 1.8;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
-    margin-bottom: 150px;
+    margin-bottom: 130px;
     font-size: 2em;
     line-height: 1.8;
   }
