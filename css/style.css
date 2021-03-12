@@ -1952,17 +1952,17 @@ img  {
 }
 
 /*
-@media only screen and (min-width:375px) and (max-height:666px)  { /* --- portrait mode for iPhone 6/7/8 --- */
+@media only screen and (min-width:375px) and (max-height:666px)  { /* --- portrait mode for iPhone 6/7/8 ---
 
-  /* ---- Header section for screen size 375px ----- */
-  .container > h2 {       /* --- used for "I love to design..." --- */
+  /* ---- Header section for screen size 375px -----
+  .container > h2 {       /* --- used for "I love to design..." ---
     font-size: 1.6em;
     margin-top: 25px;
     margin-bottom: 40px;
     line-height: 1.4;
   }
 
-  .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
+  .container > h5 {     /* --- used for "I'm so happy to see you..." ---
     margin-bottom: 80px;
     font-size: 1em;
     line-height: 1.4;
@@ -1976,7 +1976,7 @@ img  {
     font-size: .8em;
   }
 
-}
+} */
 
 @media only screen and (min-width:414px)  { /* --- portrait mode for iPhone 6/7/8 Plus --- */
 
@@ -2318,7 +2318,7 @@ img  {
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 2.9em;
     margin-top: 40px;
-    margin-bottom: 135px;
+    margin-bottom: 1.35px;
     line-height: 1.6;
   }
 
