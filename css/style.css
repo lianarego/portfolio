@@ -87,7 +87,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     text-decoration: none;
     font-weight: 400;
     background-color: white;
-    padding: 0 15px 15px 0;
+    padding: 0 15px 30px 0;
   }
 
   .projectnav > #prevproject {
@@ -96,7 +96,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     text-decoration: none;
     font-weight: 400;
     background-color: white;
-    padding: 0 0 15px 15px;
+    padding: 0 0 30px 15px;
   }
 
 /* ===============   LAYOUT and STYLING for HOME SCREEN   ============== */
@@ -1854,7 +1854,8 @@ img  {
 /* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /*------------------------------------------------------------------------------------------------ */
-@media only screen and (min-width:375px)  { /* --- portrait mode for iPhone 6/7/8 and X --- */
+
+@media only screen and (min-width:375px)  { /* --- portrait mode for X --- */
 
   /* ---- Header section for screen size 375px ----- */
   main {
@@ -1946,6 +1947,32 @@ img  {
 
   .button-secondary {
     font-size: 1.2em;
+  }
+
+}
+
+@media only screen and (min-width:375px) and (max-height:667px)  { /* --- portrait mode for iPhone 6/7/8 --- */
+
+  /* ---- Header section for screen size 375px ----- */
+  .container > h2 {       /* --- used for "I love to design..." --- */
+    font-size: 1.6em;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+
+  .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
+    margin-bottom: 80px;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .scrolldown {
+    font-size: 1em;
+  }
+
+  #copyright > h6 {
+    font-size: .8em;
   }
 
 }
@@ -2150,32 +2177,19 @@ img  {
   }
 
   .colorpalettetext {
-    display: inline-block;
-    width: 50%;
+    width: 100%;
     float: left;
   }
 
-  .colorpaletteimage::after {
-    clear: both;
-    display: table;
-  }
-
   .typographytext {
-    padding-top: 140px;
     text-align: right;
-    width: 40%;
+    width: 100%;
     float: right;
   }
 
   .typographyimage{
     width: 60%;
     float: left;
-  }
-
-  .typographytext::after {
-  content: "";
-  clear: both;
-  display: table;
   }
 
   .projectnav > #nextproject {
@@ -2496,8 +2510,7 @@ img  {
   }
 
   .colorpalettetext {
-    display: inline-block;
-    width: 50%;
+    width: 100%;
     float: left;
   }
 
@@ -2507,6 +2520,17 @@ img  {
 
   .typographytext > h3{
     padding-bottom: 5px;
+  }
+
+  .typographytext {
+    text-align: right;
+    width: 100%;
+    float: right;
+  }
+
+  .typographyimage{
+    width: 60%;
+    float: left;
   }
 
  .projectnav {
@@ -3696,15 +3720,14 @@ img  {
   content: "";
   clear: both;
   display: table;
-}
+  }
 
+  .projectnav {
+     width: 70%;
+     margin: auto;
+  }
 
- .projectnav {
-   width: 70%;
-   margin: auto;
- }
-
- .projectnav > #nextproject {
+  .projectnav > #nextproject {
    font-size: 1.6em;
    padding: 30px 15px 75px 0;
  }
