@@ -2317,15 +2317,15 @@ img  {
 
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 2.9em;
-    margin-top: 50px;
-    margin-bottom: 150px;
-    line-height: 1.8;
+    margin-top: 40px;
+    margin-bottom: 135px;
+    line-height: 1.6;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
     margin-bottom: 130px;
-    font-size: 2em;
-    line-height: 1.8;
+    font-size: 1.75em;
+    line-height: 1.6;
   }
 
   .scrolldown {
