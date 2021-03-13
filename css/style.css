@@ -1746,7 +1746,7 @@ img  {
 }
 
 #plane1 {
-  width: 50px;
+  width: 60px;
   position: absolute;
   display: block;
   left: -30%;
@@ -1758,10 +1758,15 @@ img  {
 }
 
 #plane2 {
-  width: 60px;
+  width: 55px;
   position: absolute;
   display: block;
   left: -30%;
+  animation-name: plane-fly-2;
+  animation-duration: 2s;
+  animation-delay: 1s
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #plane3 {
@@ -1769,29 +1774,46 @@ img  {
   position: absolute;
   display: block;
   left: -30%;
+  animation-name: plane-fly-3;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
 #plane4 {
+  width: 45px;
+  position: absolute;
+  display: block;
+  left: -30%;
+  animation-name: plane-fly-3_1;
+  animation-duration: 3s;
+  animation-delay: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#plane5 {
   width: 35px;
   position: absolute;
   display: block;
-  left: -30%;
-}
-
-#plane5 {
-  width: 60px;
-  position: absolute;
-  display: block;
   top: 50%;
   left: -30%;
+  animation-name: plane-fly-2_1;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #plane6 {
-  width: 30px;
+  width: 35px;
   position: absolute;
   display: block;
   top: 50%;
   left: -30%;
+  animation-name: plane-fly-4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #plane7 {
@@ -1800,6 +1822,9 @@ img  {
   display: block;
   top: 50%;
   left: -30%;
+  animation-name: plane-fly-4_1;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 #plane8 {
@@ -1808,28 +1833,40 @@ img  {
   display: block;
   top: 50%;
   left: -30%;
+  animation-name: plane-fly-4_1;
+  animation-duration: 3.5s;
+  animation-delay: 7s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 }
 
-/*
 #plane9 {
+  width: 45px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: -30%;
+  animation-name: plane-fly-2_2;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#plane10 {
   width: 35px;
   position: absolute;
   display: block;
   top: 50%;
   left: -30%;
+  animation-name: plane-fly-4_2;
+  animation-duration: 3s;
+  animation-delay: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-
-#plane10 {
-  width: 25px;
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: -30%;
-}
-*/
 
 #plane11 {
-  width: 40px;
+  width: 50px;
   position: absolute;
   display: block;
   top: 50%;
@@ -2611,7 +2648,7 @@ img  {
   }
 
   .button-secondary-container {
-    margin-left: 5.5em; /* spacing to the left of secondary button */
+    margin-left: 4em; /* spacing to the left of secondary button */
     padding: 20px 0 20px 0;
   }
 
@@ -3647,39 +3684,138 @@ img  {
   }
 
   #plane1 {
-    width: 75px;
+    width: 85px;
+    position: absolute;
+    display: block;
+    left: -30%;
+    animation-name: plane-fly-swirl;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
   }
 
   #plane2 {
-    width: 100px;
+    width: 65px;
+    position: absolute;
+    display: block;
+    left: -30%;
+    animation-name: plane-fly-2;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   #plane3 {
-    width: 70px;
+    width: 85px;
+    position: absolute;
+    display: block;
+    left: -30%;
+    animation-name: plane-fly-3;
+    animation-duration: 9s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
   }
 
   #plane4 {
-    width: 60px;
+    width: 75px;
+    position: absolute;
+    display: block;
+    left: -30%;
+    animation-name: plane-fly-3_1;
+    animation-duration: 7s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   #plane5 {
     width: 105px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: -30%;
+    animation-name: plane-fly-2_1;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   #plane6 {
-    width: 45px;
+    width: 75px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: -30%;
+    animation-name: plane-fly-4;
+    animation-duration: 8s;
+    animation-delay: 5.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   #plane7 {
-    width: 65px;
+    width: 80px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: -30%;
+    animation-name: plane-fly-4_1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   #plane8 {
-    width: 60px;
+    width: 100px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: -30%;
+    animation-name: plane-fly-4_1;
+    animation-duration: 7s;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+
+  #plane9 {
+    width: 85px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: -30%;
+    animation-name: plane-fly-2_2;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  #plane10 {
+    width: 75px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: -30%;
+    animation-name: plane-fly-4_2;
+    animation-duration: 6s;
+    animation-delay: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
 
   #plane11 {
-    width: 60px;
+    width: 90px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: -30%;
+    animation-name: plane-fly-swirl_2;
+    animation-duration: 6s;
+    animation-delay: 13s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
   }
 
 }
