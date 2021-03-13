@@ -41,15 +41,6 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     margin: auto;
   }
 
-  #role {
-    display: block;
-    text-align: left;
-  }
-
-  #role > h3 {
-    padding: 10px 0;
-  }
-
   .width90auto {
     width: 90%;
     margin: auto;
@@ -2324,7 +2315,7 @@ img  {
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
     margin-bottom: 140px;
-    font-size: 1.85em;
+    font-size: 1.75em;
     line-height: 1.6;
   }
 
@@ -2636,17 +2627,21 @@ img  {
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 700;
   }
 
   h3 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 300;
     margin:0;
     padding-bottom: 50px;
     line-height: 1.7;
     letter-spacing: 1px;
+  }
+
+  .rolesummary > h3 {
+    padding-bottom: 30px;
   }
 
   h4 {
