@@ -1791,6 +1791,7 @@ img  {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 #plane5 {
   width: 35px;
   position: absolute;
@@ -1980,7 +1981,7 @@ img  {
 }
 
 
-@media only screen and (min-width:375px) and (max-height:666px)  { /* --- portrait mode for iPhone 6/7/8 ---
+@media only screen and (min-width:375px) and (max-height:667px)  { /* --- portrait mode for iPhone 6/7/8 ---
 
   /* ---- Header section for screen size 375px ----- */
   .container > h2 {       /* --- used for "I love to design..." --- */
