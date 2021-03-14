@@ -126,7 +126,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 
 /* ===============   STYLING for ABOUT PAGE   ============== */
 
-  ul > li {
+  #aboutme > ul > li {
     list-style-type: square;
   }
 
@@ -2430,7 +2430,7 @@ img  {
 
   #aboutme > ul > li {
     padding: 4px 0;
-    font-size: 1.05em;
+    font-size: 1em;
   }
 
   .button-primary-container {
@@ -2447,21 +2447,21 @@ img  {
   .contact-image {
     float: right;
     width: 40%;
-    margin-right: 36px; /* 10% to the right of screen for 736px size */
+    margin-right: 5vw; /* 5% to the right of screen for 736px size */
   }
 
   #contact-header {
-    font-size: 1.9em;
-    margin-top: 15px;
+    font-size: 1.8em;
+    margin-top: 20px;
     text-align: left;
     }
 
   #email-address {
-      font-size: 1.5em;
+      font-size: 1.4em;
       width: 50%;
       text-align: left;
       margin-top: 35px;
-      margin-left: 36px;  /* 10% to the leff of screen for 736px size */
+      padding-left: 5vw;  /* 5% to the leff of screen for 736px size */
   }
 
   .social-media {
@@ -2485,15 +2485,35 @@ img  {
   }
 
   /* ---- Contact page for screen size 768px ----- */
-  #contact-header {
+  .contact-image {
+    width: 90%;
+    margin-top: 25px;
+    float:none;
+  }
 
+  #contact-header {
+    font-size: 1.9em;
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
     }
 
   #email-address {
-      font-size: 1.5em;
-      width: 100%;
-      margin-top: 15px;
-      margin-bottom: 25px;
+    display: inline-block;
+    font-size: 1.7em;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    transition-duration: 0.2s;
+    text-align: center;
+  }
+
+  .social-media {
+    width: 100%;
+    margin: auto;
   }
 
 }
@@ -2586,27 +2606,30 @@ img  {
   }
 
 
-    /* ---- Contact page for screen size 812px ----- */
-    .contact-image {
-      width: 40%;
-      margin-right: 40px; /* 10% to the right of screen for 736px size */
+  /* ---- Contact page for screen size 812px ----- */
+  .contact-image {
+    width: 40%;
+    float: right;
+    margin-right: 5vw; /* 5% to the right of screen for 812px size */
+  }
+
+  #contact-header {
+    text-align: left;
+    font-size: 2em;
+    margin-top: 20px;
     }
 
-    #contact-header {
-      font-size: 2em;
-      margin-top: 20px;
-      }
-
-    #email-address {
-        font-size: 1.6em;
-        margin-bottom: 40px;
-        margin-left: 40px;  /* 10% to the leff of screen for 736px size */
-    }
-
-    .social-media {
+  #email-address {
+      font-size: 1.6em;
       width: 50%;
-      margin-left: 25px;
-    }
+      margin-bottom: 40px;
+      padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
+  }
+
+  .social-media {
+    width: 50%;
+    margin-left: 25px;
+  }
 
 }
 
@@ -2778,23 +2801,6 @@ img  {
     padding: 0;
   }
 
-  /* ----- Contact Page ------ */
-
-  #email-address {
-    display: inline-block;
-    max-width: 25%;
-    color: #ff7f50;
-    float: right;
-    text-decoration: none;
-    font-size: 1.7em;
-    font-weight: 400;
-    margin-top: 100px;
-    margin-right: 250px;
-    padding-bottom: 2px;
-    border-bottom: 4px solid #ff7f50; /* width of the border, type, color */
-    transition-duration: 0.2s;
-    text-align: center;
-  }
 
 
   /* ----- Typography for Media query for 1024px+ ------ */
@@ -4104,7 +4110,7 @@ img  {
   /* ----- Contact page for 1366px ----- */
   #contact-header {
     font-size: 4em;
-    margin-left: 150px;
+    margin-left: 5vw;
     width: 55%;
     display: inline-block;
   }
