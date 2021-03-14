@@ -40,7 +40,7 @@ function menuToggle() {
     if (header.style.backgroundColor === 'transparent' || header.style.backgroundColor === '') {
       header.style.backgroundColor = '#DDF7FB';
     } else {
-  	header.style.backgroundColor = 'transparent';
+  	header.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
     }
   }
 
@@ -49,7 +49,7 @@ function menuToggle() {
     if (projectHeader.style.backgroundColor === 'transparent' || projectHeader.style.backgroundColor === '') {
       projectHeader.style.backgroundColor = '#FFFFFF';
     } else {
-  	projectHeader.style.backgroundColor = 'transparent';
+  	projectHeader.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
     }
   }
 }
@@ -76,4 +76,5 @@ function activateNiceScroll() {
 activateNiceScroll();
 
 // Callback function when window is resized
-window.onresize = function() { activateNiceScroll(); resetAnimation(); };
+// window.onresize = function() { activateNiceScroll(); resetAnimation(); };
+window.onresize = function() { activateNiceScroll(); };

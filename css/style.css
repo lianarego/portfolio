@@ -12,7 +12,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 /* ===============   STYLING for PROJECT PAGES   ============== */
 
   #project-header {
-    background-color: white;
+    background-color: transparent;
   }
 
   #project-main {
@@ -2193,6 +2193,10 @@ img  {
     padding-top: 80px;
   }
 
+  #project-header {
+    background-color: white;
+  }
+
   nav {
     margin-top: 12px;
     display: inline-block;
@@ -2376,7 +2380,6 @@ img  {
 @media only screen and (min-width:736px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */
 
   /* ---- Header section for screen size 736px ----- */
-
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 2.9em;
     margin-top: 50px;
@@ -2530,6 +2533,10 @@ img  {
 
   main {
     padding-top: 110px;
+  }
+
+  #project-header {
+    background-color: white;
   }
 
   #about-main {
