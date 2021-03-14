@@ -26,10 +26,10 @@
     <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body>
+  <body class="projectbodycolor">
 
     <!-- Header Section Here -->
-    <header>
+    <header id="project-header">
       <div>
         <div class="navtoggle" id="myNavtoggle">
           <!-- Logo/Name -->
@@ -37,19 +37,18 @@
               <img class="logo" src="img/paper-plane-logo.svg" alt="Paper Plane Logo">
             </a>
 
-          <!-- Navigation links -->
-
+            <!-- Navigation links -->
             <nav>
               <ul>
-                <li><a href="index.html" class="nav-link">Projects</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars" id="menu-icon"></i></a></li> <!-- List item for hamburger menu icon -->
+                <li style="background-color: #ffffff; border-color: #ffffff"><a href="index.html" class="nav-link">Projects</a></li>
+                <li style="background-color: #ffffff; border-color: #ffffff"><a href="about.html" class="nav-link">About</a></li>
+                <li style="background-color: #ffffff; border-color: #ffffff"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li style="background-color: #ffffff; border-color: #ffffff"><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars" id="menu-icon"></i></a></li> <!-- List item for hamburger menu icon -->
               </ul>
             </nav>
-          </div>
         </div>
-      </header>
+      </div>
+    </header>
 
     <main>
       <div class="masthead"> <!-- Container for project Masthead) -->
@@ -399,27 +398,23 @@
                     <img src="img/TerraCare/breakpoints_2x.png" alt="Recycling Articles Mockup">
                 </picture>
               </div>
+
+              <div class="projectnav">
+                  <!-- Section for next/prev links -->
+                  <a id="nextproject" href="retrogames.html" class="next-project-button">Next project  → </a>
+                  <a id="prevproject" href="busybee.html" class="previous-project-button"> ← Prev project</a>
+                  <div class="clearfix"></div>
+              </div>
             </div> <!-- closing for Final Showcase container -->
 
-    </main>
+          </main>
 
-    <!-- Footer Section Here -->
-    <footer>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+          <script src="js/jquery.nicescroll.min.js"></script>
+          <script src="js/script.js"></script>
 
-          <!-- Section for next/prev links -->
-          <div>
-            <div class="button-primary-container">
-              <a href="files/Liana_Rego_Resume.pdf" class="next-project-button" target="_blank">Next project</a>
-            </div>
+          <!-- Overlay container to close hamburger menu when the user clicks anywhere on screen -->
+          <div id="project-overlay" onclick="menuToggle()"></div>
 
-            <div class="button-secondary-container">
-              <a href="contact.html" class="previous-project-button" target="_blank">Previous project</a>
-            </div>
-          </div>
-
-    </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     </body>
     </html>

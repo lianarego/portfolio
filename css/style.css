@@ -105,7 +105,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     line-height: 1.4;
     }
 
-  #email-address { /* button styling for "Explore more" of project */
+  #email-address {
     display: inline-block;
     color: #ff7f50;
     font-size: 1.2em;
@@ -122,6 +122,12 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     text-decoration: none;
     color: black;
     text-align: center;
+  }
+
+/* ===============   STYLING for ABOUT PAGE   ============== */
+
+  ul > li {
+    list-style-type: square;
   }
 
 /* ===============   LAYOUT and STYLING for HOME SCREEN   ============== */
@@ -1784,7 +1790,7 @@ img  {
   left: -30%;
   animation-name: plane-fly-2;
   animation-duration: 2s;
-  animation-delay: 1s
+  animation-delay: 1s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
@@ -2005,10 +2011,10 @@ img  {
     margin-top: 20px;
     }
 
-  #email-address { /* button styling for "Explore more" of project */
+  #email-address {
     font-size: 1.4em;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 16px;
     margin-bottom: 30px;
   }
 
@@ -2127,6 +2133,19 @@ img  {
 
   .button-secondary {
     font-size: 1.35em;
+  }
+
+  /* ---- Contact page for screen size 414px ----- */
+  #contact-header {
+    font-size: 1.8em;
+    margin-top: 15px;
+    }
+
+  #email-address {
+      font-size: 1.5em;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 25px;
   }
 
 }
@@ -2380,6 +2399,7 @@ img  {
 @media only screen and (min-width:736px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */
 
   /* ---- Header section for screen size 736px ----- */
+
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 2.9em;
     margin-top: 50px;
@@ -2423,6 +2443,32 @@ img  {
     display: inline-block;
   }
 
+  /* ---- Contact page for screen size 736px ----- */
+  .contact-image {
+    float: right;
+    width: 40%;
+    margin-right: 36px; /* 10% to the right of screen for 736px size */
+  }
+
+  #contact-header {
+    font-size: 1.9em;
+    margin-top: 15px;
+    text-align: left;
+    }
+
+  #email-address {
+      font-size: 1.5em;
+      width: 50%;
+      text-align: left;
+      margin-top: 35px;
+      margin-left: 36px;  /* 10% to the leff of screen for 736px size */
+  }
+
+  .social-media {
+    width: 50%;
+    margin-left: 25px;
+  }
+
 }
 
 @media only screen and (min-width:768px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */
@@ -2436,6 +2482,18 @@ img  {
   #aboutme {
     width: 67%;
     margin: auto;
+  }
+
+  /* ---- Contact page for screen size 768px ----- */
+  #contact-header {
+
+    }
+
+  #email-address {
+      font-size: 1.5em;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 25px;
   }
 
 }
@@ -2526,6 +2584,29 @@ img  {
     margin-left: 2em;  /* spacing to the left of secondary button */
     padding: 20px 0 20px 0;
   }
+
+
+    /* ---- Contact page for screen size 812px ----- */
+    .contact-image {
+      width: 40%;
+      margin-right: 40px; /* 10% to the right of screen for 736px size */
+    }
+
+    #contact-header {
+      font-size: 2em;
+      margin-top: 20px;
+      }
+
+    #email-address {
+        font-size: 1.6em;
+        margin-bottom: 40px;
+        margin-left: 40px;  /* 10% to the leff of screen for 736px size */
+    }
+
+    .social-media {
+      width: 50%;
+      margin-left: 25px;
+    }
 
 }
 
@@ -2699,7 +2780,7 @@ img  {
 
   /* ----- Contact Page ------ */
 
-  #email-address { /* button styling for "Explore more" of project */
+  #email-address {
     display: inline-block;
     max-width: 25%;
     color: #ff7f50;
