@@ -92,8 +92,9 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 
   /* ===============   STYLING for CONTACT PAGE   ============== */
 
-  .contact-image {
-    margin-top: 20px;
+  #contact-image {
+    padding-top: 20px;
+    margin: auto;
   }
 
   #contact-header {
@@ -749,6 +750,10 @@ img  {
     opacity: 1\9;
     margin: 0 0 20px 0;
     padding: 0;
+}
+
+[class$="in-1"]{
+  animation-delay: .25s;
 }
 
 [class$="in-2"]{
@@ -2443,31 +2448,6 @@ img  {
     display: inline-block;
   }
 
-  /* ---- Contact page for screen size 736px ----- */
-  .contact-image {
-    float: right;
-    width: 40%;
-    margin-right: 5vw; /* 5% to the right of screen for 736px size */
-  }
-
-  #contact-header {
-    font-size: 1.8em;
-    margin-top: 20px;
-    text-align: left;
-    }
-
-  #email-address {
-      font-size: 1.4em;
-      width: 50%;
-      text-align: left;
-      margin-top: 35px;
-      padding-left: 5vw;  /* 5% to the leff of screen for 736px size */
-  }
-
-  .social-media {
-    width: 50%;
-    margin-left: 25px;
-  }
 
 }
 
@@ -2485,7 +2465,7 @@ img  {
   }
 
   /* ---- Contact page for screen size 768px ----- */
-  .contact-image {
+  #contact-image {
     width: 90%;
     margin-top: 25px;
     float:none;
@@ -2493,9 +2473,8 @@ img  {
 
   #contact-header {
     font-size: 1.9em;
-    width: 90%;
+    width: 50%;
     text-align: center;
-    margin: auto;
     margin-top: 30px;
     }
 
@@ -2607,16 +2586,20 @@ img  {
 
 
   /* ---- Contact page for screen size 812px ----- */
-  .contact-image {
+  #contact-image {
     width: 40%;
     float: right;
     margin-right: 5vw; /* 5% to the right of screen for 812px size */
+    margin-bottom: 40px;
+    margin-top: 0;
   }
 
   #contact-header {
+    width: 47%;
     text-align: left;
+    margin-left: 5vw;
     font-size: 2em;
-    margin-top: 20px;
+    margin-top: 30px;
     }
 
   #email-address {
@@ -2801,6 +2784,31 @@ img  {
     padding: 0;
   }
 
+  /* ----- Contact Page ------ */
+  #contact-image {
+    width: 40%;
+    float: right;
+    margin-right: 5vw; /* 5% to the right of screen for 812px size */
+    margin-bottom: 40px;
+  }
+
+  #contact-header {
+    font-size: 2.6em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+  #email-address {
+      font-size: 2em;
+      width: 50%;
+      margin-bottom: 50px;
+      padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
+  }
+
+  .social-media {
+    width: 50%;
+    margin-left: 25px;
+  }
 
 
   /* ----- Typography for Media query for 1024px+ ------ */
@@ -4108,11 +4116,30 @@ img  {
   }
 
   /* ----- Contact page for 1366px ----- */
+  #contact-image {
+    width: 40%;
+    float: right;
+    margin-top: 75px;
+    margin-right: 5vw; /* 5% to the right of screen for 812px size */
+    margin-bottom: 40px;
+  }
+
   #contact-header {
-    font-size: 4em;
-    margin-left: 5vw;
-    width: 55%;
-    display: inline-block;
+    font-size: 3.5em;
+    margin-top: 175px;
+    margin-bottom: 50px;
+    }
+
+  #email-address {
+      font-size: 2.6em;
+      width: 50%;
+      margin-bottom: 100px;
+      padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
+  }
+
+  .social-media {
+    width: 50%;
+    margin-left: 25px;
   }
 
 }
