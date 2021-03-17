@@ -265,7 +265,6 @@ footer {
   padding: 0px 0 0 0;
   display: inline-block;
   width: 100%;
-  text-align: left; /* left-aligned text */
   margin-left: auto;
   margin-right: auto;
 }
@@ -493,7 +492,6 @@ p {
   padding-left: 15px;
   padding-bottom: 5px;
   font-weight: 400;
-  color: rgba(0,0,0,0.8);
 }
 
 /* ---- HYPERLINK states (default, hover, active) --- */
@@ -2337,7 +2335,7 @@ img  {
   }
 
   .container {
-    text-align: left;
+    text-align: center;
     width: 100%;
     padding-left: 0 500px;
     display: inline-block;
@@ -2635,6 +2633,7 @@ img  {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     padding: 0;
   }
 
@@ -2700,6 +2699,7 @@ img  {
 
   .typographytext > h3{
     padding-bottom: 5px;
+    padding-top: 2.5em;
   }
 
   .typographytext {
@@ -3977,7 +3977,17 @@ img  {
 
 @media only screen and (min-width:1366px)  { /* --- landscape mode for iPad Pro --- */
 
-  /* ------ Busy Bee project for screen size 1024px ----- */
+
+  /* ------ Home page for screen size 1366px ----- */
+  .container > h2 {
+    font-size: 3.4em;
+  }
+
+  .container > h5 {
+    line-height: 2;
+  }
+
+  /* ------ Busy Bee project for screen size 1366px ----- */
 
   .width90auto {
     margin-top: 30px;
@@ -3995,41 +4005,8 @@ img  {
    font-size: 1.4em;
   }
 
-  .colorpaletteimage {
-    width: 40%;
-    float: right;
-  }
-
-  .colorpalettetext {
-    display: inline-block;
-    width: 55%;
-    float: left;
-  }
-
-  .colorpalettetext > h3{
-    padding-bottom: 5px;
-  }
-
-  .typographytext > h3{
-    padding-bottom: 5px;
-  }
-
-  .typographytext {
-    padding-top: 300px;
-    text-align: right;
-    width: 30%;
-    float: right;
-  }
-
-  .typographyimage{
-    width: 50%;
-    float: left;
-  }
-
-  .typographytext::after {
-  content: "";
-  clear: both;
-  display: table;
+  .typographytext > h3 {
+    padding-top: 3.5em;
   }
 
   .projectnav {
@@ -4189,7 +4166,7 @@ img  {
 
   #hero-section {
     padding: 0 0 0 0;
-    text-align: left;
+    text-align: center;
     max-width: 90vw;
   }
 }
