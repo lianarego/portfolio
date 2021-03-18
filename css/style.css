@@ -205,7 +205,6 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   background-size: contain;
 }
 
-
 #css-animation-picture {
   display: inline-block;
   max-height: 70vh;
@@ -3987,6 +3986,39 @@ img  {
     line-height: 2;
   }
 
+  .parent {
+    position: relative;
+    /* To change the size of the "unroll triangle", change both of the 65% numbers
+       in this clip-path AND in the .parent:before width & height below.
+       Note: Smaller values make a bigger triangle. */
+    clip-path: polygon(100% 0, 100% calc(100% - (100% - 65%)*4/3), 65% 100%, 0 100%, 0 0);
+    transition: all ease 1s;
+    transition-delay: 0.5s;
+  }
+
+  .parent.unroll {
+    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+  }
+
+  .parent:before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 65%);
+    height: calc((100% - 65%)*4/3);
+    transition: all ease 1s;
+    transition-delay: 0.5s;
+    background: white;
+  }
+
+  .parent.unroll:before {
+    width: 0;
+    height: 0;
+  }
+
+
   /* ------ Busy Bee project for screen size 1366px ----- */
 
   .width90auto {
@@ -4103,7 +4135,7 @@ img  {
 
   #contact-header {
     font-size: 3.5em;
-    margin-top: 175px;
+    margin-top: 145px;
     margin-bottom: 50px;
     }
 
