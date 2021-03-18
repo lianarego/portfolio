@@ -78,3 +78,15 @@ activateNiceScroll();
 // Callback function when window is resized
 // window.onresize = function() { activateNiceScroll(); resetAnimation(); };
 window.onresize = function() { activateNiceScroll(); };
+
+// Disable horizontal scrolling in grid-container when niceScroll is enabled
+$("#grid-container").niceScroll({})
+
+
+$( document ).ready(function() {
+  $(".parent").hover(
+    function () {
+      $(this).addClass('unroll');
+    }
+  )
+});
