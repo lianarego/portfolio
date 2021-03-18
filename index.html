@@ -41,7 +41,16 @@
 
           <nav>
             <ul>
-              <li><a href="index.html" class="nav-link">Projects</a></li>
+              <li class="dropdown-parent"><a href="index.html" class="nav-link">Projects</a>
+                <ul class="dropdown">
+                  <li style="height: 10px;">&nbsp;</li>
+                  <li><a href="terracare.html" class="nav-link subnav">TerraCare</a></li>
+                  <li><a href="retrogames.html" class="nav-link subnav">Retro Games</a></li>
+                  <li><a href="streambuff.html" class="nav-link subnav">StreamBuff</a></li>
+                  <li><a href="busybee.html" class="nav-link subnav">Busy Bee</a></li>
+                  <li style="height: 0;">&nbsp;</li> <!-- Empty list item (hidden last child on desktop) -->
+                </ul>
+              </li>
               <li><a href="about.html" class="nav-link">About</a></li>
               <li><a href="contact.html" class="nav-link">Contact</a></li>
               <li><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars" id="menu-icon"></i></a></li> <!-- List item for hamburger menu icon -->
@@ -50,6 +59,15 @@
         </div>
       </div>
     </header>
+
+    <!--
+    <ul class="dropdown">
+      <li><a href="terracare.html" class="nav-link">TerraCare</a></li>
+      <li><a href="retrogames.html" class="nav-link">Retro Games</a></li>
+      <li><a href="streambuff.html" class="nav-link">StreamBuff</a></li>
+      <li><a href="busybee.html" class="nav-link">Busy Bee</a></li>
+    </ul>
+    -->
 
     <!-- HTML Main Section Here -->
 

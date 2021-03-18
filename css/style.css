@@ -28,7 +28,6 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
     width: 100%;
     height: 100%;
     background-color: #FFFFFF;
-    opacity: 0.8;
   }
 
   .projectbodycolor {
@@ -146,7 +145,6 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   width: 100%;
   height: 100%;
   background-color: #DDF7FB;
-  opacity: 0.8;
 }
 
 .grid-container {
@@ -497,7 +495,7 @@ p {
 .nav-link {   /* styling for navigation links (Work, About, Contact) */
   color: #ff7f50;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: 600;
   transition-duration: 0.2s;
   margin-top: 2px;
@@ -518,6 +516,33 @@ p {
 .nav-link:active {
   color: #df7244;
   border-radius: 3px;
+}
+
+.subnav {
+  display: block;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
+/* Dropdown CSS for responsive nav menu */
+nav > ul ul {
+  display: none;
+}
+
+nav > ul > li.dropdown-parent {
+  position: relative;
+}
+
+nav > ul > li.dropdown-parent ul {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+.dropdown-parent > .dropdown > li {
+  display: block;
+  padding: 0;
 }
 
 .explore-button { /* button styling for "Explore more" of project */
@@ -1908,7 +1933,7 @@ img  {
 }
 
 
-/* --------------------------------------- MEDIA QUIERIES ---------------------------------------- */
+/* --------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
 /*------------------------------------------------------------------------------------------------ */
 
@@ -2249,6 +2274,32 @@ img  {
 
   .navtoggle li:last-child { /* hides the hamburger menu icon */
     display: none;
+  }
+
+  /* Dropdown CSS for responsive nav menu */
+  nav > ul ul {
+    display: none;
+  }
+
+  nav > ul > li.dropdown-parent {
+    position: relative;
+  }
+
+  nav > ul > li.dropdown-parent ul {
+    display: none;
+    padding-left: 20px;
+  }
+
+  nav > ul > li.dropdown-parent:hover ul {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 250px;
+  }
+
+  .dropdown-parent > .dropdown > li {
+    display: block;
   }
 
   .logo {
@@ -2666,6 +2717,32 @@ img  {
 
   .navtoggle li:last-child { /* hides the hamburger menu icon */
     display: none;
+  }
+
+  /* Dropdown CSS for responsive nav menu */
+  nav > ul ul {
+    display: none;
+  }
+
+  nav > ul > li.dropdown-parent {
+    position: relative;
+  }
+
+  nav > ul > li.dropdown-parent ul {
+    display: none;
+    padding-left: 40px;
+  }
+
+  nav > ul > li.dropdown-parent:hover ul {
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 250px;
+  }
+
+  .dropdown-parent > .dropdown > li {
+    display: block;
   }
 
   /* ------ Busy Bee project for screen size 1024px ----- */
