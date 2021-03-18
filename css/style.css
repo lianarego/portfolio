@@ -217,7 +217,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 }
 
 footer {
-  background-color: #DDF7FB;
+  background-color: transparent;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 0px;
@@ -649,93 +649,133 @@ img  {
   padding: 0;
 }
 
-/* CSS Animation */
-@keyframes color-change {
-  0% {fill: #DCF5F3;}
-  100% {fill: #ffffff;}
-}
-
+/* Cloud Animation for MOBILE */
 @keyframes cloud1-move-right{
-  from {transform: translate(0px, 413px);}
-  to {transform: translate(330px, 413px);}
+  from {transform: translate(900px, 0px);}
+  to {transform: translate(1830px, 0px);}
 }
 
 @keyframes cloud2-move-right{
-  from {transform: translate(241px, 582px);}
-  to {transform: translate(441px, 582px);}
+  from {transform: translate(-200px, 422px);}
+  to {transform: translate(841px, 422px);}
 }
 
 @keyframes cloud3-move-right{
-  from {transform: translate(502px, 478px);}
-  to {transform: translate(1102px, 478px);}
+  from {transform: translate(202px, 43px);}
+  to {transform: translate(1002px, 43px);}
 }
 
 @keyframes cloud4-move-left{
-  from {transform: translate(808px, 370px);}
-  to {transform: translate(208px, 370px);}
+  from {transform: translate(1608px, 420px);}
+  to {transform: translate(1008px, 420px);}
 }
 
 @keyframes cloud5-move-left{
-  from {transform: translate(788px, 569px);}
-  to {transform: translate(588px, 569px);}
+  from {transform: translate(1288px, 80px);}
+  to {transform: translate(488px, 80px);}
 }
 
 @keyframes cloud6-move-right{
-  from {transform: translate(0px, 613px);}
-  to {transform: translate(330px, 613px);}
+  from {transform: translate(0px, 609px);}
+  to {transform: translate(930px, 609px);}
 }
 
-@keyframes animateleft {
-  from {left: 50%; opacity: 0}
-  to {left: 85%; opacity: 1}
+@keyframes cloud7-move-left{
+  from {transform: translate(788px, 469px);}
+  to {transform: translate(188px, 469px);}
 }
 
-#cloud-1 {
+@keyframes cloud8-move-left{
+  from {transform: translate(1900px, 213px);}
+  to {transform: translate(800px, 213px);}  /* 1600px to the right of screen and 213px down the screen */
+}
+
+@keyframes cloud9-move-right{
+  from {transform: translate(150px, 3px);}
+  to {transform: translate(950px, 3px);}  /* 1600px to the right of screen and 213px down the screen */
+}
+
+#clouds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#cloud1 {
   position: relative;
-  animation-duration: 3s, 60s;
-  animation-name: color-change, cloud1-move-right;
+  animation-duration: 85s, 60s;
+  animation-name: cloud1-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
   animation-timing-function: ease-in-out, linear;
 }
 
-#cloud-2 {
-  animation-duration: 3s, 60s;
-  animation-name: color-change, cloud2-move-right;
+#cloud2 {
+  animation-duration: 70s, 60s;
+  animation-name:  cloud2-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
+  animation-delay: 10s;
   animation-timing-function: ease-in-out, linear;
 }
 
-#cloud-3 {
+#cloud3 {
   position: relative;
-  animation-duration: 3s, 60s;
-  animation-name: color-change, cloud3-move-right;
+  animation-duration: 75s, 60s;
+  animation-name: cloud3-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
   animation-timing-function: ease-in-out, linear;
 }
 
-#cloud-4 {
-  animation-duration: 3s, 60s;
-  animation-name: color-change, cloud4-move-left;
+#cloud4 {
+  animation-duration: 65s, 60s;
+  animation-name: cloud4-move-left;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
   animation-timing-function: ease-in-out, linear;
 }
 
-#cloud-5 {
-  animation-duration: 3s, 60s;
-  animation-name: color-change, cloud5-move-left;
+#cloud5 {
+  animation-duration: 75s, 60s;
+  animation-name:  cloud5-move-left;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
   animation-timing-function: ease-in-out, linear;
 }
 
-#cloud-6 {
+#cloud6 {
   position: relative;
-  animation-duration: 3s, 60s;
-  animation-name: color-change, cloud6-move-right;
+  animation-duration: 80s, 60s;
+  animation-name:  cloud6-move-right;
+  animation-iteration-count: infinite;
+  animation-direction: alternate, normal;
+  animation-timing-function: ease-in-out, linear;
+}
+
+#cloud7 {
+  position: relative;
+  animation-duration: 70s, 60s;
+  animation-name:  cloud7-move-left;
+  animation-iteration-count: infinite;
+  animation-direction: alternate, normal;
+  animation-timing-function: ease-in-out, linear;
+}
+
+#cloud8 {
+  position: relative;
+  animation-duration: 70s, 60s;
+  animation-name:  cloud8-move-left;
+  animation-iteration-count: infinite;
+  animation-direction: alternate, normal;
+  animation-timing-function: ease-in-out, linear;
+}
+
+#cloud9 {
+  position: relative;
+  animation-duration: 75s, 60s;
+  animation-name:  cloud9-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
   animation-timing-function: ease-in-out, linear;
@@ -1931,7 +1971,6 @@ img  {
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
-
 
 /* --------------------------------------- MEDIA QUERIES ---------------------------------------- */
 /* ----------------------------------------------------------------------------------------------- */
@@ -4070,7 +4109,7 @@ img  {
        Note: Smaller values make a bigger triangle. */
     clip-path: polygon(100% 0, 100% calc(100% - (100% - 65%)*4/3), 65% 100%, 0 100%, 0 0);
     transition: all ease 1s;
-    transition-delay: 0.5s;
+    transition-delay: 1s;
   }
 
   .parent.unroll {
@@ -4086,7 +4125,7 @@ img  {
     width: calc(100% - 65%);
     height: calc((100% - 65%)*4/3);
     transition: all ease 1s;
-    transition-delay: 0.5s;
+    transition-delay: 1s;
     background: white;
   }
 
