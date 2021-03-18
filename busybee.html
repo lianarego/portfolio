@@ -29,7 +29,7 @@
   <body class="projectbodycolor">
 
     <!-- Header Section Here -->
-    <header id="project-header">
+    <header id="index-header">
       <div>
         <div class="navtoggle" id="myNavtoggle">
           <!-- Logo/Name -->
@@ -37,18 +37,28 @@
               <img class="logo" src="img/paper-plane-logo.svg" alt="Paper Plane Logo">
             </a>
 
-            <!-- Navigation links -->
+          <!-- Navigation links -->
+
             <nav>
               <ul>
-                <li style="background-color: #ffffff; border-color: #ffffff"><a href="index.html" class="nav-link">Projects</a></li>
-                <li style="background-color: #ffffff; border-color: #ffffff"><a href="about.html" class="nav-link">About</a></li>
-                <li style="background-color: #ffffff; border-color: #ffffff"><a href="contact.html" class="nav-link">Contact</a></li>
-                <li style="background-color: #ffffff; border-color: #ffffff"><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars" id="menu-icon"></i></a></li> <!-- List item for hamburger menu icon -->
+                <li class="dropdown-parent"><a href="index.html" class="nav-link">Projects</a>
+                  <ul class="dropdown">
+                    <li style="height: 10px;">&nbsp;</li>
+                    <li><a href="terracare.html" class="nav-link subnav">TerraCare</a></li>
+                    <li><a href="retrogames.html" class="nav-link subnav">Retro Games</a></li>
+                    <li><a href="streambuff.html" class="nav-link subnav">StreamBuff</a></li>
+                    <li><a href="busybee.html" class="nav-link subnav">Busy Bee</a></li>
+                    <li style="height: 0;">&nbsp;</li> <!-- Empty list item (hidden last child on desktop) -->
+                  </ul>
+                </li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()"><i class="fas fa-bars" id="menu-icon"></i></a></li> <!-- List item for hamburger menu icon -->
               </ul>
             </nav>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
     <main id="project-main">
       <div class="width90auto"> <!-- Container for Masthead) -->
