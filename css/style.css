@@ -520,7 +520,7 @@ p {
 
 .subnav {
   display: block;
-  font-size: 0.9em;
+  font-size: 0.85em;
   font-weight: 400;
 }
 
@@ -651,51 +651,52 @@ img  {
 
 /* Cloud Animation for MOBILE */
 @keyframes cloud1-move-right{
-  from {transform: translate(900px, 0px);}
-  to {transform: translate(1830px, 0px);}
+  from {transform: translate(100px, 0px);}
+  to {transform: translate(530px, 0px);}
 }
 
 @keyframes cloud2-move-right{
-  from {transform: translate(-200px, 422px);}
-  to {transform: translate(841px, 422px);}
+  from {transform: translate(-100px, 422px);}
+  to {transform: translate(641px, 422px);}
 }
 
 @keyframes cloud3-move-right{
-  from {transform: translate(202px, 43px);}
-  to {transform: translate(1002px, 43px);}
+  from {transform: translate(0px, 43px);}
+  to {transform: translate(502px, 43px);}
 }
 
 @keyframes cloud4-move-left{
-  from {transform: translate(1608px, 420px);}
-  to {transform: translate(1008px, 420px);}
+  from {transform: translate(508px, 420px);}
+  to {transform: translate(8px, 420px);}
 }
 
 @keyframes cloud5-move-left{
-  from {transform: translate(1288px, 80px);}
-  to {transform: translate(488px, 80px);}
+  from {transform: translate(608px, 170px);}
+  to {transform: translate(-30px, 170px);}
 }
 
 @keyframes cloud6-move-right{
-  from {transform: translate(0px, 609px);}
-  to {transform: translate(930px, 609px);}
+  from {transform: translate(0px, 409px);}
+  to {transform: translate(500px, 409px);}
 }
 
 @keyframes cloud7-move-left{
-  from {transform: translate(788px, 469px);}
-  to {transform: translate(188px, 469px);}
+  from {transform: translate(488px, 369px);}
+  to {transform: translate(88px, 369px);}
 }
 
 @keyframes cloud8-move-left{
-  from {transform: translate(1900px, 213px);}
-  to {transform: translate(800px, 213px);}  /* 1600px to the right of screen and 213px down the screen */
+  from {transform: translate(600px, 213px);}
+  to {transform: translate(200px, 213px);}  /* 1600px to the right of screen and 213px down the screen */
 }
 
 @keyframes cloud9-move-right{
-  from {transform: translate(150px, 3px);}
-  to {transform: translate(950px, 3px);}  /* 1600px to the right of screen and 213px down the screen */
+  from {transform: translate(50px, 53px);}
+  to {transform: translate(750px, 3px);}  /* 1600px to the right of screen and 213px down the screen */
 }
 
 #clouds {
+  width: 85px;
   position: fixed;
   top: 0;
   left: 0;
@@ -704,7 +705,7 @@ img  {
 
 #cloud1 {
   position: relative;
-  animation-duration: 85s, 60s;
+  animation-duration: 65s, 60s;
   animation-name: cloud1-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -712,17 +713,12 @@ img  {
 }
 
 #cloud2 {
-  animation-duration: 70s, 60s;
-  animation-name:  cloud2-move-right;
-  animation-iteration-count: infinite;
-  animation-direction: alternate, normal;
-  animation-delay: 10s;
-  animation-timing-function: ease-in-out, linear;
+  display: none;
 }
 
 #cloud3 {
   position: relative;
-  animation-duration: 75s, 60s;
+  animation-duration: 55s, 60s;
   animation-name: cloud3-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -730,15 +726,11 @@ img  {
 }
 
 #cloud4 {
-  animation-duration: 65s, 60s;
-  animation-name: cloud4-move-left;
-  animation-iteration-count: infinite;
-  animation-direction: alternate, normal;
-  animation-timing-function: ease-in-out, linear;
+  display: none;
 }
 
 #cloud5 {
-  animation-duration: 75s, 60s;
+  animation-duration: 40s, 60s;
   animation-name:  cloud5-move-left;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -747,7 +739,7 @@ img  {
 
 #cloud6 {
   position: relative;
-  animation-duration: 80s, 60s;
+  animation-duration: 45s, 60s;
   animation-name:  cloud6-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -755,17 +747,12 @@ img  {
 }
 
 #cloud7 {
-  position: relative;
-  animation-duration: 70s, 60s;
-  animation-name:  cloud7-move-left;
-  animation-iteration-count: infinite;
-  animation-direction: alternate, normal;
-  animation-timing-function: ease-in-out, linear;
+  display: none;
 }
 
 #cloud8 {
   position: relative;
-  animation-duration: 70s, 60s;
+  animation-duration: 40s, 60s;
   animation-name:  cloud8-move-left;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -774,7 +761,7 @@ img  {
 
 #cloud9 {
   position: relative;
-  animation-duration: 75s, 60s;
+  animation-duration: 45s, 60s;
   animation-name:  cloud9-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -2332,7 +2319,7 @@ img  {
   nav > ul > li.dropdown-parent:hover ul {
     display: block;
     position: absolute;
-    top: 40px;
+    top: 25px;
     left: 0;
     width: 250px;
   }
@@ -2704,6 +2691,135 @@ img  {
 }
 
 @media only screen and (min-width: 1024px) { /* this is for "col-lg" classes */
+
+  /* Cloud Animation for 1024px */
+  @keyframes cloud1-move-right{
+    from {transform: translate(900px, 0px);}
+    to {transform: translate(1830px, 0px);}
+  }
+
+  @keyframes cloud2-move-right{
+    from {transform: translate(-200px, 422px);}
+    to {transform: translate(841px, 422px);}
+  }
+
+  @keyframes cloud3-move-right{
+    from {transform: translate(292px, 23px);}
+    to {transform: translate(1002px, 23px);}
+  }
+
+  @keyframes cloud4-move-left{
+    from {transform: translate(1608px, 420px);}
+    to {transform: translate(1008px, 420px);}
+  }
+
+  @keyframes cloud5-move-left{
+    from {transform: translate(1358px, 140px);}
+    to {transform: translate(588px, 140px);}
+  }
+
+  @keyframes cloud6-move-right{
+    from {transform: translate(0px, 609px);}
+    to {transform: translate(930px, 609px);}
+  }
+
+  @keyframes cloud7-move-left{
+    from {transform: translate(788px, 469px);}
+    to {transform: translate(188px, 469px);}
+  }
+
+  @keyframes cloud8-move-left{
+    from {transform: translate(1700px, 283px);}
+    to {transform: translate(300px, 283px);}  /* 1600px to the right of screen and 213px down the screen */
+  }
+
+  @keyframes cloud9-move-right{
+    from {transform: translate(120px, 143px);}
+    to {transform: translate(1130px, 143px);}  /* 1600px to the right of screen and 213px down the screen */
+  }
+
+  #clouds {
+    width: inherit;
+  }
+
+  #cloud1 {
+    position: relative;
+    animation-duration: 85s, 60s;
+    animation-name: cloud1-move-right;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out, linear;
+  }
+
+  #cloud2 {
+    animation-duration: 70s, 60s;
+    animation-name:  cloud2-move-right;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-delay: 10s;
+    animation-timing-function: ease-in-out, linear;
+  }
+
+  #cloud3 {
+    position: relative;
+    animation-duration: 75s, 60s;
+    animation-name: cloud3-move-right;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out, linear;
+  }
+
+  #cloud4 {
+    animation-duration: 65s, 60s;
+    animation-name: cloud4-move-left;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out, linear;
+  }
+
+  #cloud5 {
+    animation-duration: 75s, 60s;
+    animation-name:  cloud5-move-left;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out, linear;
+  }
+
+  #cloud6 {
+    position: relative;
+    animation-duration: 80s, 60s;
+    animation-name:  cloud6-move-right;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out, linear;
+  }
+
+  #cloud7 {
+    position: relative;
+    animation-duration: 70s, 60s;
+    animation-name:  cloud7-move-left;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out, linear;
+  }
+
+  #cloud8 {
+    position: relative;
+    animation-duration: 80s, 60s;
+    animation-name:  cloud8-move-left;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out, linear;
+  }
+
+  #cloud9 {
+    position: relative;
+    animation-duration: 80s, 60s;
+    animation-name:  cloud9-move-right;
+    animation-iteration-count: infinite;
+    animation-direction: alternate, normal;
+    animation-timing-function: ease-in-out, linear;
+  }
 
   main {
     padding-top: 110px;
