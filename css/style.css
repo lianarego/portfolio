@@ -2421,7 +2421,7 @@ img  {
 
   .masthead {
     opacity: 1;
-    transition: 0.5s ease;
+    transition: 1s ease;
   }
 
   .masthead:hover {
@@ -4220,16 +4220,15 @@ img  {
 
   .parent {
     position: relative;
-    /* To change the size of the "unroll triangle", change both of the 65% numbers
-       in this clip-path AND in the .parent:before width & height below.
+    /* To change the size of the "unroll triangle", change all of the 50% numbers
+       in this clip-path AND in the .parent:before/after width & height below.
        Note: Smaller values make a bigger triangle. */
-    clip-path: polygon(100% 0, 100% calc(100% - (100% - 65%)*4/3), 65% 100%, 0 100%, 0 0);
+    clip-path: polygon(25% 0, 100% calc(50% - 1px), 100% calc(50% + 1px), 25% 100%, 0 100%, 0 0);
     transition: all ease 1s;
-    transition-delay: 1s;
   }
 
   .parent.unroll {
-    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
   }
 
   .parent:before {
@@ -4238,14 +4237,30 @@ img  {
     z-index: 10;
     bottom: 0;
     right: 0;
-    width: calc(100% - 65%);
-    height: calc((100% - 65%)*4/3);
+    width: 75%;
+    height: calc(50% - 1px);
     transition: all ease 1s;
-    transition-delay: 1s;
+    background: white;
+  }
+
+  .parent:after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: calc(50% - 1px);
+    transition: all ease 1s;
     background: white;
   }
 
   .parent.unroll:before {
+    width: 0;
+    height: 0;
+  }
+
+  .parent.unroll:after {
     width: 0;
     height: 0;
   }
@@ -4407,7 +4422,7 @@ img  {
 
   .masthead {
     opacity: 1;
-    transition: 0.5s ease;
+    transition: 1s ease;
   }
 
   .masthead:hover {
