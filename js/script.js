@@ -63,8 +63,8 @@ function activateNiceScroll() {
     console.log('  niceScroll(): Window width =', window.innerWidth);
 
     $("#grid-container").niceScroll({
-    cursorcolor: "rgba(255,130, 68,0.8)",
-    cursorwidth: "5px",
+    cursorcolor: "rgba(255,130, 68,0.9)",
+    cursorwidth: "8px",
     cursorborder: "0"})
   } else {
     // Console log
@@ -82,6 +82,32 @@ window.onresize = function() { activateNiceScroll(); };
 // Disable horizontal scrolling in grid-container when niceScroll is enabled
 $("#grid-container").niceScroll({})
 
+// Automatically scroll to Projects section of the home page when user clicks on
+// the "Projects" nav link
+function scrollToProjects() {
+  gridContainer = document.getElementById('grid-container');
+
+  initialScrollLeft = gridContainer.scrollLeft;
+
+  var x = 0; // Fraction of displacement from old to new scroll position
+  updatePosition();
+  const id = setInterval(updatePosition, 10); // Total duration: 1000 milliseconds
+
+  function updatePosition() {
+    console.log('scrollToProjects(): updatePosition(): x =', x+',',
+      'scrollLeft =', gridContainer.scrollLeft);
+    if (x >= 1) {
+      clearInterval(id);
+      return null;
+    }
+    // gridContainer.scrollLeft = (x/100)*window.innerWidth +
+      // (1 - x/100)*initialScrollLeft;
+    var w = x**3 * (6*x**2 - 15*x + 10); // Fraction of smoothed displacement (Beta(3,3) CDF)
+    gridContainer.scrollLeft = w*window.innerWidth + (1-w)*initialScrollLeft;
+    x = x + 0.01;
+  }
+
+}
 
 $( document ).ready(function() {
   $(".parent").hover(
