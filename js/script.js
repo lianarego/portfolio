@@ -1,5 +1,6 @@
 console.log("Hello world")
 
+// Toggle hamburger menu
 function menuToggle() {
   var myNavToggle = document.getElementById('myNavtoggle');
   if (myNavToggle.className === 'navtoggle') {
@@ -17,12 +18,12 @@ function menuToggle() {
     $('.navtoggle li .icon').css("font-size" , "40px");
   }
 
-  var overlay = document.getElementById('overlay');
-  if (overlay !== null) {
-    if (overlay.style.display === 'none' || overlay.style.display === '') {
-      overlay.style.display = 'block';
+  var indexOverlay = document.getElementById('index-overlay');
+  if (indexOverlay !== null) {
+    if (indexOverlay.style.display === 'none' || indexOverlay.style.display === '') {
+      indexOverlay.style.display = 'block';
     } else {
-  	overlay.style.display = 'none';
+  	  indexOverlay.style.display = 'none';
     }
   }
 
@@ -31,29 +32,60 @@ function menuToggle() {
     if (projectOverlay.style.display === 'none' || projectOverlay.style.display === '') {
       projectOverlay.style.display = 'block';
     } else {
-  	projectOverlay.style.display = 'none';
+  	  projectOverlay.style.display = 'none';
     }
   }
 
-  var header = document.getElementById('header');
-  if (header !== null) {
-    if (header.style.backgroundColor === 'transparent' || header.style.backgroundColor === '') {
-      header.style.backgroundColor = '#DDF7FB';
+  var indexHeader = document.getElementById('index-header');
+  if (indexHeader !== null) {
+    if (indexHeader.style.backgroundColor === 'transparent' || indexHeader.style.backgroundColor === '') {
+      indexHeader.style.backgroundColor = '#DDF7FB';
     } else {
-  	header.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
+  	  indexHeader.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
     }
   }
 
   var projectHeader = document.getElementById('project-header');
   if (projectHeader !== null) {
     if (projectHeader.style.backgroundColor === 'transparent' || projectHeader.style.backgroundColor === '') {
-      projectHeader.style.backgroundColor = '#FFFFFF';
+      projectHeader.style.backgroundColor = 'white';
     } else {
-  	projectHeader.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
+  	  projectHeader.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
     }
   }
 }
 
+// Close hamburger menu
+function menuClose() {
+  var myNavToggle = document.getElementById('myNavtoggle');
+  myNavToggle.className = 'navtoggle';
+
+  var menuIcon = document.getElementById('menu-icon');
+  menuIcon.className = 'fas fa-bars';
+  $('.navtoggle li .icon').css("font-size" , "40px");
+
+  var indexOverlay = document.getElementById('index-overlay');
+  if (indexOverlay !== null) {
+    indexOverlay.style.display = 'none';
+  }
+
+  var projectOverlay = document.getElementById('project-overlay');
+  if (projectOverlay !== null) {
+    projectOverlay.style.display = 'none';
+  }
+
+  var indexHeader = document.getElementById('index-header');
+  if (indexHeader !== null) {
+    indexHeader.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
+  }
+
+  var projectHeader = document.getElementById('project-header');
+  if (projectHeader !== null) {
+    projectHeader.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
+  }
+}
+
+/*
 function activateNiceScroll() {
   // Console log
   console.log('activateNiceScroll(): Window width =', window.innerWidth);
@@ -81,7 +113,10 @@ window.onresize = function() { activateNiceScroll(); };
 
 // Disable horizontal scrolling in grid-container when niceScroll is enabled
 $("#grid-container").niceScroll({})
+*/
 
+
+/*
 // Automatically scroll to Projects section of the home page when user clicks on
 // the "Projects" nav link
 function scrollToProjects() {
@@ -108,11 +143,41 @@ function scrollToProjects() {
   }
 
 }
+*/
 
+// Scroll smoothly to anchor hyperlinks
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+
+// Unroll "paper plane" covering project image, when first hovered
 $( document ).ready(function() {
   $(".parent").hover(
     function () {
       $(this).addClass('unroll');
     }
   )
+});
+
+
+// Change header background color depending on scroll position
+$( document ).on('scroll', function() {
+  var indexHeader = document.getElementById('index-header');
+  if ((document.documentElement.scrollTop || document.body.scrollTop) > 50) { // If scroll position exceeds 50px
+    if (window.innerWidth >= 640) { // If hamburger menu isn't showing
+      if (indexHeader !== null) {
+        indexHeader.style.backgroundColor = '#DDF7FB'; // Set header background to solid light blue
+      }
+    }
+  } else {
+    if (window.innerWidth >= 640) { // If hamburger menu isn't showing
+      if (indexHeader !== null) {
+        indexHeader.style.backgroundColor = ''; // Set header background to transparent
+      }
+    }
+  }
 });

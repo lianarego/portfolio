@@ -41,13 +41,13 @@
 
           <nav>
             <ul>
-              <li class="dropdown-parent"><a href="javascript:void(0);" onclick="scrollToProjects()" class="nav-link">Projects</a>
-                <ul class="dropdown">
+              <li class="dropdown-parent"><a href="#terracare" class="nav-link" onclick="menuClose()">Projects</a>
+                <ul class="dropdown" style="background-color: #DDF7FB;">
                   <li style="height: 10px;">&nbsp;</li>
-                  <li><a href="terracare.html" class="nav-link subnav">TerraCare</a></li>
-                  <li><a href="retrogames.html" class="nav-link subnav">Retro Games</a></li>
-                  <li><a href="streambuff.html" class="nav-link subnav">StreamBuff</a></li>
-                  <li><a href="busybee.html" class="nav-link subnav">Busy Bee</a></li>
+                  <li><a href="#terracare" class="nav-link subnav" onclick="menuClose()">TerraCare</a></li>
+                  <li><a href="#retrogames" class="nav-link subnav" onclick="menuClose()">Retro Games</a></li>
+                  <li><a href="#streambuff" class="nav-link subnav" onclick="menuClose()">StreamBuff</a></li>
+                  <li><a href="#busybee" class="nav-link subnav" onclick="menuClose()">Busy Bee</a></li>
                   <li style="height: 0;">&nbsp;</li> <!-- Empty list item (hidden last child on desktop) -->
                 </ul>
               </li>
@@ -71,7 +71,7 @@
 
     <!-- HTML Main Section Here -->
 
-    <main>
+    <main style="margin-bottom: 50px;">
       <div id="clouds">
         <img src="img/cloud-2.svg" class="cloud" id="cloud1"/>
         <img src="img/cloud-3.svg" class="cloud" id="cloud2"/>
@@ -98,7 +98,7 @@
         <img src="img/whiteplane.svg" class="plane" id="plane11"/>
       </div>
 
-  	  <div class="grid-container" id="grid-container">
+  	  <!-- <div> <!-- class="grid-container" id="grid-container"> -->
   		<!-- Hero Section Here -->
           <div id="hero-section">
             <div class="container">
@@ -107,20 +107,23 @@
             </div>
             <div class="clearfix"></div>
      <!-- Scroll indicator -->
-            <div class="scrolldown slide-right">
-              <h6 class="fade-in">SCROLL TO VIEW PROJECTS → </h6>
+            <div class="scrolldown slide-up-fade-in-4">
+              <a href="#terracare" style="color: black; text-decoration: none;">
+                <h6 class="fade-in">&#8675;&nbsp;&nbsp;SCROLL TO VIEW PROJECTS&nbsp;&nbsp;&#8675;</h6>
+              </a>
             </div>
           </div>
 
   		<!-- Project Intros Here -->
 
           <!-- Container for project #1 -->
-          <div class="parent row" style="background-image: url(img/TerraCare/TerraCare1.Masthead.2x.png);">
+          <div class="parent">
+            <a class="anchor" id="terracare"></a>
             <!-- Project picture -->
             <a href="terracare.html">
               <picture>
-                <source srcset="img/TerraCare/TerraCare2.Masthead.1x.png" media="(max-width:767px)">
-                <img class="masthead" src="img/TerraCare/TerraCare2.Masthead.2x.png" alt="TerraCare Masthead">
+                <source srcset="img/TerraCare/TerraCare1.Masthead.1x.png" media="(max-width:767px)">
+                <img class="masthead" src="img/TerraCare/TerraCare1.Masthead.2x.png" alt="TerraCare Masthead">
               </picture>
             </a>
             <!-- Project info -->
@@ -131,12 +134,13 @@
           </div>
 
           <!-- Container for  project #2 -->
-          <div class="parent row"  style="background-image: url(img/Retro_Games/RetroGames1.Masthead.2x.png);">
+          <div class="parent">
+            <a class="anchor" id="retrogames"></a>
             <!-- Project picture -->
             <a href="retrogames.html">
               <picture>
-                <source srcset="img/Retro_Games/RetroGames2.Masthead.1x.png" media="(max-width:767px)">
-                <img class="masthead" src="img/Retro_Games/RetroGames2.Masthead.2x.png" alt="Retro Games Masthead">
+                <source srcset="img/Retro_Games/RetroGames1.Masthead.1x.png" media="(max-width:767px)">
+                <img class="masthead" src="img/Retro_Games/RetroGames1.Masthead.2x.png" alt="Retro Games Masthead">
               </picture>
             </a>
             <!-- Project info -->
@@ -147,12 +151,13 @@
           </div>
 
           <!-- Container for project #3 -->
-          <div class="parent row"  style="background-image: url(img/StreamBuff/StreamBuff1.Masthead.2x.png);">
+          <div class="parent">
+            <a class="anchor" id="streambuff"></a>
             <!-- Project picture -->
             <a href="streambuff.html">
               <picture>
-                <source srcset="img/StreamBuff/StreamBuff2.Masthead.1x.png" media="(max-width:767px)">
-                <img class="masthead" src="img/StreamBuff/StreamBuff2.Masthead.2x.png" alt="StreamBuff Masthead">
+                <source srcset="img/StreamBuff/StreamBuff1.Masthead.1x.png" media="(max-width:767px)">
+                <img class="masthead" src="img/StreamBuff/StreamBuff1.Masthead.2x.png" alt="StreamBuff Masthead">
               </picture>
             </a>
             <!-- Project info -->
@@ -163,12 +168,13 @@
           </div>
 
           <!-- Container for project #4 -->
-          <div class="parent row"  style="background-image: url(img/Busy_Bee/BusyBee1.Masthead.2x.png);">
+          <div class="parent">
+            <a class="anchor" id="busybee"></a>
             <!--  Project picture -->
             <a href="busybee.html">
               <picture>
-                <source srcset="img/Busy_Bee/BusyBee2.Masthead.1x.png" media="(max-width:767px)">
-                <img class="masthead" src="img/Busy_Bee/BusyBee2.Masthead.2x.png" alt="Busy Bee Masthead">
+                <source srcset="img/Busy_Bee/BusyBee1.Masthead.1x.png" media="(max-width:767px)">
+                <img class="masthead" src="img/Busy_Bee/BusyBee1.Masthead.2x.png" alt="Busy Bee Masthead">
               </picture>
             </a>
             <!-- Project info -->
@@ -179,10 +185,10 @@
           </div>
 
 		<!-- Empty div to add an extra column of blank space on grid -->
-		<div>&nbsp;</div>
+		<!-- <div>&nbsp;</div> -->
 
 	  <!-- End of grid container -->
-	  </div>
+	  <!-- </div> -->
     </main>
 
     <!-- Footer Section Here -->
@@ -195,10 +201,10 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- <script src="js/flight-path-generator.js"></script> -->
-  <script src="js/jquery.nicescroll.min.js"></script>
+  <!-- <script src="js/jquery.nicescroll.min.js"></script> -->
   <script src="js/script.js"></script>
 
     <!-- Overlay container to close hamburger menu when the user clicks anywhere on screen -->
-	  <div id="overlay" onclick="menuToggle()"></div>
+	  <div id="index-overlay" onclick="menuToggle()"></div>
   </body>
 </html>

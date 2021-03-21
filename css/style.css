@@ -9,6 +9,14 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   box-sizing: border-box;
 }
 
+/* Offset anchors when hyperlinking to IDs */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
 /* ===============   STYLING for PROJECT PAGES   ============== */
 
   #project-header {
@@ -35,9 +43,10 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
   }
 
   .masthead {
-    margin-top: 30px;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 70vh;
+    object-fit: contain;
   }
 
   .width90auto {
@@ -132,12 +141,13 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 
 /* ===============   LAYOUT and STYLING for HOME SCREEN   ============== */
 
-
+/*
 ::-webkit-scrollbar {
-  display: none; /* Hide all scrollbars */
+  display: none; /* Hide all scrollbars
 }
+*/
 
-#overlay {
+#index-overlay {
   display: none;
   position: fixed;
   top: 0;
@@ -150,10 +160,10 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 .grid-container {
   position: fixed;
   display: grid;
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: auto;
-  grid-template-columns: calc(100vw - 20px) repeat(4, 90vw) 1px; /* Last column is blank, just to add some space */
-  /* grid-template-rows: 100vh; */
+  /* grid-template-columns: calc(100vw - 20px) repeat(4, 90vw) 1px; /* Last column is blank, just to add some space */
+  grid-template-rows: 100vh auto auto auto auto auto;
   grid-gap: 10vw;
   padding: 0 10px;
   align-items: center;
@@ -176,7 +186,7 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 }
 
 .scrolldown {
-  text-align: right;
+  text-align: center;
   width: 100%;
   margin: auto;
   margin-left: auto;
@@ -203,7 +213,13 @@ Light blue color: #DDF7FB; R221 G247 B251. With opacity: rgba(221, 247, 251, .9)
 }
 
 .parent {
-  background-size: contain;
+  display: block;
+  position: relative;
+  width: min(calc(4/3*70vh), 90vw);
+  max-width: 1200px;
+  margin-top: 5vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #css-animation-picture {
@@ -225,7 +241,7 @@ footer {
   margin-top: 10px;
   margin-bottom: 0px;
   padding-left: 15px;
-  position: fixed;
+  position: static;
   bottom: 0;
 }
 
@@ -250,7 +266,7 @@ footer {
 
 .project-info {
   background-color: white;
-  padding: 12px 0 20px 0;
+  padding: 20px 0 20px 0;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -263,9 +279,10 @@ footer {
 }
 
 #hero-section {
-  padding: 0px 0 0 0;
+  padding: 0px 0 50px 0;
   display: inline-block;
   width: 100%;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -281,7 +298,7 @@ footer {
 
 
 .masthead {
-  opacity: 0;
+  opacity: 1;
 }
 
 .logo {
@@ -380,10 +397,7 @@ nav > ul > li {
   display: block;
   padding: 15px 50px;
   text-align: center;
-  background-color: #DDF7FB;
-  border-style: solid;
-  border-color: #DDF7FB;
-  border-width: 3px;
+  background-color: inherit;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -416,7 +430,7 @@ body {
 }
 
 #home {
-  overflow-y: hidden; /* Disable vertical scrolling */
+  /* overflow-y: hidden; /* Disable vertical scrolling */
 }
 
 #greeting {
@@ -490,7 +504,7 @@ p {
 
 #copyright {
   font-size: 0.8em;
-  padding-left: 15px;
+  padding-left: 0;
   padding-bottom: 5px;
   font-weight: 400;
 }
@@ -547,7 +561,7 @@ nav > ul > li.dropdown-parent ul {
 
 .dropdown-parent > .dropdown > li {
   display: block;
-  padding: 0 0 0 10px;
+  padding: 0;
   opacity: 1;
 }
 
@@ -817,6 +831,10 @@ img  {
 
 [class$="in-3"]{
   animation-delay: 1s;
+}
+
+[class$="in-4"]{
+  animation-delay: 1.5s;
 }
 
 @keyframes slide-up-fade-in{
@@ -2361,6 +2379,7 @@ img  {
 
   .dropdown-parent > .dropdown > li {
     display: block;
+    padding: 0 0 0 10px;
   }
 
   .logo {
@@ -2460,7 +2479,7 @@ img  {
   }
 
   .masthead:hover {
-    opacity: 0;
+    opacity: 1;
   }
 
   .project-info {
@@ -2946,6 +2965,7 @@ img  {
 
   .dropdown-parent > .dropdown > li {
     display: block;
+    padding: 0 0 0 10px;
   }
 
   /* ------ Busy Bee project for screen size 1024px ----- */
@@ -4273,6 +4293,7 @@ img  {
 
   .parent {
     position: relative;
+    margin-bottom: 100px;
     /* To change the size of the "unroll triangle", change all of the 50% numbers
        in this clip-path AND in the .parent:before/after width & height below.
        Note: Smaller values make a bigger triangle. */
@@ -4453,54 +4474,4 @@ img  {
     margin-bottom: 6em;
   }
 
-}
-
-@media only screen and (orientation: landscape) { /* Media query for landscape (any screen size) */
-  .grid-container {
-    display: grid;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    grid-template-columns: calc(100vw - 20px) repeat(4, 90vh) 1px; /* Last column is blank, just to add some space */
-    /* grid-template-rows: 100vh; */
-    grid-gap: 10vw;
-    padding: 0 10px;
-  }
-
- /* CSS code for overlaying masthead and project info */
-  .parent {
-    position: relative;
-    top: 0;
-    left: 0;
-	  max-width: 80vw;
-	  max-height: 100%;
-  }
-
-  .masthead {
-    opacity: 1;
-    transition: 1s ease;
-  }
-
-  .masthead:hover {
-    opacity: 0;
-  }
-
-  .masthead {
-      position: relative;
-      top: 0;
-      left: 0;
-  	width: 100%;
-  	/* height: 100%; */
-  	object-position: 0 0;
-      object-fit: contain;
-  }
-
-    .project-info {
-      display: none;
-  }
-
-  #hero-section {
-    padding: 0 0 0 0;
-    text-align: center;
-    max-width: 90vw;
-  }
 }
