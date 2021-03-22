@@ -39,7 +39,7 @@ function menuToggle() {
   var indexHeader = document.getElementById('index-header');
   if (indexHeader !== null) {
     if (indexHeader.style.backgroundColor === 'transparent' || indexHeader.style.backgroundColor === '') {
-      indexHeader.style.backgroundColor = '#DDF7FB';
+      indexHeader.style.backgroundColor = '#e0f3ff';
     } else {
   	  indexHeader.style.backgroundColor = ''; // Transparent by default, but allow override by CSS media query
     }
@@ -170,7 +170,7 @@ $( document ).on('scroll', function() {
   if ((document.documentElement.scrollTop || document.body.scrollTop) > 50) { // If scroll position exceeds 50px
     if (window.innerWidth >= 640) { // If hamburger menu isn't showing
       if (indexHeader !== null) {
-        indexHeader.style.backgroundColor = '#DDF7FB'; // Set header background to solid light blue
+        indexHeader.style.backgroundColor = '#e0f3ff'; // Set header background to solid light blue
       }
     }
   } else {
