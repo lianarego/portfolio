@@ -254,6 +254,11 @@ footer {
   margin-bottom: 5em;
 }
 
+.social-media svg {
+  width: 30px;
+  height: 30px;
+}
+
 .social-media > a {
   text-decoration: none;
   margin-right: 8px;   /* margin to the right of each social media icon */
@@ -737,7 +742,7 @@ img  {
 #cloud1 {
   width: 100px;
   position: relative;
-  animation-duration: 85s, 60s;
+  animation-duration: 95s, 60s;
   animation-name: cloud1-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -751,7 +756,7 @@ img  {
 #cloud3 {
   width: 60px;
   position: relative;
-  animation-duration: 75s, 60s;
+  animation-duration: 85s, 60s;
   animation-name: cloud3-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -764,7 +769,7 @@ img  {
 
 #cloud5 {
   width: 60px;
-  animation-duration: 80s, 60s;
+  animation-duration: 90s, 60s;
   animation-name:  cloud5-move-left;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -774,7 +779,7 @@ img  {
 #cloud6 {
   width: 60px;
   position: relative;
-  animation-duration: 75s, 60s;
+  animation-duration: 85s, 60s;
   animation-name:  cloud6-move-right;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -788,7 +793,7 @@ img  {
 #cloud8 {
   width: 80px;
   position: relative;
-  animation-duration: 80s, 60s;
+  animation-duration: 90s, 60s;
   animation-name:  cloud8-move-left;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -808,7 +813,7 @@ img  {
 #cloud10 {
   width: 80px;
   position: relative;
-  animation-duration: 83s, 80s;
+  animation-duration: 93s, 80s;
   animation-name:  cloud10-move-left;
   animation-iteration-count: infinite;
   animation-direction: alternate, normal;
@@ -2774,7 +2779,7 @@ img  {
 
   #contact-header {
     width: 47%;
-    text-align: left;
+    text-align: center;
     margin-left: 5vw;
     font-size: 2em;
     margin-top: 30px;
@@ -2790,6 +2795,11 @@ img  {
   .social-media {
     width: 50%;
     margin-left: 25px;
+  }
+
+  .social-media svg {
+    width: 35px;
+    height: 35px;
   }
 
 }
@@ -2859,7 +2869,7 @@ img  {
   #cloud1 {
     width: 100px;
     position: relative;
-    animation-duration: 95s, 80s;
+    animation-duration: 105s, 80s;
     animation-name: cloud1-move-right;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2868,7 +2878,7 @@ img  {
 
   #cloud2 {
     width: 100px;
-    animation-duration: 88s, 80s;
+    animation-duration: 108s, 80s;
     animation-name:  cloud2-move-right;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2879,7 +2889,7 @@ img  {
   #cloud3 {
     width: 180px;
     position: relative;
-    animation-duration: 85s, 60s;
+    animation-duration: 95s, 60s;
     animation-name: cloud3-move-right;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2888,7 +2898,7 @@ img  {
 
   #cloud4 {
     width: 250px;
-    animation-duration: 74s, 80s;
+    animation-duration: 90s, 80s;
     animation-name: cloud4-move-left;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2897,7 +2907,7 @@ img  {
 
   #cloud5 {
     width: 200px;
-    animation-duration: 85s, 80s;
+    animation-duration: 95s, 80s;
     animation-name:  cloud5-move-left;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2907,7 +2917,7 @@ img  {
   #cloud6 {
     width: 330px;
     position: relative;
-    animation-duration: 143s, 80s;
+    animation-duration: 153s, 80s;
     animation-name:  cloud6-move-right;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2917,7 +2927,7 @@ img  {
   #cloud7 {
     width: 200px;
     position: relative;
-    animation-duration: 82s, 80s;
+    animation-duration: 92s, 80s;
     animation-name:  cloud7-move-left;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2927,7 +2937,7 @@ img  {
   #cloud8 {
     width: 120px;
     position: relative;
-    animation-duration: 80s, 80s;
+    animation-duration: 90s, 80s;
     animation-name:  cloud8-move-left;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2937,7 +2947,7 @@ img  {
   #cloud9 {
     width: 120px;
     position: relative;
-    animation-duration: 90s, 80s;
+    animation-duration: 100s, 80s;
     animation-name:  cloud9-move-right;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2947,7 +2957,7 @@ img  {
   #cloud10 {
     width: 160px;
     position: relative;
-    animation-duration: 123s, 80s;
+    animation-duration: 133s, 80s;
     animation-name:  cloud10-move-left;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -2957,7 +2967,7 @@ img  {
   #cloud11 {
     width: 99px;
     position: relative;
-    animation-duration: 143s, 80s;
+    animation-duration: 153s, 80s;
     animation-name:  cloud11-move-right;
     animation-iteration-count: infinite;
     animation-direction: alternate, normal;
@@ -3170,20 +3180,25 @@ img  {
 
   #contact-header {
     font-size: 2.6em;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
     }
 
   #email-address {
-      font-size: 2em;
+      font-size: 2.2em;
       width: 50%;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
       padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
   }
 
   .social-media {
     width: 50%;
     margin-left: 25px;
+  }
+
+  .social-media svg {
+    width: 40px;
+    height: 40px;
   }
 
 
@@ -4536,8 +4551,8 @@ img  {
 
   #contact-header {
     font-size: 3.5em;
-    margin-top: 145px;
-    margin-bottom: 50px;
+    margin-top: 135px;
+    margin-bottom: 60px;
     }
 
   #email-address {
@@ -4551,6 +4566,11 @@ img  {
     width: 50%;
     margin-left: 25px;
     margin-bottom: 6em;
+  }
+
+  .social-media svg {
+    width: 45px;
+    height: 45px;
   }
 
 }
