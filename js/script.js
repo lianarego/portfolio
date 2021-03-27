@@ -156,11 +156,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 // Unroll "paper plane" covering project image, when first hovered
 $( document ).ready(function() {
-  $(".parent").hover(
-    function () {
-      $(this).addClass('unroll');
-    }
-  )
+
 });
 
 
@@ -181,3 +177,28 @@ $( document ).on('scroll', function() {
     }
   }
 });
+
+
+// Add class when parent (.project) is in viewport
+var isInViewport = function(elem) {
+  var distance = elem.getBoundingClientRect();
+  return (
+    distance.top >= 0 &&
+    distance.left >= 0 &&
+    distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
+
+var findMe = document.querySelectorAll('.parent');
+
+window.addEventListener('scroll', function(event) {
+// add event on scroll
+findMe.forEach(element => {
+    //for each .thisisatest
+    if (isInViewport(element)) {
+      //if in Viewport
+      element.classList.add("unroll");
+    }
+});
+}, false);
