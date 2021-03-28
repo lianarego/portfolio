@@ -119,6 +119,14 @@ a.anchor {
     padding: 0 0 30px 15px;
   }
 
+  #img-left  {    /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
+    margin: 1em 0 1em 0;
+  }
+
+  #img-right {     /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
+    margin: 1em 0 1em 0;
+  }
+
   .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -2177,14 +2185,6 @@ img  {
     margin: 1em 0 1em 0;
   }
 
-  #img-left  {    /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
-    margin: 1em 0 1em 0;
-  }
-
-  #img-right {     /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
-    margin: 1em 0 1em 0;
-  }
-
   /* ---- About Me page for screen size 375px ----- */
 
   #greeting {
@@ -2662,10 +2662,6 @@ img  {
     padding: 25px 0 40px 0;
     display: inline-block;
   }
-
-}
-
-@media only screen and (min-width:768px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */
 
   nav > ul > li.dropdown-parent ul {
     padding-left: 15px;
@@ -4577,7 +4573,7 @@ img  {
   }
 
   p {
-   font-size: 1.3em;
+   font-size: 1.2em;
    margin-top: .5em;
    line-height: 1.6;
    margin-bottom: 1.5em;
