@@ -60,6 +60,10 @@
         </div>
       </header>
 
+
+    <!-- ============================= MAIN SECTION  ======================= -->
+    <!-- ============================================================================ -->
+
     <main id="project-main">
       <div class="width90auto"> <!-- Container for Masthead) -->
         <div>
@@ -87,25 +91,20 @@
       <div class="width90auto"><!--container for Overview-->
         <h2>Overview</h2>
         <p>With so many different recycling rules depending on where one lives, it can get confusing sometimes to follow best practices for sustainable waste management. To address this problem, TerraCare was designed to take into consideration the user's current location to provide simple, accurate, and personalized information.</p>
-        </br>
         <p>It features 3 key functionalities: an intuitive search engine for items, a locator feature to find recycling centers/eco-friendly stores nearby, and useful articles/blogs geared towards every user's unique sustainable waste management goals.</p>
       </div>
 
       <div class="width90auto"><!--container for Context-->
         <h2>Context</h2>
         <p>TerraCare is a sustainable waste management web app that I developed, from conception to execution, for my UI Design certification. The goal of the project was to design responsive screens that would function well and look beautiful across all breakpoints and devices. It also needed to follow conventional web app structure and considerations.</p>
-        </br> <!-- For space between Contect and image below it -->
-        </br>
+      </br> <!-- For space between Context and image below it -->
       </div>
 
       <div class="dividerline-top"> <!-- container for design process pic -->
-          </br>
-          </br>
           <picture>
             <source srcset="img/TerraCare/design_thinking_1x.png" media="(max-width:767px)">
               <img src="img/TerraCare/design_thinking_2x.png" alt="Design Thinking Diagram">
           </picture>
-          </br>
       </div>
 
     <div class="dividerline-top width90auto"><!-- Container Competitive Analysis title, text, and 2 images)-->
@@ -113,14 +112,14 @@
           <h2>Competitive Analysis</h2>
           <p>The first step in my design process was to research similar sustainability apps that were currently in the market. This will allow me to identify their strengths and opportunities for my own app. I did an analysis of two competitors: RecycleCoach and How2Recycle.</p>
       </div>
-      <div class="img50-left"> <!-- container for image #1 -->
+      <div id="img-left"> <!-- container for image #1 -->
         <picture>
           <source srcset="img/TerraCare/analysis1_1x.png" media="(max-width:767px)">
             <img src="img/TerraCare/analysis1_2x.png" alt="Competitive Analysis #1">
         </picture>
       </div>
 
-      <div class="img50-right"> <!-- container for image #2 -->
+      <div id="img-right"> <!-- container for image #2 -->
         <picture >
           <source srcset="img/TerraCare/analysis2_1x.png" media="(max-width:767px)">
             <img src="img/TerraCare/analysis2_2x.png" alt="Competitive Analysis #2">
@@ -134,14 +133,14 @@
             <h2>User Personas</h2>
             <p>After completing a competitive analysis, I recruited and interviewed 5 people from the Slack community who were interested in sustainable living in order to better understand their needs and goals. I then created user personas based on my user research that helped me paint a clear and realistic picture of users’ goals, needs, and behaviors.</p>
         </div>
-        <div class="img50-left"> <!-- container for image #1 -->
+        <div id="img-left"> <!-- container for image #1 -->
           <picture>
             <source srcset="img/TerraCare/UserPersona1.1x.png" media="(max-width:767px)">
               <img src="img/TerraCare/UserPersona1.2x.png" alt="James Persona">
           </picture>
         </div>
 
-        <div class="img50-right"> <!-- container for image #2 -->
+        <div id="img-right"> <!-- container for image #2 -->
           <picture>
             <source srcset="img/TerraCare/UserPersona2.1x.png" media="(max-width:767px)">
               <img src="img/TerraCare/UserPersona2.2x.png" alt="Joyce Persona">
@@ -151,9 +150,8 @@
       </div>
 
         <div class="width90auto dividerline-top"> <!-- Container for MVP title, text, and image -->
-
             <div class="text-right">
-              <div class="img50-left" style="margin-right:40px;"> <!-- container for image -->
+              <div class="img50-left"> <!-- container for image -->
                 <picture>
                   <source srcset="img/TerraCare/MVP.1x.png" media="(max-width:767px)">
                     <img src="img/TerraCare/MVP.2x.png" alt="MVP Document">
@@ -161,7 +159,6 @@
               </div>
               <h2>Minimum Viable Product</h2>
               <p>Next, I gathered requirements to define what features I needed to design for my app. I developed key user stories (from my personas) and minimum viable products (MVPs). </p>
-              </br>
               <p>The MVPs would allow me to quickly test my initial designs on users, giving me valuable feedback early in the design process and to address any concerns right from the beginning.</p>
             </div>
             <div class="clearfix"></div>
@@ -186,14 +183,14 @@
                 <h2>Crazy 8's Wireframe</h2>
                 <p>Using my user personas, user flows, and MVPs as a guide, I sketched out wireframes using the Crazy 8's method. After multiple sessions, I picked the designs that I felt addressed the MVP goals the best, and converted them to prototypes in InVision.</p>
             </div>
-            <div class="img50-left"> <!-- container for image #1 -->
+            <div id="img-left"> <!-- container for image #1 -->
               <picture>
                 <source srcset="img/TerraCare/wireframe1_1x.png" media="(max-width:767px)">
                   <img src="img/TerraCare/wireframe1_2x.png" alt="Wireframe #1">
               </picture>
             </div>
 
-            <div class="img50-right"> <!-- container for image #2 -->
+            <div id="img-right"> <!-- container for image #2 -->
               <picture>
                 <source srcset="img/TerraCare/wireframe2_1x.png" media="(max-width:767px)">
                   <img src="img/TerraCare/wireframe1_2x.png" alt="Wireframe #2">
@@ -229,7 +226,6 @@
                 </picture>
               </div>
               </br>
-
               <p>After the user interviews, I synthesized and ranked my observations into concrete issues using Jakob Nielsen’s error severity rating system. This helped me prioritize and understand the most important pain points and propose new solutions for my designs and ideas for my next iteration based on the results. </p>
 
               <picture>
@@ -241,7 +237,6 @@
               </br>
               <h3>A/B Testing</h3>
               <p>Using UsabilityHub, I also conducted A/B testing to determine which typography style was preferred by users. With an 81% overwhelming majority, users voted that they liked the design to have a san-serif font over serif font, as it was more readable and matched the tone of an eco-friendly app better.</p>
-              </br>
                 <div> <!-- containter for A/B test image -->
                 <picture>
                   <source srcset="img/TerraCare/ABTest.1x.png" media="(max-width:767px)">
@@ -256,47 +251,167 @@
             <!-- ============================================================================ -->
 
 
-            <div class="width90auto"> <!--container for Style Guide title and image -->
+            <div> <!--container for Style Guide title and image -->
               <div class="backgroundimage" style="background-image: url('img/TerraCare/BackgroundHeader1.jpeg')"> <!-- container for title  -->
                   <h1>Design System</h1>
               </div>
+            </div>
 
-              <div> <!-- container for image -->
-                <picture>
-                  <source srcset="img/TerraCare/style_guide_1x.png" media="(max-width:767px)">
-                    <img src="img/TerraCare/style_guide_2x.png" alt="Style Guide">
-                </picture>
+            <div class="width90auto"> <!-- Container for 8 Point Grid title, text, and image -->
+
+                <div class="text-left">
+                  <div class="img50-right"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/4Column.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/4Column.2x.png" alt="8 Point Grid">
+                    </picture>
+                  </div>
+                  <h2>8-Point Grid</h2>
+                  <p>The first step was to lay the foundation of TerraCare’s design system by establishing the grid that the screens will live on.</p>
+                  <p>With a mobile-first approach, I designed using a 4-column and 8-point grid system. This helped me define the spacing system which was also later used to set typography and iconography measurements.</p>
+                  <p>Incorporating this essential step helped to create an exceptional user experience as I defined and adhered to the design standards. It ensured consistency of design and assisted in the expression of TerraCare’s unique personality and brand. </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="width90auto"> <!-- Container for Typography  title, text, and image -->
+                <div class="text-right">
+                  <div class="img50-left"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/Typography.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/Typography.2x.png" alt="Typography Styles">
+                    </picture>
+                  </div>
+                  </br>
+                  <h2>Typography</h2>
+                  <p>Source Sans Pro, a sans-serif typeface, was used across the brand to showcase a clean and modern look and feel as well as provide easier readability. </p>
+                  <p>For typography measurements, I based the font size on a defined type scale (1.250 - Major Third) but still used a 8px system for the line height. Using a type scale ensured a harmonious scale that was pleasing for users and scalable for web development. </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="width90auto"> <!-- Container for Color Styles title, text, and image -->
+
+                <div class="text-left">
+                  <div class="img50-right"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/ColorStyles.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/ColorStyles.2x.png" alt="Color Styles">
+                    </picture>
+                  </div>
+                  <h2>Color Styles</h2>
+                  <p>The primary palette was comprised of green shades and tints to bring in a sense of nature and eco-friendliness to the brand. </p>
+                  <p>Brown was peppered in as a secondary palette to ground the whole product, providing contrast and an earthy tone. Neutral colors were also used to add a touch of contemporary look and feel.</p>
+                  <p>To create a light-hearted and on-brand color naming system, I took inspiration from organic materials found in nature.  </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="width90auto"> <!-- Container for Iconography  title, text, and image -->
+                <div class="text-left">
+                  <div class="img50-right"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/Iconography2.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/Iconography2.2x.png" alt="Iconography Styles">
+                    </picture>
+                  </div>
+                  </br>
+                  <h2>Iconography</h2>
+                  <p>Like the typography, I used the 8px grid system for the iconography as well.</p>
+                  <p>I sized the icons proportionally, with the height as a multiple of 8. I used 16px, 24px,  32px, and 48px.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="width90auto"> <!-- Container for UI Components title, text, and image -->
+                <div class="text-left">
+                  <div class="img50-right"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/UIComponents2.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/UIComponents2.2x.png" alt="UI Components #2">
+                    </picture>
+                  </div>
+                  </br>
+                  <h2>UI Components</h2>
+                  <p>Following the color styles, I designed UI components that would later assist in building pages in a consistent and effective manner.</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="width90auto" id="TCphotos-parent"> <!-- Container for Photography title, text, and image -->
+                <div>
+                  <h2>Photography</h2>
+                  <div class="TCphotos"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/Photography1.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/Photography1.2x.png" alt="Photography #1">
+                    </picture>
+                  </div>
+                  <div class="TCphotos"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/Photography4.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/Photography4.2x.png" alt="Photography #2">
+                    </picture>
+                  </div>
+                  <div class="TCphotos"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/Photography3.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/Photography3.2x.png" alt="Photography #3">
+                    </picture>
+                  </div>
+                  <div class="TCphotos"> <!-- container for image -->
+                    <picture>
+                      <source srcset="img/TerraCare/Photography2.1x.png" media="(max-width:767px)">
+                        <img src="img/TerraCare/Photography2.2x.png" alt="Photography #4">
+                    </picture>
+                  </div>
+                  <p>For images, I used a 16:9 ratio and set the width to the layout grid. For this reason, the image’s height does not follow the 8px grid system.</p>
+                  <p>All photos used for articles should be of high resolution, with the main subject of the topic shot up close. They should ideally feature topics that promote sustainable living. The colors of images should aim to have neutral or earth tones with a minimalist style.  </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+
+            <!-- ====================== FINAL SHOWCASE SECTION  ======================= -->
+            <!-- ============================================================================ -->
+            <div > <!--container for Style Guide title and image -->
+              <div class="backgroundimage" style="background-image: url('img/TerraCare/BackgroundHeader3.jpeg')"> <!-- container for title  -->
+                  <h1>Final Showcase</h1>
               </div>
             </div>
 
-              <div class="width90auto dividerline-top"> <!-- Final Showcase title, subheaders, text, and mockups -->
-                <h2>Final Showcase</h2>
+              <div class="width90auto"> <!-- Final Showcase title, subheaders, text, and mockups -->
                 <div>
                     <picture>
                       <source srcset="img/TerraCare/TerraCare2.Masthead.1x.png" media="(max-width:767px)">
                         <img src="img/TerraCare/TerraCare2.Masthead.2x.png" alt="TerraCare Masthead">
                     </picture>
                 </div>
-              </div>
-              <!-- ***Protyping Animation subheader and video will be placed here*** -->
-
-              <div class="width90auto"> <!-- container for Responsive Breakpoints subheader-->
-                <h2>Responsive Breakpoints</h2>
+                </br>
+                <!-- ***Protyping Animation ideo here*** -->
+                <div class="videoWrapper">
+                  <!-- Copy & Pasted from YouTube -->
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/W85xg4DXQvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </div>
+                </br>
                 <div> <!-- container for responsive breakpoints -->
                   <picture>
                     <source srcset="img/TerraCare/TerraCare1.Masthead.1x.png" media="(max-width:767px)">
                       <img src="img/TerraCare/TerraCare1.Masthead.2x.png" alt="Responsive Screens Mockup">
                   </picture>
                 </div>
-              </div>
 
-              <div class="projectnav">
-                  <!-- Section for next/prev links -->
-                  <a id="nextproject" href="retrogames.html" class="next-project-button">Next project  → </a>
-                  <a id="prevproject" href="busybee.html" class="previous-project-button"> ← Prev project</a>
-                  <div class="clearfix"></div>
-              </div>
-            </div> <!-- closing for Final Showcase container -->
+              </div> <!-- closing for Final Showcase container -->
+
+
+
+
+          <!-- SECTION for NEXT/PREV LINKS -->
+          <div class="projectnav">
+              <a id="nextproject" href="retrogames.html" class="next-project-button">Next project  → </a>
+              <a id="prevproject" href="busybee.html" class="previous-project-button"> ← Prev project</a>
+              <div class="clearfix"></div>
+          </div>
+
 
           </main>
 
