@@ -313,6 +313,7 @@ footer {
   display: inline-block;
   width: 100%;
   height: 100vh;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2392,7 +2393,7 @@ img  {
 
 }
 
-@media only screen and (min-width: 640px) and (max-width: 1023px) {  /* /* --- landscape mode for iPhone 6/7/8 --- */
+@media only screen and (min-width: 640px)  {  /* /* --- landscape mode for iPhone 6/7/8 --- */
 
   /* ---- Header section for screen size 640 ----- */
   main {
@@ -2754,7 +2755,7 @@ img  {
 
   h3 {
    font-size: 1.3em;
-   text-align: center;
+   text-align: left;
   }
 
   p {
