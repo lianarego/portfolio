@@ -67,7 +67,26 @@ a.anchor {
     width: 90%;
     max-width: 1200px;
     margin: auto;
+    padding: 2em 0 1.5em 0;
     border-top: 0.5px solid grey;
+  }
+
+  .backgroundimage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 26%;
+    margin-top: 1em;
+    height: 80px;
+  }
+
+  .backgroundimage > h1 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.55); // Last value is background image opacity
   }
 
   #showcasedesktop {
@@ -220,6 +239,11 @@ a.anchor {
   margin-top: 5vw;
   margin-left: auto;
   margin-right: auto;
+}
+
+#rolesummary-parent {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 #css-animation-picture {
@@ -2124,6 +2148,14 @@ img  {
     font-size: 1.2em;
   }
 
+  /* ------ TerraCare project for screen size 375px ----- */
+  .img50-left  {
+    margin: 1em 0 1em 0;
+  }
+
+  .img50-right {
+    margin: 1em 0 1em 0;
+
   /* ---- About Me page for screen size 375px ----- */
 
   #greeting {
@@ -2296,6 +2328,13 @@ img  {
       margin-bottom: 25px;
   }
 
+  /* ---- TerraCare for screen size 414px ----- */
+
+  .backgroundimage {
+    margin-top: 1.5em;
+    height: 100px;
+  }
+
 }
 
 @media only screen and (min-width:568px)  { /* --- landscape mode for iPhone 5/SE --- */
@@ -2430,6 +2469,12 @@ img  {
     margin: 10px 0 0 0;
   }
 
+  /* ---- TerraCare for screen size 640px ----- */
+
+  .backgroundimage {
+    height: 120px;
+  }
+
   /* ---- Busy Bee project for screen size 640px ----- */
 
   .colorpaletteimage {
@@ -2442,7 +2487,7 @@ img  {
     float: left;
   }
 
-  .typographytext {
+  .text-right{
     text-align: right;
     width: 100%;
     float: right;
@@ -2685,19 +2730,35 @@ img  {
   main {
     padding-top: 90px;
   }
+  /* ------ TerraCare project for screen size 812px ----- */
+  .img50-left  {
+    float: left;
+    width: 49%;
+    max-width: 600px;
+    margin: 2.5em 0 3em 0;
+  }
+
+  .img50-right {
+    float: right;
+    width: 49%;
+    max-width: 600px;
+    margin: 2.5em 0 3em 0;
+  }
+
 
   /* ------ Busy Bee project for screen size 812px ----- */
 
   h2 {
-   font-size: 1.7em;
-  }
-
-  h3 {
    font-size: 1.5em;
   }
 
+  h3 {
+   font-size: 1.3em;
+   text-align: center;
+  }
+
   p {
-   font-size: 1.2em;
+   font-size: 1em;
   }
 
  .projectnav {
@@ -3055,6 +3116,23 @@ img  {
     padding: 0 0 0 10px;
   }
 
+  /* ------ TerraCare project for screen size 1024px ----- */
+  .img50-left  {
+    width: 49%;
+    max-width: 600px;
+    display: inline;
+  }
+
+   .img50-right {
+    width: 49%;
+    max-width: 600px;
+    display: inline;
+  }
+
+  .backgroundimage {
+    height: 170px;
+  }
+
   /* ------ Busy Bee project for screen size 1024px ----- */
 
   h2 {
@@ -3066,7 +3144,7 @@ img  {
   }
 
   p {
-   font-size: 1.3em;
+   font-size: 1.2em;
   }
 
   .colorpaletteimage {
@@ -3083,12 +3161,17 @@ img  {
     padding-bottom: 5px;
   }
 
-  .typographytext > h3{
+  .text-right > h3{
     padding-bottom: 5px;
     padding-top: 2.5em;
   }
 
-  .typographytext {
+  .text-right > h2{
+    padding-bottom: 5px;
+    padding-top: 2.5em;
+  }
+
+  .text-right {
     text-align: right;
     width: 100%;
     float: right;
@@ -3205,26 +3288,29 @@ img  {
   /* ----- Typography for Media query for 1024px+ ------ */
 
   h1 {
-    font-size: 4.7em;
+    font-size: 3.5em;
     margin: 0 0 50px 0;
   }
 
   h2 {
-    font-size: 2.5em;
+    font-size: 1.9em;
     font-weight: 700;
+    padding-bottom: 10px;
   }
 
   h3 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 300;
     margin:0;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
     line-height: 1.7;
     letter-spacing: 1px;
   }
 
   .rolesummary > h3 {
     padding-bottom: 30px;
+    width: 30%;
+    display: inline-block;
   }
 
   h4 {
@@ -4433,6 +4519,12 @@ img  {
     height: 0;
   }
 
+  #rolesummary-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
 
   /* ------ Busy Bee project for screen size 1366px ----- */
 
@@ -4441,19 +4533,25 @@ img  {
   }
 
   h2 {
-   font-size: 2.2em;
+   font-size: 2em;
   }
 
   h3 {
-   font-size: 1.9em;
+   font-size: 1.7em;
   }
 
   p {
-   font-size: 1.4em;
+   font-size: 1.3em;
+   margin-top: .5em;
+   line-height: 1.6;
   }
 
-  .typographytext > h3 {
+  .text-right > h3 {
     padding-top: 3.5em;
+  }
+
+  .text-right > h2 {
+    padding-top: 4.5em;
   }
 
   .projectnav {
