@@ -2384,6 +2384,10 @@ img  {
     margin: 10px 0 0 0;
   }
 
+  .scrolldown {
+    display: none;
+  }
+
   /* ---- About Me page for screen size 568px ----- */
 
   #greeting {
