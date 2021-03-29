@@ -202,3 +202,20 @@ findMe.forEach(element => {
     }
 });
 }, false);
+
+// Change written text to a list of <span> elements, each with one character
+var writtenText = document.getElementById('written-text');
+var writtenTextString = writtenText.innerText;
+writtenText.innerHTML = ''; // Empty string
+for (i=0; i < writtenTextString.length; i++) {
+  // Add a <span> with one character, but make it transparent
+  writtenText.innerHTML += '<span style="opacity: 0;">' + writtenTextString[i] + '</span>'
+};
+// Change opacity of written text
+function changeOpacity(elem) {
+  elem.style.opacity = 1;
+};
+var interval = 30; // Pause between characters (in milliseconds)
+for (i=0; i < writtenText.childElementCount; i++) {
+  setTimeout(changeOpacity, i * interval + 500, writtenText.children[i]);
+};
