@@ -17,6 +17,9 @@ a.anchor {
   visibility: hidden;
 }
 
+font-family: 'Homemade Apple', cursive;
+font-family: 'Satisfy', cursive;
+
 /* ===============   STYLING for PROJECT PAGES   ============== */
 
   #project-header {
@@ -250,6 +253,10 @@ a.anchor {
   padding: 0 20px;
 }
 
+.container > h2 {
+  position: relative;
+}
+
 .row {
   margin: 0 0; /* 25px top and bottom, 0 left and right */
   padding-bottom: 0px;
@@ -260,7 +267,7 @@ a.anchor {
   position: relative;
   width: min(calc(4/3*70vh), 90vw);
   max-width: 1200px;
-  margin-top: 5vw;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -338,9 +345,11 @@ footer {
 
 #hero-section {
   padding: 0px 0 50px 0;
-  display: inline-block;
+  display: flex; /* inline-block; */
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 60px);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -482,7 +491,7 @@ main {
 body {
   background-color: #e0f3ff;;
   font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   color: #000000;
@@ -522,7 +531,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 600;
   margin: 20px 0 0 0;
 }
@@ -562,7 +571,7 @@ p {
 }
 
 #copyright {
-  font-size: 0.8em;
+  font-size: 0.9em;
   padding-left: 0;
   padding-bottom: 5px;
   font-weight: 400;
@@ -912,7 +921,7 @@ img  {
     -ms-animation-fill-mode:forwards; /*IE 10+*/
     opacity:0;
     opacity: 1\9;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
     padding: 0;
 }
 
@@ -925,7 +934,7 @@ img  {
 }
 
 [class$="in-3"]{
-  animation-delay: 1s;
+  animation-delay: 4s;
 }
 
 [class$="in-4"]{
@@ -2135,6 +2144,10 @@ img  {
     line-height: 1.6;
   }
 
+  .container > h3 {       /* --- used for "I love to design..." --- */
+    text-align: center;
+  }
+
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
     margin-bottom: 155px;
     font-size: 1.1em;
@@ -2619,11 +2632,16 @@ img  {
   /* ---- Header section for screen size 736px ----- */
 
   .container > h2 {       /* --- used for "I love to design..." --- */
-    font-size: 2.7em;
+    font-size: 1em;
     margin-top: 50px;
     margin-bottom: 85px;
-    line-height: 1.6;
+    line-height: 2;
     letter-spacing: 0.035em;
+    font-family: 'Homemade Apple', cursive;
+  }
+
+  .container >h3 {
+    font-weight: 200;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
@@ -3282,12 +3300,12 @@ img  {
 
   .button-primary-container {
     margin-left: 3em; /* spacing between primary and secondary buttons */
-    padding: 20px 20px 20px 0;
+    padding: 25px 20px 20px 0;
   }
 
   .button-secondary-container {
     margin-left: 4em; /* spacing to the left of secondary button */
-    padding: 20px 0 20px 0;
+    padding: 25px 0 20px 0;
   }
 
   .hobbies-container {
@@ -4491,8 +4509,18 @@ img  {
   /* ------ Home page for screen size 1366px ----- */
   .container > h2 {
     font-size: 3.3em;
-    margin-top: 70px;
+    margin-top: 0px;
     letter-spacing: 0.045em;
+  }
+
+  .container > h2 {       /* --- used for "I love to design..." --- */
+    font-size: 2.7em;
+    margin-top: 50px;
+    margin-bottom: 85px;
+    line-height: 2.5;
+    font-weight: normal;
+    word-spacing: .45em;
+    font-family: 'Homemade Apple', cursive;
   }
 
   .container > h5 {
@@ -4555,12 +4583,6 @@ img  {
     justify-content: space-between;
   }
 
-  #TCphotos-parent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
 
   /* ------ Busy Bee project for screen size 1366px ----- */
 
@@ -4614,6 +4636,13 @@ img  {
    padding: 30px 0 75px 15px;
  }
 
+ /* ------ TerraCare project for screen size 1366px ----- */
+
+ #TCphotos-parent {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
 
   /* ----- About Me page for 1366px ----- */
   #about-main {
@@ -4666,7 +4695,7 @@ img  {
   #aboutme > h3 {
     font-size: 1.8em;
     padding-bottom: 0;
-    margin-top: 15px;
+    margin-top: 20px;
   }
 
   #aboutme > ul {
@@ -4676,7 +4705,7 @@ img  {
 
   #aboutme > ul > li {
     padding: 3px 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .button-secondary-container {
