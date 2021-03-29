@@ -579,7 +579,7 @@ h6 {
   font-size: .7em;
   font-weight: 300;
   margin: 0 0 3px 0;
-  letter-spacing: .08em;
+  letter-spacing: .1em;
   line-height: 2;
 }
 
@@ -603,6 +603,7 @@ p {
   font-weight: 500;
   transition-duration: 0.2s;
   margin-top: 2px;
+  letter-spacing: 0.06em;
 }
 
 .nav-link:visited {
@@ -943,20 +944,20 @@ img  {
     padding: 0;
 }
 
+[class$="in-0"]{
+  animation-delay: .5s;
+}
+
 [class$="in-1"]{
-  animation-delay: 3.5s;
+  animation-delay: 1.2s;
 }
 
 [class$="in-2"]{
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 [class$="in-3"]{
-  animation-delay: 4s;
-}
-
-[class$="in-4"]{
-  animation-delay: 1.5s;
+  animation-delay: 3.2s;
 }
 
 @keyframes slide-up-fade-in{
@@ -2138,7 +2139,23 @@ img  {
 /* ----------------------------------------------------------------------------------------------- */
 /*------------------------------------------------------------------------------------------------ */
 
-@media only screen and (min-width:375px)  { /* --- portrait mode for X --- */
+/*
+MOST IMPORTANT:
+
+iPhone X Max/iPhone 11, iPhone 11 Pro Max, iPhone XR (20.3% of US users)
+iPhone X (12.15%)
+iPhone 6/7/8 (12.07%)
+iPhone 6/7/8 Plus (5.8%)
+
+iPad (47.86%)
+
+1920x1080 (21.6%)
+1366x768 (14.5%)
+1440x900 (9%)
+1536x864 (7.95%)
+*/
+
+@media only screen and (min-width:375px)  { /* --- iPhone X, 11 Pro, Xs (375x812), 12.15% of USA || iPhone 6/7/8 (375x667), 12.07% of USA*/
 
   /* ---- Header section for screen size 375px ----- */
   main {
@@ -2155,23 +2172,30 @@ img  {
     margin: 9px 0 0 0;
   }
 
-  .container > h2 {       /* --- used for "I love to design..." --- */
-    font-size: .9em;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    line-height: 2.7;
-    letter-spacing: 0.045em;
+  #hero-section {      /* --- helps H2 in hero-section be higher in the mobile screen --- */
+    padding: 0 0 100px 0;
   }
 
-  .container > h3 {       /* --- used for "I love to design..." --- */
-    text-align: center;
+  .container > h2 {       /* --- used for "I create high-performing..." --- */
+    font-size: 1.1em;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    max-width: 1200px;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
-    margin-bottom: 30px;
-    font-size: .85em;
-    line-height: 1.7;
+    margin-bottom: 50px;
+    font-size: .8em;
+    line-height: 2;
+    max-width: 1200px;
   }
+
+/*
+  .container > h3 {
+    text-align: center;
+  }
+*/
+
 
   .scrolldown {
     font-size: 1.05em;
@@ -2261,33 +2285,7 @@ img  {
 
 }
 
-@media only screen and (min-width:375px) and (max-height:667px)  { /* --- portrait mode for iPhone 6/7/8 ---
-
-  /* ---- Header section for screen size 375px ----- */
-  .container > h2 {       /* --- used for "I love to design..." --- */
-    font-size: 1.6em;
-    margin-top: 25px;
-    margin-bottom: 35px;
-    line-height: 1.4;
-  }
-
-  .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
-    margin-bottom: 80px;
-    font-size: 1em;
-    line-height: 1.4;
-  }
-
-  .scrolldown {
-    font-size: 1em;
-  }
-
-  #copyright > h6 {
-    font-size: .8em;
-  }
-
-}
-
-@media only screen and (min-width:414px)  { /* --- portrait mode for iPhone 6/7/8 Plus --- */
+@media only screen and (min-width:414px)  { /* --- iPhone X Max/iPhone 11, iPhone 11 Pro Max, iPhone XR (414x896); 20.36% of USA use || iPhone 6/7/8 Plus (414x736), 5.8% of USA --- */
 
   /* ---- Header section for screen size 414px ----- */
   main {
@@ -2304,18 +2302,21 @@ img  {
     margin: 10px 0 0 0;
   }
 
-  .container > h2 {       /* --- used for "I love to design..." --- */
-    font-size: 1.9em;
-    margin-top: 40px;
-    margin-bottom: 70px;
-    line-height: 1.6;
+  .container > h2 {       /* --- used for "I create high-performing..." --- */
+    font-size: 1.2em;
+    margin-bottom: 40px;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
-    margin-bottom: 80px;
-    font-size: 1.3em;
-    line-height: 1.6;
+    margin-bottom: 70px;
+    font-size: .9em;
+    line-height: 2;
   }
+
+  h6 {   /* --- used for Scroll indicator on mobile --- */
+    font-size: .6em;
+  }
+
 
   .scrolldown {
     font-size: 1.3em;
@@ -2414,6 +2415,14 @@ img  {
     max-width: 65px;
     padding: 6px 8px 6px 20px;
     margin: 10px 0 0 0;
+  }
+
+  .container > h2 {       /* --- used for "I create high-performing..." --- */
+    text-align: center;
+  }
+
+  .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
+    text-align: center;
   }
 
   .scrolldown {
@@ -2646,7 +2655,7 @@ img  {
 }
 
 
-@media only screen and (min-width:736px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px) --- */
+@media only screen and (min-width:736px)  { /* --- landscape mode for iPhone 6/7/8 Plus, portrait for iPad/iPad Mini (768px; 47% of USA who use tablets) --- */
 
   /* ---- Header section for screen size 736px ----- */
 
@@ -4520,7 +4529,7 @@ img  {
 
 }
 
-@media only screen and (min-width:1366px)  { /* --- landscape mode for iPad Pro --- */
+@media only screen and (min-width:1366px)  { /* --- landscape mode for iPad Pro. 14.5% of USA uses this screen size (1366x768)--- */
 
 
   /* ------ Home page for screen size 1366px ----- */
@@ -4536,7 +4545,7 @@ img  {
     margin-bottom: 100px;
     line-height: 2.5;
     font-weight: normal;
-    word-spacing: .48em;
+    word-spacing: .46em;
     font-family: 'Homemade Apple', sans-serid;
   }
 
@@ -4764,3 +4773,5 @@ img  {
   }
 
 }
+
+@media only screen and (min-width:1920px)  { /* --- 21.6% of USA uses this screen size (1920x1080)--- */
