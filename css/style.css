@@ -957,7 +957,7 @@ img  {
 }
 
 [class$="in-3"]{
-  animation-delay: 3.2s;
+  animation-delay: 3.3s;
 }
 
 @keyframes slide-up-fade-in{
@@ -4722,7 +4722,7 @@ iPad (47.86%)
   #aboutme > h3 {
     font-size: 1.8em;
     padding-bottom: 0;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   #aboutme > ul {
