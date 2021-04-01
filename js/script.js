@@ -215,7 +215,7 @@ for (i=0; i < writtenTextString.length; i++) {
 function changeOpacity(elem) {
   elem.style.opacity = 1;
 };
-var interval = 30; // Pause between characters (in milliseconds)
+var interval = 25; // Pause between characters (in milliseconds). BEST SPEED IS 26
 for (i=0; i < writtenText.childElementCount; i++) {
   setTimeout(changeOpacity, i * interval + 500, writtenText.children[i]);
 };
