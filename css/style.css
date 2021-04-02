@@ -470,6 +470,7 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  padding-top: 70px;
   margin: 0;
 }
 
@@ -503,7 +504,7 @@ nav > ul > li {
 
 .navtoggle.responsive li  { /* override  previous code and shows the complete menu when .responsive class is toggled */
   display: block;
-  padding: 15px 50px;
+  padding: 20px 50px;
   text-align: center;
   background-color: inherit;
 }
