@@ -2547,7 +2547,7 @@ iPad (47.86%)
   .container > h2 {       /* --- used for "I create high-performing..." --- */
     font-size: 1.3em;
     margin-bottom: 40px;
-    margin-top: 300px;
+    margin-top: 200px;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
@@ -3138,6 +3138,29 @@ iPad (47.86%)
     margin-right: auto;
     text-align: center;
     padding: 0;
+  }
+
+  .container > h2 {
+    font-size: 2.9em;
+    margin-top: 0px;
+    letter-spacing: 0.045em;
+  }
+
+  .container > h2 {       /* --- used for "I create high-performing design..." --- */
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    line-height: 2.2;
+    font-weight: normal;
+    word-spacing: .46em;
+    font-family: 'Homemade Apple', sans-serid;
+  }
+
+  .container > h5 {
+    line-height: 2.5;
+    font-size: 1.4em;
+    margin-bottom: 110px;
+    word-spacing: .30em;
   }
 
   header {
