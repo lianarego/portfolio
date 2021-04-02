@@ -2,7 +2,7 @@
 Colors used:
 Primary color (orange): R223 G130 B68. HEX #ff7f50, darker orange: #df7244
 Secondary color (light blue): R136 G206 B247, HEX #88cef7
-Light blue color: #e0f3ff; With opacity: rgba(221, 247, 251, .9);
+Light blue color: #e0f3ff; With opacity: rgba(224, 243, 255, 1);
 */
 
 * {
@@ -153,7 +153,7 @@ font-family: 'Hind Guntur', sans-serif;
   }
 
   #contact-header {
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 90%;
     text-align: center;
     margin: auto;
@@ -182,9 +182,30 @@ font-family: 'Hind Guntur', sans-serif;
 
 /* ===============   STYLING for ABOUT PAGE   ============== */
 
-  #aboutme > ul > li {
-    list-style-type: square;
-  }
+    #aboutme {
+      width: 88%;
+      margin: auto;
+    }
+
+    #aboutme > ul {
+      margin: 2px 0;
+    }
+
+    #aboutme > ul > li {
+      padding: 3px 0;
+      list-style-type: square;
+      font-size: .85em;
+      margin: 0;
+      letter-spacing: 0.015em;
+      word-spacing: 0.07em;
+    }
+
+    #aboutme > h3 {
+      font-weight: 700;
+      color: #ff7f50;
+      margin-top: 15px;
+      font-size: 1.5em;
+    }
 
 /* ===============   LAYOUT and STYLING for HOME SCREEN   ============== */
 
@@ -290,6 +311,28 @@ font-family: 'Hind Guntur', sans-serif;
   margin-right: auto;
 }
 
+.project-hover {
+  display: flex;
+  flex-direction: column;
+  /* background: rgba(255, 255, 255, 0.9); */
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.8));
+  color: rgb(51, 51, 51);
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s;
+}
+
 #rolesummary-parent {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -362,7 +405,7 @@ footer {
 }
 
 #hero-section {
-  padding: 0px 0 50px 0;
+  padding: 0px 0 20px 0;
   display: flex; /* inline-block; */
   flex-direction: column;
   justify-content: center;
@@ -409,29 +452,8 @@ footer {
   max-width: 500px;
 }
 
-#aboutme {
-  width: 88%;
-  margin: auto;
-}
-
-#aboutme > ul {
-  margin: 2px 0;
-}
-
-#aboutme > ul > li {
-  padding: 3px 0;
-  margin: 0;
-}
-
-#aboutme > h3 {
-  font-weight: 700;
-  color: #ff7f50;
-  margin-top: 15px;
-  font-size: 1.5em;
-}
-
 header {
-  padding: 10px 0 0 0;
+  padding: 20px 0 0 0;
   position: fixed;
   z-index: 5;
   width: 100%;
@@ -465,7 +487,7 @@ nav > ul > li {
 .navtoggle li .icon {
   position: absolute;
   right: 25px;
-  top: -7px;
+  top: 0px;
   height: 53px;
   font-size: 43px;
 }
@@ -526,7 +548,7 @@ body {
 
 #greeting > h1 {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
   padding: 0;
   margin: 20px 0 0 0;
 }
@@ -603,7 +625,7 @@ p {
   font-weight: 500;
   transition-duration: 0.2s;
   margin-top: 2px;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
 }
 
 .nav-link:visited {
@@ -676,7 +698,7 @@ nav > ul > li.dropdown-parent ul {
   text-align: center;
   background-color: #ff7f50;
   color: white;
-  padding: 9px;
+  padding: 10px 12px 2px 12px;
   font-size: 1em;
   text-decoration: none;
   border: 2px solid #ff7f50;
@@ -686,6 +708,7 @@ nav > ul > li.dropdown-parent ul {
   background-color: #df7244;
   color: #ffffff;
   transition: 0.2s;
+  padding: 10px 12px 2px 12px;
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -698,8 +721,8 @@ nav > ul > li.dropdown-parent ul {
   margin: auto;
   text-align: center;
   background-color: white;
+  padding: 10px 12px 1px 12px;
   color: #ff7f50;
-  padding: 8px;
   font-size: 1em;
   text-decoration: none;
   border: 3px solid #ff7f50;
@@ -710,6 +733,7 @@ nav > ul > li.dropdown-parent ul {
   color: #ffffff;
   transition: 0.2s;
   display: inline-block;
+  padding: 10px 12px 1px 12px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -2142,12 +2166,12 @@ img  {
 /*
 MOST IMPORTANT:
 
-iPhone X Max/iPhone 11, iPhone 11 Pro Max, iPhone XR (20.3% of US users)
-iPhone X (12.15%)
-iPhone 6/7/8 (12.07%)
-iPhone 6/7/8 Plus (5.8%)
+iPhone X Max/iPhone 11, iPhone 11 Pro Max, iPhone XR (414x896 -- 20.3% of US users)
+iPhone X (375x812 -- 12.15%)
+iPhone 6/7/8 (375x667 -- 12.07%)
+iPhone 6/7/8 Plus (414x736 -- 5.8%)
 
-iPad (47.86%)
+iPad (768x1024 -- 47.86%)
 
 1920x1080 (21.6%)
 1366x768 (14.5%)
@@ -2173,11 +2197,11 @@ iPad (47.86%)
   }
 
   #hero-section {      /* --- helps H2 in hero-section be higher in the mobile screen --- */
-    padding: 0 0 100px 0;
+    padding: 0 0 90px 0;
   }
 
   .container > h2 {       /* --- used for "I create high-performing..." --- */
-    font-size: 1.1em;
+    font-size: .9em;
     margin-top: 0px;
     margin-bottom: 40px;
     max-width: 1200px;
@@ -2258,7 +2282,7 @@ iPad (47.86%)
 
   #aboutme > ul > li {
     padding: 4px 0;
-    font-size: 1.2em;
+    font-size: 1.05em;
   }
 
   .button-primary {
@@ -2290,10 +2314,6 @@ iPad (47.86%)
   /* ---- Header section for screen size 414px ----- */
   main {
     padding-top: 80px;
-  }
-
-  .navtoggle li .icon {
-    font-size: 55px;
   }
 
   .logo {
@@ -2367,7 +2387,7 @@ iPad (47.86%)
 
   #aboutme > ul > li {
     padding: 4px 0;
-    font-size: 1.3em;
+    font-size: 1.15em;
   }
 
   .button-primary {
@@ -2380,8 +2400,8 @@ iPad (47.86%)
 
   /* ---- Contact page for screen size 414px ----- */
   #contact-header {
-    font-size: 1.8em;
-    margin-top: 15px;
+    font-size: 1.7em;
+    margin-top: 20px;
     }
 
   #email-address {
@@ -2405,16 +2425,6 @@ iPad (47.86%)
   /* ---- Header section for screen size 568px ----- */
   main {
     padding-top: 80px;
-  }
-
-  .navtoggle li .icon {
-    font-size: 55px;
-  }
-
-  .logo {
-    max-width: 65px;
-    padding: 6px 8px 6px 20px;
-    margin: 10px 0 0 0;
   }
 
   .container > h2 {       /* --- used for "I create high-performing..." --- */
@@ -2441,7 +2451,6 @@ iPad (47.86%)
 
   #aboutme > ul > li {
     padding: 4px 0;
-    font-size: 1em;
   }
 
   .button-primary {
@@ -2537,7 +2546,6 @@ iPad (47.86%)
   .logo {
     max-width: 65px;
     padding: 6px 8px 6px 20px;
-    margin: 10px 0 0 0;
   }
 
   #hero-section {      /* --- helps H2 in hero-section be higher in the mobile screen --- */
@@ -2612,7 +2620,6 @@ iPad (47.86%)
   }
 
   #aboutme > ul > li {
-    padding: 4px 0;
     font-size: 1.1em;
   }
 
@@ -2708,7 +2715,12 @@ iPad (47.86%)
 
   #aboutme > ul > li {
     padding: 4px 0;
-    font-size: 1em;
+    font-size: .9em;
+  }
+
+  #greeting > h1 {
+    font-size: 2.1em;
+    padding-top: 20px;
   }
 
   .button-primary-container {
@@ -2735,10 +2747,6 @@ iPad (47.86%)
 
   /* ---- About Me page for screen size 768px ----- */
 
-  #greeting > h1 {
-    font-size: 2.5em;
-  }
-
   #aboutme {
     width: 67%;
     margin: auto;
@@ -2753,7 +2761,6 @@ iPad (47.86%)
 
   #contact-header {
     font-size: 1.9em;
-    width: 50%;
     text-align: center;
     margin-top: 30px;
     }
@@ -2826,6 +2833,10 @@ iPad (47.86%)
     display: none;
   }
 
+  .project-hover:hover {
+    opacity: 1;
+  }
+
   .project-info {
     display: none;
   }
@@ -2889,8 +2900,8 @@ iPad (47.86%)
   }
 
   #aboutme > ul > li {
-    padding: 1.5px 0;
-    font-size: 0.8em;
+    padding: 3px 0;
+    font-size: ..7em;
   }
 
   .button-primary {
@@ -2903,12 +2914,12 @@ iPad (47.86%)
 
   .button-primary-container {
     float: none;
-    margin-left: 5em; /* spacing between primary and secondary buttons */
+    margin-left: 2.5em; /* spacing between primary and secondary buttons */
     padding: 20px 20px 20px 0;
   }
 
   .button-secondary-container {
-    margin-left: 2em;  /* spacing to the left of secondary button */
+    margin-left: 4.5em;  /* spacing to the left of secondary button */
     padding: 20px 0 20px 0;
   }
 
@@ -2926,12 +2937,12 @@ iPad (47.86%)
     width: 47%;
     text-align: center;
     margin-left: 5vw;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: 30px;
     }
 
   #email-address {
-      font-size: 1.6em;
+      font-size: 1.4em;
       width: 50%;
       margin-bottom: 40px;
       padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
@@ -3165,14 +3176,8 @@ iPad (47.86%)
 
   header {
       text-align: unset;
-      padding: 20px 0 10px;
       font-size: 18px;
     }
-
-  .logo {
-    max-width: 75px;
-    margin-top: 0px;
-  }
 
   nav {
     width: auto;
@@ -3352,7 +3357,7 @@ iPad (47.86%)
 
   #aboutme > ul > li {
     padding: 3px 0;
-    font-size: 0.95em;
+    font-size: .8em;
   }
 
   .button-primary {
@@ -3369,7 +3374,7 @@ iPad (47.86%)
   }
 
   .button-secondary-container {
-    margin-left: 4em; /* spacing to the left of secondary button */
+    margin-left: 3em; /* spacing to the left of secondary button */
     padding: 25px 0 20px 0;
   }
 
@@ -3386,15 +3391,15 @@ iPad (47.86%)
   }
 
   #contact-header {
-    font-size: 2.6em;
+    font-size: 2.2em;
     margin-top: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     }
 
   #email-address {
-      font-size: 2.2em;
+      font-size: 1.7em;
       width: 50%;
-      margin-bottom: 70px;
+      margin-bottom: 50px;
       padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
   }
 
@@ -4723,7 +4728,7 @@ iPad (47.86%)
   }
 
   #greeting > h1 {
-    font-size: 1.9em;
+    font-size: 1.7em;
     text-align: left;
     padding: 0;
     margin: 0;
@@ -4770,10 +4775,11 @@ iPad (47.86%)
   #aboutme > ul > li {
     padding: 3px 0;
     font-size: 1.1em;
+    line-height: 1.45;
   }
 
   .button-secondary-container {
-    margin-left: 8em;
+    margin-left: 5.5em;
   }
 
   /* ----- Contact page for 1366px ----- */
@@ -4786,13 +4792,14 @@ iPad (47.86%)
   }
 
   #contact-header {
-    font-size: 3.5em;
-    margin-top: 135px;
-    margin-bottom: 60px;
+    font-size: 3em;
+    margin-top: 140px;
+    margin-bottom: 70px;
+    line-height: 1.75;
     }
 
   #email-address {
-      font-size: 2.6em;
+      font-size: 2.4em;
       width: 50%;
       margin-bottom: 100px;
       padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
