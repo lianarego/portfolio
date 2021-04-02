@@ -2197,23 +2197,26 @@ iPad (768x1024 -- 47.86%)
   }
 
   #hero-section {      /* --- helps H2 in hero-section be higher in the mobile screen --- */
-    padding: 0 0 90px 0;
+    padding: 0 0 20px 0;
   }
 
   .container > h2 {       /* --- used for "I create high-performing..." --- */
-    font-size: .9em;
+    font-size: 1em;
     margin-top: 0px;
     margin-bottom: 40px;
     max-width: 1200px;
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     font-size: .8em;
     line-height: 2;
     max-width: 1200px;
   }
 
+  #hero-section {
+    height: calc(85vh - 60px);
+  }
 /*
   .container > h3 {
     text-align: center;
@@ -2359,7 +2362,7 @@ iPad (768x1024 -- 47.86%)
 
   p {
     margin: 0 0 .5em 0;
-    font-size: 1.1em;
+    font-size: 1.075em;
 
   }
 
@@ -2433,6 +2436,18 @@ iPad (768x1024 -- 47.86%)
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
     text-align: center;
+  }
+
+  #hero-section {
+    padding: 0px 0 20px 0;
+    display: flex; /* inline-block; */
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* ---- About Me page for screen size 568px ----- */
@@ -2612,7 +2627,7 @@ iPad (768x1024 -- 47.86%)
   }
 
   #aboutme > h3 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   #aboutme > ul {
@@ -2675,8 +2690,8 @@ iPad (768x1024 -- 47.86%)
   /* ---- Header section for screen size 736px ----- */
 
   .container > h2 {       /* --- used for "I love to design..." --- */
-    font-size: 1.8em;
-    margin-top: 0px;
+    font-size: 1.75em;
+    margin-top: 5px;
     margin-bottom: 100px;
     line-height: 2.5;
     letter-spacing: 0.035em;
