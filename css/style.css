@@ -984,6 +984,10 @@ img  {
   animation-delay: 3.3s;
 }
 
+[class$="in-4"]{
+  animation-delay: 3.8s;
+}
+
 @keyframes slide-up-fade-in{
     0% {
         opacity:0;
