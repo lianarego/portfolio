@@ -621,7 +621,7 @@ p {
 .nav-link {   /* styling for navigation links (Work, About, Contact) */
   color: #ff7f50;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.35em;
   font-weight: 500;
   transition-duration: 0.2s;
   margin-top: 2px;
@@ -4587,7 +4587,7 @@ iPad (768x1024 -- 47.86%)
     margin-bottom: 100px;
     line-height: 2.5;
     font-weight: normal;
-    word-spacing: .46em;
+    word-spacing: .4em;
     font-family: 'Homemade Apple', sans-serid;
   }
 
@@ -4668,7 +4668,7 @@ iPad (768x1024 -- 47.86%)
   }
 
   p {
-   font-size: 1.2em;
+   font-size: 1.15em;
    margin-top: .5em;
    line-height: 1.6;
    margin-bottom: 1.5em;
