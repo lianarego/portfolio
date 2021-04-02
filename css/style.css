@@ -2425,10 +2425,6 @@ iPad (47.86%)
     text-align: center;
   }
 
-  .scrolldown {
-    display: none;
-  }
-
   /* ---- About Me page for screen size 568px ----- */
 
   #greeting {
@@ -2544,6 +2540,22 @@ iPad (47.86%)
     margin: 10px 0 0 0;
   }
 
+  #hero-section {      /* --- helps H2 in hero-section be higher in the mobile screen --- */
+    padding: 0 0 100px 0;
+  }
+
+  .container > h2 {       /* --- used for "I create high-performing..." --- */
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    margin-top: 300px;
+  }
+
+  .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
+    margin-bottom: 70px;
+    font-size: .9em;
+    line-height: 2;
+  }
+
   /* ---- TerraCare for screen size 640px ----- */
 
   .backgroundimage {
@@ -2644,10 +2656,6 @@ iPad (47.86%)
     opacity: 1;
   }
 
-  .project-info {
-    display: none;
-  }
-
   header {
     background-color: #e0f3ff;
   }
@@ -2660,10 +2668,10 @@ iPad (47.86%)
   /* ---- Header section for screen size 736px ----- */
 
   .container > h2 {       /* --- used for "I love to design..." --- */
-    font-size: 1em;
-    margin-top: 50px;
-    margin-bottom: 85px;
-    line-height: 2;
+    font-size: 1.8em;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    line-height: 2.5;
     letter-spacing: 0.035em;
     font-family: 'Homemade Apple', sans-serif;
   }
@@ -2674,8 +2682,8 @@ iPad (47.86%)
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
     margin-bottom: 140px;
-    font-size: 1.2em;
-    line-height: 1.6;
+    font-size: 1.4em;
+    line-height: 1.7;
   }
 
   .scrolldown {
@@ -2814,7 +2822,13 @@ iPad (47.86%)
     border-top: 0.5px solid grey;
   }
 
+  .scrolldown {
+    display: none;
+  }
 
+  .project-info {
+    display: none;
+  }
   /* ------ Busy Bee project for screen size 812px ----- */
 
   h2 {
