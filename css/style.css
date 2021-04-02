@@ -2694,6 +2694,10 @@ iPad (768x1024 -- 47.86%)
 
   /* ---- Header section for screen size 736px ----- */
 
+  nav > ul {
+    padding: 0;
+  }
+
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 1.7em;
     margin-top: 5px;
