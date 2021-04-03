@@ -164,7 +164,7 @@ font-family: 'Hind Guntur', sans-serif;
   #email-address {
     display: inline-block;
     color: #ff7f50;
-    font-size: 1.2em;
+    font-size: 1.1em;
     width: 100%;
     margin: auto;
     margin-top: 20px;
@@ -410,7 +410,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -470,6 +470,7 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  padding-top: 50px;
   margin: 0;
 }
 
@@ -2194,6 +2195,10 @@ iPad (768x1024 -- 47.86%)
     font-size: 50px;
   }
 
+  nav > ul {
+    padding-top: 80px;
+  }
+
   .logo {
     max-width: 60px;
     padding: 6px 8px 6px 20px;
@@ -2219,7 +2224,7 @@ iPad (768x1024 -- 47.86%)
   }
 
   #hero-section {
-    height: calc(85vh - 60px);
+    min-height: calc(85vh - 60px);
   }
 /*
   .container > h3 {
@@ -2434,6 +2439,10 @@ iPad (768x1024 -- 47.86%)
     padding-top: 80px;
   }
 
+  nav > ul {
+    padding-top: 0;
+  }
+
   .container > h2 {       /* --- used for "I create high-performing..." --- */
     text-align: center;
   }
@@ -2448,7 +2457,7 @@ iPad (768x1024 -- 47.86%)
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -2574,7 +2583,7 @@ iPad (768x1024 -- 47.86%)
   .container > h2 {       /* --- used for "I create high-performing..." --- */
     font-size: 1.3em;
     margin-bottom: 40px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
 
   .container > h5 {     /* --- used for "I'm so happy to see you..." --- */
@@ -3199,6 +3208,8 @@ iPad (768x1024 -- 47.86%)
   .container > h5 {
     line-height: 2.5;
     font-size: 1.4em;
+    max-width: 90%;
+    margin: auto;
     margin-bottom: 110px;
     word-spacing: .30em;
   }
@@ -4622,9 +4633,10 @@ iPad (768x1024 -- 47.86%)
 
   .container > h5 {
     line-height: 2.5;
-    font-size: 1.3em;
+    font-size: 1.35em;
+    max-width: 95%;
     margin-bottom: 110px;
-    word-spacing: .30em;
+    word-spacing: .33em;
   }
 
   .parent {
