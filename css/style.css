@@ -9,6 +9,107 @@ Light blue color: #e0f3ff; With opacity: rgba(224, 243, 255, 1);
   box-sizing: border-box;
 }
 
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 55px;
+  cursor: pointer;
+  /* transition: all .5s ease-in-out; */
+}
+
+.menu-btn_burger {
+  position: absolute;
+  left: 0;
+  width: 45px;
+  height: 6px;
+  background: #ff7f50;
+  /* transition: all .5s ease-in-out; */
+  animation-name: burger-translate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes burger-translate {
+  0% {transform: translateX(-50px); background: transparent;}
+  100% {transform: translateX(0); background: #ff7f50;}
+}
+
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 45px;
+  height: 6px;
+  background: #ff7f50;
+  /* transition: all .5s ease-in-out; */
+}
+
+.menu-btn_burger::before {
+  animation-name: before-burger-translate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform: translateY(-15px);
+}
+
+@keyframes before-burger-translate {
+  0% {transform: rotate(45deg) translate(35px, -35px);}
+  100% {transform: rotate(0) translate(0, -15px);}
+}
+
+.menu-btn_burger::after {
+  animation-name: after-burger-translate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform: translateY(15px);
+}
+
+@keyframes after-burger-translate {
+  0% {transform: rotate(-45deg) translate(35px, 35px);}
+  100% {transform: rotate(0) translate(0, 15px);}
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn_burger {
+  animation-name: burger-translate-2;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform: translateX(50px);
+  background: transparent;
+}
+
+@keyframes burger-translate-2 {
+  0% {transform: translateX(0); background: #ff7f50;}
+  100% {transform: translateX(50px); background: transparent;}
+}
+
+.menu-btn.open .menu-btn_burger::before{
+  animation-name: before-burger-translate-2;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform: rotate(45deg) translate(-35px, 35px);
+}
+
+@keyframes before-burger-translate-2 {
+  0% {transform: rotate(0) translate(0, -15px);}
+  100% {transform: rotate(-45deg) translate(-35px, -35px);}
+}
+
+.menu-btn.open .menu-btn_burger::after{
+  animation-name: after-burger-translate-2;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  transform: rotate(-45deg) translate(-35px, -35px);
+}
+
+@keyframes after-burger-translate-2 {
+  0% {transform: rotate(0) translate(0, 15px);}
+  100% {transform: rotate(45deg) translate(-35px, 35px);}
+}
+
 /* Offset anchors when hyperlinking to IDs */
 a.anchor {
   display: block;

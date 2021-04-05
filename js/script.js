@@ -9,6 +9,7 @@ function menuToggle() {
     myNavToggle.className = 'navtoggle';
   }
 
+  /*
   var menuIcon = document.getElementById('menu-icon');
   if (menuIcon.className === 'fas fa-bars') {
     menuIcon.className = 'fas fa-times';
@@ -17,6 +18,7 @@ function menuToggle() {
     menuIcon.className = 'fas fa-bars';
     $('.navtoggle li .icon').css("font-size" , "40px");
   }
+  */
 
   var indexOverlay = document.getElementById('index-overlay');
   if (indexOverlay !== null) {
@@ -60,9 +62,18 @@ function menuClose() {
   var myNavToggle = document.getElementById('myNavtoggle');
   myNavToggle.className = 'navtoggle';
 
+  /*
   var menuIcon = document.getElementById('menu-icon');
   menuIcon.className = 'fas fa-bars';
   $('.navtoggle li .icon').css("font-size" , "40px");
+  */
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
 
   var indexOverlay = document.getElementById('index-overlay');
   if (indexOverlay !== null) {
@@ -205,17 +216,32 @@ findMe.forEach(element => {
 
 // Change written text to a list of <span> elements, each with one character
 var writtenText = document.getElementById('written-text');
-var writtenTextString = writtenText.innerText;
-writtenText.innerHTML = ''; // Empty string
-for (i=0; i < writtenTextString.length; i++) {
-  // Add a <span> with one character, but make it transparent
-  writtenText.innerHTML += '<span style="opacity: 0;">' + writtenTextString[i] + '</span>'
+if (writtenText !== null) {
+  var writtenTextString = writtenText.innerText;
+  writtenText.innerHTML = ''; // Empty string
+  for (i=0; i < writtenTextString.length; i++) {
+    // Add a <span> with one character, but make it transparent
+    writtenText.innerHTML += '<span style="opacity: 0;">' + writtenTextString[i] + '</span>'
+  };
+  // Change opacity of written text
+  function changeOpacity(elem) {
+    elem.style.opacity = 1;
+  };
+  var interval = 25; // Pause between characters (in milliseconds). BEST SPEED IS 26
+  for (i=0; i < writtenText.childElementCount; i++) {
+    setTimeout(changeOpacity, i * interval + 500, writtenText.children[i]);
+  };
 };
-// Change opacity of written text
-function changeOpacity(elem) {
-  elem.style.opacity = 1;
-};
-var interval = 25; // Pause between characters (in milliseconds). BEST SPEED IS 26
-for (i=0; i < writtenText.childElementCount; i++) {
-  setTimeout(changeOpacity, i * interval + 500, writtenText.children[i]);
-};
+
+
+const menuBtn = document.querySelector('.menu-btn');
+let menuOpen = false;
+menuBtn.addEventListener('click',() => {
+  if(!menuOpen) {
+    menuBtn.classList.add('open');
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove('open');
+    menuOpen = false;
+  }
+});
