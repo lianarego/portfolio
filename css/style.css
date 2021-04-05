@@ -431,7 +431,7 @@ font-family: 'Hind Guntur', sans-serif;
   right: 0;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.15s;
+  transition: opacity 0.5s;
 }
 
 .project-hover-child {
@@ -446,6 +446,9 @@ font-family: 'Hind Guntur', sans-serif;
   justify-content: space-between;
   align-items: center;
   padding: 18px 50px;
+  animation-name: slide-down-fade-out;
+  animation-iteration-count: 1;
+  animation-duration: 0.5s;
 }
 
 #rolesummary-parent {
@@ -1156,6 +1159,17 @@ img  {
     100% {
         opacity:1;
         -ms-transform:  translate(0px,0px)  ;
+    }
+}
+
+@keyframes slide-down-fade-out{
+    0% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+    }
+    100% {
+        opacity:0;
+        transform:  translate(0px,40px)  ;
     }
 }
 
@@ -2979,6 +2993,13 @@ iPad (768x1024 -- 47.86%)
 
   .project-hover:hover {
     opacity: 1;
+    transition: opacity 0.15s;
+  }
+
+  .project-hover:hover > .project-hover-child {
+    animation-name: slide-up-fade-in;
+    animation-iteration-count: 1;
+    animation-duration: 0.65s;
   }
 
   .project-info {
