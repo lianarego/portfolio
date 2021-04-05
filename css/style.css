@@ -21,24 +21,6 @@ font-family: 'Homemade Apple', sans-serif;
 font-family: 'Satisfy', sans-serif;
 font-family: 'Hind Guntur', sans-serif;
 
-.rotate {
-
-/* Safari */
--webkit-transform: rotate(-90deg);
-
-/* Firefox */
--moz-transform: rotate(-90deg);
-
-/* IE */
--ms-transform: rotate(-90deg);
-
-/* Opera */
--o-transform: rotate(-90deg);
-
-float: left;
-
-}
-
 /* ===============   STYLING for PROJECT PAGES   ============== */
 
   #project-header {
@@ -449,7 +431,7 @@ float: left;
   right: 0;
   justify-content: center;
   align-items: center;
-  transition: opacity 0.4s;
+  transition: opacity 0.15s;
 }
 
 .project-hover-child {
@@ -463,7 +445,7 @@ float: left;
   right: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 60px;
+  padding: 18px 50px;
 }
 
 #rolesummary-parent {
