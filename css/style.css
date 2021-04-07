@@ -21,6 +21,19 @@ font-family: 'Homemade Apple', sans-serif;
 font-family: 'Satisfy', sans-serif;
 font-family: 'Hind Guntur', sans-serif;
 
+.handwave {
+  animation-name: handwave-animation;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes handwave-animation {
+  from {transform: rotate(0);}
+  to {transform: rotate(25deg);}
+}
+
 /* ===============   STYLING for PROJECT PAGES   ============== */
 
   #project-header {
