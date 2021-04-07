@@ -564,10 +564,38 @@ footer {
 .logo {
   max-width: 60px;
   background-color: #ff7f50;
-  padding: 4px 6px 4px 18px;
+  padding: 0px 0px 0px 15px;
   text-align: left;
   display: inline-block;
   margin: 8px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.flyhome {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: .07em;
+  width: 200px;
+  position: absolute;
+  bottom: -15px; /* the higher the number, the lower the words appear next to logo */
+  left: -55px;
+  transform-origin: top left;
+  transition: all .2s ease;
+}
+
+.logo:hover .flyhome {
+  left: 13px;
+}
+
+.logo img {
+  transform: translate(0, 0);
+  transition: all .2s ease;
+}
+
+.logo:hover img {
+  transform: translate(8px, -10px);
 }
 
 .navtoggle > a {
@@ -2343,7 +2371,7 @@ iPad (768x1024 -- 47.86%)
 
   .logo {
     max-width: 60px;
-    padding: 6px 8px 6px 20px;
+    padding: 6px 8px 6px 18px;
     margin: 9px 0 0 0;
   }
 
@@ -2472,8 +2500,7 @@ iPad (768x1024 -- 47.86%)
 
   .logo {
     max-width: 65px;
-    padding: 6px 8px 6px 20px;
-    margin: 10px 0 0 0;
+    padding: 6px 8px 6px 18px;
   }
 
   .container > h2 {       /* --- used for "I create high-performing..." --- */
@@ -2714,8 +2741,9 @@ iPad (768x1024 -- 47.86%)
   }
 
   .logo {
-    max-width: 65px;
-    padding: 6px 8px 6px 20px;
+    max-width: 75px;
+    padding: 6px 10px 6px 18px;
+    margin-top: 4px;
   }
 
   #hero-section {      /* --- helps H2 in hero-section be higher in the mobile screen --- */
@@ -2799,11 +2827,6 @@ iPad (768x1024 -- 47.86%)
 
   .button-secondary {
     font-size: 1.35em;
-  }
-
-  .logo {
-    max-width: 75px;
-    margin-top: 0px;
   }
 
   .navtoggle > a {
