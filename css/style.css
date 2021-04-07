@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary color (orange): R223 G130 B68. HEX #ff7f50, darker orange: #df7244
+Primary color (orange): R255 G127 B79. HEX #ff7f50, darker orange: #df7244
 Secondary color (light blue): R136 G206 B247, HEX #88cef7
 Light blue color: #e0f3ff; With opacity: rgba(224, 243, 255, 1);
 */
@@ -582,7 +582,7 @@ footer {
   bottom: -15px; /* the higher the number, the lower the words appear next to logo */
   left: -55px;
   transform-origin: top left;
-  transition: all .2s ease;
+  transition: all .3s ease;
 }
 
 .logo:hover .flyhome {
@@ -591,7 +591,7 @@ footer {
 
 .logo img {
   transform: translate(0, 0);
-  transition: all .2s ease;
+  transition: all .3s ease;
 }
 
 .logo:hover img {
