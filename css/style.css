@@ -106,7 +106,7 @@ font-family: 'Hind Guntur', sans-serif;
     background: rgba(255, 255, 255, 0.3);  /* Last value is background image opacity; the higher the number, the more transparent it is */
   }
 
-  #showcasedesktop {
+  .showcasedesktop {
     display: none;
   }
 
@@ -156,6 +156,7 @@ font-family: 'Hind Guntur', sans-serif;
   left: 0;
   width: 100%;
   height: 100%;
+  border: 0px;
   }
 
   /* ===============   STYLING for CONTACT PAGE   ============== */
@@ -2691,11 +2692,11 @@ iPad (768x1024 -- 47.86%)
   }
 
   /* ---- Busy Bee project page for screen size 568px ----- */
-  #showcasemobile {
+  .showcasemobile {
     display: none;
   }
 
-  #showcasedesktop {
+  .showcasedesktop {
     display: inline-block;
   }
 
@@ -3033,14 +3034,14 @@ iPad (768x1024 -- 47.86%)
     margin-left: 4em;
   }
 
-  #img-left  {      /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
+  .img-left  {      /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
     float: left;
     width: 49%;
     max-width: 600px;
     margin: 2.5em 0 3em 0;
   }
 
-  #img-right {     /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
+  .img-right {     /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
     float: right;
     width: 49%;
     max-width: 600px;
