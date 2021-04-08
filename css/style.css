@@ -487,6 +487,13 @@ font-family: 'Hind Guntur', sans-serif;
 #css-animation {
 }
 
+header {
+  padding: 20px 0 0 0;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+
 footer {
   background-color: transparent;
   text-align: center;
@@ -572,6 +579,7 @@ footer {
   overflow: hidden;
 }
 
+/* animation of "fly home" text */
 .flyhome {
   text-decoration: none;
   color: #fff;
@@ -589,6 +597,7 @@ footer {
   left: 13px;
 }
 
+/* animation of logo plane */
 .logo img {
   transform: translate(0, 0);
   transition: all .3s ease;
@@ -609,13 +618,6 @@ footer {
   padding: 0;
   margin-bottom: 30px;
   max-width: 500px;
-}
-
-header {
-  padding: 20px 0 0 0;
-  position: fixed;
-  z-index: 5;
-  width: 100%;
 }
 
 nav {
@@ -718,6 +720,36 @@ body {
   margin: 0 0 10px 0;
   padding: 0;
 }
+
+/* disables accidental selecting of planes and clouds */
+.plane::selection {
+  background: none; /* WebKit/Blink Browsers */
+}
+
+.plane::-moz-selection {
+  background: none; /* Gecko Browsers */
+}
+
+.cloud::selection {
+  background: none; /* WebKit/Blink Browsers */
+}
+
+.cloud::-moz-selection {
+  background: none;  /* Gecko Browsers */
+}
+
+/* changes colors and background of all text when selected */
+::selection {
+  background:  #e0f3ff; /* WebKit/Blink Browsers */
+  color: #ff7f50;
+}
+
+::-moz-selection {
+  background: white;  /* Gecko Browsers */
+  color: #e0f3ff;
+
+}
+
 
 /* ----- MOBILE Typography styles ------ */
 
