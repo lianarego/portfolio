@@ -1,83 +1,87 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QM56FHVVYE"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<head>
 
-      gtag('config', 'G-QM56FHVVYE');
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QM56FHVVYE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-    <meta charset="utf-8">
-    <title>Paper Plane Designs</title>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
 
-    <!-- Normalize CSS and link to CSS stylesheet-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://kit.fontawesome.com/ed915deea8.js" crossorigin="anonymous"></script>
+    gtag('config', 'G-QM56FHVVYE');
+  </script>
 
-    <!-- Code for viewport to do responsive web -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Paper Plane Designs</title>
 
-    <!-- Fonts embedded -->
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Satisfy&display=swap" rel="stylesheet">
+  <!-- Normalize CSS and link to CSS stylesheet-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/ed915deea8.js" crossorigin="anonymous"></script>
 
-    <!-- Favicon -->
-    <link href="img/favicon/favicon.ico" rel="shortcut icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
+  <!-- Code for viewport to do responsive web -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body id="home">
+  <!-- Fonts embedded -->
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Satisfy&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link href="img/favicon/favicon.ico" rel="shortcut icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body id="home">
   <!-- Header Section Here -->
   <header id="index-header">
-      <div class="navtoggle" id="myNavtoggle">
-        <!-- Logo/Name -->
-          <a href="index.html" class="logo">
-            <p class="flyhome">Fly Home</p>
-            <img src="img/paper-plane-logo.svg" alt="Paper Plane Logo">
-          </a>
+    <div class="navtoggle" id="myNavtoggle">
+      <!-- Logo/Name -->
+      <a href="index.html" class="logo">
+        <p class="flyhome">Fly Home</p>
+        <img src="img/paper-plane-logo.svg" alt="Paper Plane Logo">
+      </a>
 
-        <!-- Navigation links -->
+      <!-- Navigation links -->
 
-          <nav>
-            <ul>
-              <li class="dropdown-parent"><a href="#terracare" class="nav-link" onclick="menuClose()">Projects</a>
-                <ul class="dropdown" style="background-color: #e0f3ff;">
-                  <li style="height: 10px;">&nbsp;</li>
-                  <li><a href="#terracare" class="nav-link subnav" onclick="menuClose()">TerraCare</a></li>
-                  <li><a href="#retrogames" class="nav-link subnav" onclick="menuClose()">Retro Games</a></li>
-                  <li><a href="#streambuff" class="nav-link subnav" onclick="menuClose()">StreamBuff</a></li>
-                  <li><a href="#busybee" class="nav-link subnav" onclick="menuClose()">Busy Bee</a></li>
-                  <li style="height: 0;">&nbsp;</li> <!-- Empty list item (hidden last child on desktop) -->
-                </ul>
-              </li>
-              <li><a href="about.html" class="nav-link">About</a></li>
-              <li><a href="contact.html" class="nav-link">Contact</a></li>
-              <li>
-                <a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()">
-                  <div class="menu-btn">
-                    <div class="menu-btn_burger"></div>
-                  </div>
-                </a>
-              </li> <!-- List item for hamburger menu icon -->
+      <nav>
+        <ul>
+          <li class="dropdown-parent"><a href="#terracare" class="nav-link" onclick="menuClose()">Projects</a>
+            <ul class="dropdown" style="background-color: #e0f3ff;">
+              <li style="height: 10px;">&nbsp;</li>
+              <li><a href="#terracare" class="nav-link subnav" onclick="menuClose()">TerraCare</a></li>
+              <li><a href="#retrogames" class="nav-link subnav" onclick="menuClose()">Retro Games</a></li>
+              <li><a href="#streambuff" class="nav-link subnav" onclick="menuClose()">StreamBuff</a></li>
+              <li><a href="#busybee" class="nav-link subnav" onclick="menuClose()">Busy Bee</a></li>
+              <li style="height: 0;">&nbsp;</li> <!-- Empty list item (hidden last child on desktop) -->
             </ul>
-          </nav>
-        </div>
-    </header>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="javascript:void(0);" class="icon nav-link" onclick="menuToggle()">
+              <div class="menu-btn">
+                <div class="menu-btn_burger"></div>
+              </div>
+            </a>
+          </li> <!-- List item for hamburger menu icon -->
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!--
+  <!--
     <ul class="dropdown">
       <li><a href="terracare.html" class="nav-link">TerraCare</a></li>
       <li><a href="retrogames.html" class="nav-link">Retro Games</a></li>
@@ -86,200 +90,201 @@
     </ul>
     -->
 
-    <!-- HTML Main Section Here -->
+  <!-- HTML Main Section Here -->
 
 
-    <!-- ======================== ANIMATIONS Here ====================== -->
+  <!-- ======================== ANIMATIONS Here ====================== -->
+  <!-- ============================================== ====================== -->
+
+  <main style="margin-bottom: 50px;">
+    <div id="clouds">
+      <img src="img/cloud-2.svg" class="cloud" id="cloud1" alt="white cloud" />
+      <img src="img/cloud-3.svg" class="cloud" id="cloud2" alt="white cloud" />
+      <img src="img/cloud-4.svg" class="cloud" id="cloud3" alt="white cloud" />
+      <img src="img/cloud-2.svg" class="cloud" id="cloud4" alt="white cloud" />
+      <img src="img/cloud-5.svg" class="cloud" id="cloud5" alt="white cloud" />
+      <img src="img/cloud-3.svg" class="cloud" id="cloud6" alt="white cloud" />
+      <img src="img/cloud-4.svg" class="cloud" id="cloud7" alt="white cloud" />
+      <img src="img/cloud-5.svg" class="cloud" id="cloud8" alt="white cloud" />
+      <img src="img/cloud-5.svg" class="cloud" id="cloud9" alt="white cloud" />
+      <img src="img/cloud-2.svg" class="cloud" id="cloud10" alt="white cloud" />
+      <img src="img/cloud-4.svg" class="cloud" id="cloud11" alt="white cloud" />
+    </div>
+
+    <div id="planes">
+      <img src="img/whiteplane.svg" class="plane" id="plane1" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane2" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane3" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane4" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane5" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane6" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane7" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane8" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane9" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane10" alt="paper plane" />
+      <img src="img/whiteplane.svg" class="plane" id="plane11" alt="paper plane" />
+    </div>
+
+    <!-- ======================== HERO SECTION Here ====================== -->
     <!-- ============================================== ====================== -->
 
-    <main style="margin-bottom: 50px;">
-      <div id="clouds">
-        <img src="img/cloud-2.svg" class="cloud" id="cloud1" alt="white cloud"/>
-        <img src="img/cloud-3.svg" class="cloud" id="cloud2" alt="white cloud"/>
-        <img src="img/cloud-4.svg" class="cloud" id="cloud3" alt="white cloud"/>
-        <img src="img/cloud-2.svg" class="cloud" id="cloud4" alt="white cloud"/>
-        <img src="img/cloud-5.svg" class="cloud" id="cloud5" alt="white cloud"/>
-        <img src="img/cloud-3.svg" class="cloud" id="cloud6" alt="white cloud"/>
-        <img src="img/cloud-4.svg" class="cloud" id="cloud7" alt="white cloud"/>
-        <img src="img/cloud-5.svg" class="cloud" id="cloud8" alt="white cloud"/>
-        <img src="img/cloud-5.svg" class="cloud" id="cloud9" alt="white cloud"/>
-        <img src="img/cloud-2.svg" class="cloud" id="cloud10" alt="white cloud"/>
-        <img src="img/cloud-4.svg" class="cloud" id="cloud11" alt="white cloud"/>
+    <div id="hero-section">
+      <div class="container">
+        <h2 id="written-text">Creating high&mdash;performing digital interfaces using emotional design principles and a sprinkle of wonder</h2>
+        <h5 class="slide-up-fade-in-3">Hello, I'm Liana, a designer + frontend developer with a background in nursing.<br>I'm so happy to see you here; I hope you find something that'll make you go <i>"woah"</i></h5>
       </div>
+      <div class="clearfix"></div>
 
-      <div id="planes">
-        <img src="img/whiteplane.svg" class="plane" id="plane1" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane2" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane3" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane4" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane5" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane6" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane7" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane8" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane9" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane10" alt="paper plane"/>
-        <img src="img/whiteplane.svg" class="plane" id="plane11" alt="paper plane"/>
+      <!-- Scroll indicator (only for mobile)-->
+      <div class="scrolldown slide-up-fade-in-4">
+        <a href="#terracare" style="color: black; text-decoration: none;">
+          <h6 class="fade-in">&#8675;&nbsp;&nbsp;SCROLL TO VIEW MY WORK&nbsp;&nbsp;&#8675;</h6>
+        </a>
       </div>
+    </div>
 
-      <!-- ======================== HERO SECTION Here ====================== -->
-      <!-- ============================================== ====================== -->
+    <!-- ======================== Project Intros Here ====================== -->
+    <!-- ============================================== ====================== -->
 
-          <div id="hero-section">
-            <div class="container">
-              <h2 id="written-text">Creating high&mdash;performing digital interfaces using emotional design principles and a sprinkle of wonder</h2>
-              <h5 class="slide-up-fade-in-3">Hello, I'm Liana, a designer + frontend developer with a background in nursing.<br>I'm so happy to see you here; I hope you find something that'll make you go <i>"woah"</i></h5>
+
+    <!-- Container for project #1 -->
+    <div class="parent" style="background-image: url(img/TerraCare/TerraCare1.Masthead.2x_blue.png)">
+      <a class="anchor" id="terracare"></a>
+      <!-- Project picture (blue version) -->
+      <a href="terracare.html">
+        <picture>
+          <source srcset="img/TerraCare/TerraCare1.Masthead.1x.png" media="(max-width:767px)">
+          <img class="masthead" src="img/TerraCare/TerraCare1.Masthead.2x.png" alt="TerraCare Masthead">
+        </picture>
+      </a>
+      <!-- original project picture overlay (when hovered)-->
+      <a href="terracare.html">
+        <div class="project-hover" style="background-image: url(img/TerraCare/TerraCare1.Masthead.2x.png);">
+          <div class="project-hover-child">
+            <div>
+              <h4 style="font-weight: bold; line-height: 1.5; padding: 0;">TerraCare</h4>
+              <h5 style="line-height: 1; padding: 0;">UX // UI // VISUAL DESIGN</h5>
             </div>
-            <div class="clearfix"></div>
-
-            <!-- Scroll indicator (only for mobile)-->
-             <div class="scrolldown slide-up-fade-in-4">
-               <a href="#terracare" style="color: black; text-decoration: none;">
-                 <h6 class="fade-in">&#8675;&nbsp;&nbsp;SCROLL TO VIEW MY WORK&nbsp;&nbsp;&#8675;</h6>
-               </a>
-             </div>
+            <p style="border-bottom: 2px solid #ff7f50; margin: 0;">View case study</p>
           </div>
-
-  		<!-- ======================== Project Intros Here ====================== -->
-      <!-- ============================================== ====================== -->
-
-
-          <!-- Container for project #1 -->
-          <div class="parent" style="background-image: url(img/TerraCare/TerraCare1.Masthead.2x_blue.png)">
-            <a class="anchor" id="terracare"></a>
-            <!-- Project picture (blue version) -->
-            <a href="terracare.html">
-              <picture>
-                <source srcset="img/TerraCare/TerraCare1.Masthead.1x.png" media="(max-width:767px)">
-                <img class="masthead" src="img/TerraCare/TerraCare1.Masthead.2x.png" alt="TerraCare Masthead">
-              </picture>
-            </a>
-            <!-- original project picture overlay (when hovered)-->
-            <a href="terracare.html">
-              <div class="project-hover" style="background-image: url(img/TerraCare/TerraCare1.Masthead.2x.png);">
-                <div class="project-hover-child">
-                  <div>
-                    <h4 style="font-weight: bold; line-height: 1.5; padding: 0;">TerraCare</h4>
-                    <h5 style="line-height: 1; padding: 0;">UX // UI // VISUAL DESIGN</h5>
-                  </div>
-                  <p style="border-bottom: 2px solid #ff7f50; margin: 0;">View case study</p>
-                </div>
-              </div>
-            </a>
-            <!-- Project info (mobile only)-->
-            <div class="project-info">
-              <h5>UX  //  UI  //  VISUAL DESIGN</h5>
-              <a href="terracare.html" class="explore-button">View case study</a>
-            </div>
-          </div>
-
-          <!-- Container for  PROJECT #2 -->
-          <div class="parent" style="background-image: url(img/Retro_Games/RetroGames1.Masthead.2x_blue6.png)">
-            <a class="anchor" id="retrogames"></a>
-            <!-- Project picture (blue version) -->
-            <a href="retrogames.html">
-              <picture>
-                <source srcset="img/Retro_Games/RetroGames1.Masthead.1x.png" media="(max-width:767px)">
-                <img class="masthead" src="img/Retro_Games/RetroGames1.Masthead.2x.png" alt="Retro Games Masthead">
-              </picture>
-            </a>
-            <!-- original project picture overlay (when hovered)-->
-            <a href="retrogames.html">
-              <div class="project-hover" style="background-image: url(img/Retro_Games/RetroGames1.Masthead.2x.png);">
-                <div class="project-hover-child">
-                  <div>
-                    <h4 style="font-weight: bold; line-height: 1.5; padding: 0;">Retro Games</h4>
-                    <h5 style="line-height: 1; padding: 0;">UX // UI // BRANDING</h5>
-                  </div>
-                  <p style="border-bottom: 2px solid #ff7f50; margin: 0;">View case study</p>
-                </div>
-              </div>
-            </a>
-            <!-- Project info (mobile only)-->
-            <div class="project-info">
-              <h5>UX // UI // BRANDING</h5>
-              <a href="retrogames.html" class="explore-button">View case study</a>
-            </div>
-          </div>
-
-          <!-- Container for project #3 -->
-          <div class="parent" style="background-image: url(img/StreamBuff/StreamBuff1.Masthead.2x_blue2.png);">
-            <a class="anchor" id="streambuff"></a>
-            <!-- Project picture (blue version) -->
-            <a href="streambuff.html">
-              <picture>
-                <source srcset="img/StreamBuff/StreamBuff1.Masthead.1x.png" media="(max-width:767px)">
-                <img class="masthead" src="img/StreamBuff/StreamBuff1.Masthead.2x.png" alt="StreamBuff Masthead">
-              </picture>
-            </a>
-            <!-- original project picture overlay (when hovered)-->
-            <a href="streambuff.html">
-              <div class="project-hover" style="background-image: url(img/StreamBuff/StreamBuff1.Masthead.2x.png);">
-                <div class="project-hover-child">
-                  <div>
-                    <h4 style="font-weight: bold; line-height: 1.5; padding: 0;">StreamBuff</h4>
-                    <h5 style="line-height: 1; padding: 0;">iOS & ANDROID DESIGNS</h5>
-                  </div>
-                  <p style="border-bottom: 2px solid #ff7f50; margin: 0;">View case study</p>
-                </div>
-              </div>
-            </a>
-            <!-- Project info (mobile only)-->
-            <div class="project-info">
-              <h5>iOS & ANDROID DESIGNS</h5>
-              <a href="streambuff.html" class="explore-button">View case study</a>
-            </div>
-          </div>
-
-          <!-- Container for project #4 -->
-          <div class="parent" style="background-image: url(img/Busy_Bee/BusyBee1.Masthead.2x_blue2.png);">
-            <a class="anchor" id="busybee"></a>
-            <!-- Project picture (blue version) -->
-            <a href="busybee.html">
-              <picture>
-                <source srcset="img/Busy_Bee/BusyBee1.Masthead.1x.png" media="(max-width:767px)">
-                <img class="masthead" src="img/Busy_Bee/BusyBee1.Masthead.2x.png" alt="Busy Bee Masthead">
-              </picture>
-            </a>
-            <!-- original project picture overlay (when hovered)-->
-            <a href="busybee.html">
-              <div class="project-hover" style="background-image: url(img/Busy_Bee/BusyBee1.Masthead.2x.png);">
-                <div class="project-hover-child">
-                  <div>
-                    <h4 style="font-weight: bold; line-height: 1.5; padding: 0;">Busy Bee</h4>
-                    <h5 style="line-height: 1; padding: 0;">UI // VISUAL DESIGN</h5>
-                  </div>
-                  <p style="border-bottom: 2px solid #ff7f50; margin: 0;">View case study</p>
-                </div>
-              </div>
-            </a>
-            <!-- Project info (mobile only)-->
-            <div class="project-info">
-              <h5>UI // VISUAL DESIGN</h5>
-              <a href="busybee.html" class="explore-button">View case study</a>
-            </div>
-          </div>
-
-		<!-- Empty div to add an extra column of blank space on grid -->
-		<!-- <div>&nbsp;</div> -->
-
-	  <!-- End of grid container -->
-	  <!-- </div> -->
-    </main>
-
-    <!-- Footer Section Here -->
-    <footer>
-      <!-- Copyright Section -->
-      <div id="copyright">
-        <h6>Website made with &#129505; by Liana Rego © 2021</h6>
+        </div>
+      </a>
+      <!-- Project info (mobile only)-->
+      <div class="project-info">
+        <h5>UX // UI // VISUAL DESIGN</h5>
+        <a href="terracare.html" class="explore-button">View case study</a>
       </div>
-    </footer>
+    </div>
+
+    <!-- Container for  PROJECT #2 -->
+    <div class="parent" style="background-image: url(img/Retro_Games/RetroGames1.Masthead.2x_blue6.png)">
+      <a class="anchor" id="retrogames"></a>
+      <!-- Project picture (blue version) -->
+      <a href="retrogames.html">
+        <picture>
+          <source srcset="img/Retro_Games/RetroGames1.Masthead.1x.png" media="(max-width:767px)">
+          <img class="masthead" src="img/Retro_Games/RetroGames1.Masthead.2x.png" alt="Retro Games Masthead">
+        </picture>
+      </a>
+      <!-- original project picture overlay (when hovered)-->
+      <a href="retrogames.html">
+        <div class="project-hover" style="background-image: url(img/Retro_Games/RetroGames1.Masthead.2x.png);">
+          <div class="project-hover-child">
+            <div>
+              <h4 style="font-weight: bold; line-height: 1.5; padding: 0;">Retro Games</h4>
+              <h5 style="line-height: 1; padding: 0;">UX // UI // BRANDING</h5>
+            </div>
+            <p style="border-bottom: 2px solid #ff7f50; margin: 0;">View case study</p>
+          </div>
+        </div>
+      </a>
+      <!-- Project info (mobile only)-->
+      <div class="project-info">
+        <h5>UX // UI // BRANDING</h5>
+        <a href="retrogames.html" class="explore-button">View case study</a>
+      </div>
+    </div>
+
+    <!-- Container for project #3 -->
+    <div class="parent" style="background-image: url(img/StreamBuff/StreamBuff1.Masthead.2x_blue2.png);">
+      <a class="anchor" id="streambuff"></a>
+      <!-- Project picture (blue version) -->
+      <a href="streambuff.html">
+        <picture>
+          <source srcset="img/StreamBuff/StreamBuff1.Masthead.1x.png" media="(max-width:767px)">
+          <img class="masthead" src="img/StreamBuff/StreamBuff1.Masthead.2x.png" alt="StreamBuff Masthead">
+        </picture>
+      </a>
+      <!-- original project picture overlay (when hovered)-->
+      <a href="streambuff.html">
+        <div class="project-hover" style="background-image: url(img/StreamBuff/StreamBuff1.Masthead.2x.png);">
+          <div class="project-hover-child">
+            <div>
+              <h4 style="font-weight: bold; line-height: 1.5; padding: 0;">StreamBuff</h4>
+              <h5 style="line-height: 1; padding: 0;">iOS & ANDROID DESIGNS</h5>
+            </div>
+            <p style="border-bottom: 2px solid #ff7f50; margin: 0;">View case study</p>
+          </div>
+        </div>
+      </a>
+      <!-- Project info (mobile only)-->
+      <div class="project-info">
+        <h5>iOS & ANDROID DESIGNS</h5>
+        <a href="streambuff.html" class="explore-button">View case study</a>
+      </div>
+    </div>
+
+    <!-- Container for project #4 -->
+    <div class="parent" style="background-image: url(img/Busy_Bee/BusyBee1.Masthead.2x_blue2.png);">
+      <a class="anchor" id="busybee"></a>
+      <!-- Project picture (blue version) -->
+      <a href="busybee.html">
+        <picture>
+          <source srcset="img/Busy_Bee/BusyBee1.Masthead.1x.png" media="(max-width:767px)">
+          <img class="masthead" src="img/Busy_Bee/BusyBee1.Masthead.2x.png" alt="Busy Bee Masthead">
+        </picture>
+      </a>
+      <!-- original project picture overlay (when hovered)-->
+      <a href="busybee.html">
+        <div class="project-hover" style="background-image: url(img/Busy_Bee/BusyBee1.Masthead.2x.png);">
+          <div class="project-hover-child">
+            <div>
+              <h4 style="font-weight: bold; line-height: 1.5; padding: 0;">Busy Bee</h4>
+              <h5 style="line-height: 1; padding: 0;">UI // VISUAL DESIGN</h5>
+            </div>
+            <p style="border-bottom: 2px solid #ff7f50; margin: 0;">View case study</p>
+          </div>
+        </div>
+      </a>
+      <!-- Project info (mobile only)-->
+      <div class="project-info">
+        <h5>UI // VISUAL DESIGN</h5>
+        <a href="busybee.html" class="explore-button">View case study</a>
+      </div>
+    </div>
+
+    <!-- Empty div to add an extra column of blank space on grid -->
+    <!-- <div>&nbsp;</div> -->
+
+    <!-- End of grid container -->
+    <!-- </div> -->
+  </main>
+
+  <!-- Footer Section Here -->
+  <footer>
+    <!-- Copyright Section -->
+    <div id="copyright">
+      <h6>Website made with &#129505; by Liana Rego © 2021</h6>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!-- <script src="js/flight-path-generator.js"></script> -->
   <!-- <script src="js/jquery.nicescroll.min.js"></script> -->
   <script src="js/script.js"></script>
 
-    <!-- Overlay container to close hamburger menu when the user clicks anywhere on screen -->
-	  <div id="index-overlay" onclick="menuToggle()"></div>
-  </body>
+  <!-- Overlay container to close hamburger menu when the user clicks anywhere on screen -->
+  <div id="index-overlay" onclick="menuToggle()"></div>
+</body>
+
 </html>
