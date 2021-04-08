@@ -17,10 +17,6 @@ a.anchor {
   visibility: hidden;
 }
 
-font-family: 'Homemade Apple', sans-serif;
-font-family: 'Satisfy', sans-serif;
-font-family: 'Hind Guntur', sans-serif;
-
 .handwave {
   animation-name: handwave-animation;
   animation-duration: 1.2s;
@@ -823,7 +819,7 @@ p {
 
 .nav-link:visited {
   color: #ff7f50;
-  border-radius: 3px solid #ff7f50;
+  border-radius: 3px;
 }
 
 .nav-link:hover,
@@ -1156,7 +1152,6 @@ img  {
     -ms-transform-origin: 50% 50%;
     -ms-animation-fill-mode:forwards; /*IE 10+*/
     opacity:0;
-    opacity: 1\9;
     margin: 0 0 30px 0;
     padding: 0;
 }
@@ -2874,7 +2869,6 @@ iPad (768x1024 -- 47.86%)
   .container {
     text-align: center;
     width: 100%;
-    padding-left: 0 500px;
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -3135,7 +3129,7 @@ iPad (768x1024 -- 47.86%)
 
   #aboutme > ul > li {
     padding: 3px 0;
-    font-size: ..7em;
+    font-size: .7em;
   }
 
   .button-primary {
@@ -4833,7 +4827,7 @@ iPad (768x1024 -- 47.86%)
     line-height: 2.5;
     font-weight: normal;
     word-spacing: .3em;
-    font-family: 'Homemade Apple', sans-serid;
+    font-family: 'Homemade Apple', sans-serif;
   }
 
   .container > h5 {
@@ -5015,7 +5009,6 @@ iPad (768x1024 -- 47.86%)
 
   #aboutme > ul {
     margin: 5px 0;
-    padding-inline-start: 35px;
   }
 
   #aboutme > ul > li {
@@ -5065,3 +5058,4 @@ iPad (768x1024 -- 47.86%)
 }
 
 @media only screen and (min-width:1920px)  { /* --- 21.6% of USA uses this screen size (1920x1080)--- */
+}
