@@ -995,44 +995,44 @@ img {
   }
 }
 
-@keyframes cloud4-move-left{
-  from {transform: translate(508px, 420px);}
-  to {transform: translate(8px, 420px);}
+@keyframes cloud4-move-left {
+  from { transform: translate(508px, 420px); }
+  to { transform: translate(8px, 420px); }
 }
 
-@keyframes cloud5-move-left{
-  from {transform: translate(608px, 170px);}
-  to {transform: translate(-30px, 170px);}
+@keyframes cloud5-move-left {
+  from { transform: translate(608px, 170px); }
+  to { transform: translate(-30px, 170px); }
 }
 
-@keyframes cloud6-move-right{
-  from {transform: translate(0px, 409px);}
-  to {transform: translate(500px, 409px);}
+@keyframes cloud6-move-right {
+  from { transform: translate(0, 409px); }
+  to { transform: translate(500px, 409px); }
 }
 
-@keyframes cloud7-move-left{
-  from {transform: translate(488px, 369px);}
-  to {transform: translate(88px, 369px);}
+@keyframes cloud7-move-left {
+  from { transform: translate(488px, 369px); }
+  to { transform: translate(88px, 369px); }
 }
 
-@keyframes cloud8-move-left{
-  from {transform: translate(600px, 213px);}
-  to {transform: translate(200px, 213px);}  /* 1600px to the right of screen and 213px down the screen */
+@keyframes cloud8-move-left {
+  from { transform: translate(600px, 213px); }
+  to { transform: translate(200px, 213px); }  /* 1600px to the right of screen and 213px down the screen */
 }
 
-@keyframes cloud9-move-right{
-  from {transform: translate(400px, 303px);}
-  to {transform: translate(850px, 303px);}  /* 1600px to the right of screen and 213px down the screen */
+@keyframes cloud9-move-right {
+  from { transform: translate(400px, 303px); }
+  to { transform: translate(850px, 303px); }  /* 1600px to the right of screen and 213px down the screen */
 }
 
-@keyframes cloud10-move-left{
-  from {transform: translate(570px, 459px);}
-  to {transform: translate(230px, 459px);}
+@keyframes cloud10-move-left {
+  from { transform: translate(570px, 459px); }
+  to { transform: translate(230px, 459px); }
 }
 
-@keyframes cloud11-move-right{
-  from {transform: translate(200px, 465px);}
-  to {transform: translate(500px, 465px);}
+@keyframes cloud11-move-right {
+  from { transform: translate(200px, 465px); }
+  to { transform: translate(500px, 465px); }
 }
 
 #clouds {
@@ -1186,70 +1186,76 @@ img {
   animation-delay: 3.8s;
 }
 
-@keyframes slide-up-fade-in{
-    0% {
-        opacity:0;
-        transform:  translate(0px,40px)  ;
-    }
-    100% {
-        opacity:1;
-        transform:  translate(0px,0px)  ;
-    }
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    transform: translate(0, 40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
-@-moz-keyframes slide-up-fade-in{
-    0% {
-        opacity:0;
-        -moz-transform:  translate(0px,40px)  ;
-    }
-    100% {
-        opacity:1;
-        -moz-transform:  translate(0px,0px)  ;
-    }
+@-moz-keyframes slide-up-fade-in {
+  0% {
+    opacity: 0;
+    -moz-transform: translate(0, 40px);
+  }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translate(0, 0);
+  }
 }
 
 @-webkit-keyframes slide-up-fade-in {
-    0% {
-        opacity:0;
-        -webkit-transform:  translate(0px,40px)  ;
-    }
-    100% {
-        opacity:1;
-        -webkit-transform:  translate(0px,0px)  ;
-    }
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 40px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
 }
 
 @-o-keyframes slide-up-fade-in {
-    0% {
-        opacity:0;
-        -o-transform:  translate(0px,40px)  ;
-    }
-    100% {
-        opacity:1;
-        -o-transform:  translate(0px,0px)  ;
-    }
+  0% {
+    opacity: 0;
+    -o-transform: translate(0, 40px);
+  }
+
+  100% {
+    opacity: 1;
+    -o-transform: translate(0, 0);
+  }
 }
 
 @-ms-keyframes slide-up-fade-in {
-    0% {
-        opacity:0;
-        -ms-transform:  translate(0px,40px)  ;
-    }
-    100% {
-        opacity:1;
-        -ms-transform:  translate(0px,0px)  ;
-    }
+  0% {
+    opacity: 0;
+    -ms-transform: translate(0, 40px);
+  }
+
+  100% {
+    opacity: 1;
+    -ms-transform: translate(0, 0);
+  }
 }
 
-@keyframes slide-down-fade-out{
-    0% {
-        opacity:1;
-        transform:  translate(0px,0px)  ;
-    }
-    100% {
-        opacity:0;
-        transform:  translate(0px,40px)  ;
-    }
+@keyframes slide-down-fade-out {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(0, 40px);
+  }
 }
 
 /***** Slide Right animation *****/
@@ -1272,16 +1278,20 @@ img {
   animation: fadeIn ease 2s;
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn {
   0% {
-    opacity:0;
+    opacity: 0;
   }
+
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
-.clearfix {clear: both; zoom: 1;}
+.clearfix {
+  clear: both;
+  zoom: 1;
+}
 
 /* ------ Planes looping animation for MOBILE  ------- */
 @keyframes plane-fly-swirl {
@@ -1290,231 +1300,277 @@ img {
     top: 86.4044%;
     transform: rotate(391.355deg);
   }
+
   30% {
     left: 35.952%;
     top: 82.8411%;
     transform: rotate(387.253deg);
   }
+
   31% {
     left: 38.1571%;
     top: 82.7569%;
     transform: rotate(388.346deg);
   }
+
   32% {
     left: 40.3634%;
     top: 82.7138%;
     transform: rotate(389.008deg);
   }
+
   33% {
     left: 42.5698%;
     top: 82.6805%;
     transform: rotate(388.675deg);
   }
+
   34% {
     left: 44.7754%;
     top: 82.6117%;
     transform: rotate(387.07deg);
   }
+
   35% {
     left: 46.9763%;
     top: 82.4549%;
     transform: rotate(383.938deg);
   }
+
   36% {
     left: 49.1605%;
     top: 82.146%;
     transform: rotate(378.804deg);
   }
+
   37% {
     left: 51.2968%;
     top: 81.5998%;
     transform: rotate(370.816deg);
   }
+
   38% {
     left: 53.3087%;
     top: 80.7028%;
     transform: rotate(359.057deg);
   }
+
   39% {
     left: 55.0453%;
     top: 79.3525%;
     transform: rotate(344.065deg);
   }
+
   40% {
     left: 56.3382%;
     top: 77.5728%;
     transform: rotate(328.518deg);
   }
+
   41% {
     left: 57.1286%;
     top: 75.5185%;
     transform: rotate(314.213deg);
   }
+
   42% {
     left: 57.4106%;
     top: 73.3388%;
     transform: rotate(302.147deg);
   }
+
   43% {
     left: 57.2928%;
     top: 71.1398%;
     transform: rotate(290.739deg);
   }
+
   44% {
     left: 56.7056%;
     top: 69.0157%;
     transform: rotate(279.939deg);
   }
+
   45% {
     left: 55.7856%;
     top: 67.0125%;
     transform: rotate(271.015deg);
   }
+
   46% {
     left: 54.5752%;
     top: 65.1699%;
     transform: rotate(261.822deg);
   }
+
   47% {
     left: 53.0708%;
     top: 63.56%;
     transform: rotate(249.502deg);
   }
+
   48% {
     left: 51.21%;
     top: 62.3956%;
     transform: rotate(224.409deg);
   }
+
   49% {
     left: 49.0188%;
     top: 62.5189%;
     transform: rotate(186.473deg);
   }
+
   50% {
     left: 47.4469%;
     top: 64.0339%;
     transform: rotate(156.656deg);
   }
+
   51% {
     left: 46.4356%;
     top: 65.9901%;
     transform: rotate(141.826deg);
   }
+
   52% {
     left: 45.8162%;
     top: 68.1056%;
     transform: rotate(131.474deg);
   }
+
   53% {
     left: 45.5621%;
     top: 70.2932%;
     transform: rotate(122.016deg);
   }
+
   54% {
     left: 45.6617%;
     top: 72.4949%;
     transform: rotate(110.728deg);
   }
+
   55% {
     left: 46.2673%;
     top: 74.6124%;
     transform: rotate(97.5906deg);
   }
+
   56% {
     left: 47.33%;
     top: 76.5405%;
     transform: rotate(84.5715deg);
   }
+
   57% {
     left: 48.8031%;
     top: 78.1769%;
     transform: rotate(71.6092deg);
   }
+
   58% {
     left: 50.6024%;
     top: 79.4468%;
     transform: rotate(59.0771deg);
   }
+
   59% {
     left: 52.631%;
     top: 80.3055%;
     transform: rotate(47.3188deg);
   }
+
   60% {
     left: 54.7889%;
     top: 80.7523%;
     transform: rotate(36.9393deg);
   }
+
   61% {
     left: 56.9926%;
     top: 80.8363%;
     transform: rotate(28.1606deg);
   }
+
   62% {
     left: 59.1863%;
     top: 80.6111%;
     transform: rotate(20.468deg);
   }
+
   63% {
     left: 61.3335%;
     top: 80.1074%;
     transform: rotate(13.534deg);
   }
+
   64% {
     left: 63.4095%;
     top: 79.3628%;
     transform: rotate(7.0097deg);
   }
+
   65% {
     left: 65.3875%;
     top: 78.3874%;
     transform: rotate(0.343592deg);
   }
+
   66% {
     left: 67.2357%;
     top: 77.1842%;
     transform: rotate(-6.45277deg);
   }
+
   67% {
     left: 68.9292%;
     top: 75.7712%;
     transform: rotate(-12.546deg);
   }
+
   68% {
     left: 70.4824%;
     top: 74.2045%;
     transform: rotate(-17.0409deg);
   }
+
   69% {
     left: 71.9349%;
     top: 72.5434%;
     transform: rotate(-19.6345deg);
   }
+
   70% {
     left: 73.3404%;
     top: 70.8422%;
     transform: rotate(-20.2197deg);
   }
+
   71% {
     left: 74.7587%;
     top: 69.1518%;
     transform: rotate(-18.7627deg);
   }
+
   72% {
     left: 76.2487%;
     top: 67.5245%;
     transform: rotate(-15.5315deg);
   }
+
   73% {
     left: 77.848%;
     top: 66.0047%;
     transform: rotate(-11.6145deg);
   }
+
   74% {
     left: 79.5458%;
     top: 64.5956%;
     transform: rotate(-8.06087deg);
   }
+
   100% {
     left: 130%;
     top: 37.3926%;
@@ -1529,231 +1585,277 @@ img {
     top: 36.4044%;
     transform: rotate(391.355deg);
   }
+
   30% {
     left: 35.952%;
     top: 32.8411%;
     transform: rotate(387.253deg);
   }
+
   31% {
     left: 38.1571%;
     top: 32.7569%;
     transform: rotate(388.346deg);
   }
+
   32% {
     left: 40.3634%;
     top: 32.7138%;
     transform: rotate(389.008deg);
   }
+
   33% {
     left: 42.5698%;
     top: 32.6805%;
     transform: rotate(388.675deg);
   }
+
   34% {
     left: 44.7754%;
     top: 32.6117%;
     transform: rotate(387.07deg);
   }
+
   35% {
     left: 46.9763%;
     top: 32.4549%;
     transform: rotate(383.938deg);
   }
+
   36% {
     left: 49.1605%;
     top: 32.146%;
     transform: rotate(378.804deg);
   }
+
   37% {
     left: 51.2968%;
     top: 31.5998%;
     transform: rotate(370.816deg);
   }
+
   38% {
     left: 53.3087%;
     top: 30.7028%;
     transform: rotate(359.057deg);
   }
+
   39% {
     left: 55.0453%;
     top: 29.3525%;
     transform: rotate(344.065deg);
   }
+
   40% {
     left: 56.3382%;
     top: 27.5728%;
     transform: rotate(328.518deg);
   }
+
   41% {
     left: 57.1286%;
     top: 25.5185%;
     transform: rotate(314.213deg);
   }
+
   42% {
     left: 57.4106%;
     top: 23.3388%;
     transform: rotate(302.147deg);
   }
+
   43% {
     left: 57.2928%;
     top: 21.1398%;
     transform: rotate(290.739deg);
   }
+
   44% {
     left: 56.7056%;
     top: 19.0157%;
     transform: rotate(279.939deg);
   }
+
   45% {
     left: 55.7856%;
     top: 17.0125%;
     transform: rotate(271.015deg);
   }
+
   46% {
     left: 54.5752%;
     top: 15.1699%;
     transform: rotate(261.822deg);
   }
+
   47% {
     left: 53.0708%;
     top: 13.56%;
     transform: rotate(249.502deg);
   }
+
   48% {
     left: 51.21%;
     top: 12.3956%;
     transform: rotate(224.409deg);
   }
+
   49% {
     left: 49.0188%;
     top: 12.5189%;
     transform: rotate(186.473deg);
   }
+
   50% {
     left: 47.4469%;
     top: 14.0339%;
     transform: rotate(156.656deg);
   }
+
   51% {
     left: 46.4356%;
     top: 15.9901%;
     transform: rotate(141.826deg);
   }
+
   52% {
     left: 45.8162%;
     top: 18.1056%;
     transform: rotate(131.474deg);
   }
+
   53% {
     left: 45.5621%;
     top: 20.2932%;
     transform: rotate(122.016deg);
   }
+
   54% {
     left: 45.6617%;
     top: 22.4949%;
     transform: rotate(110.728deg);
   }
+
   55% {
     left: 46.2673%;
     top: 24.6124%;
     transform: rotate(97.5906deg);
   }
+
   56% {
     left: 47.33%;
     top: 26.5405%;
     transform: rotate(84.5715deg);
   }
+
   57% {
     left: 48.8031%;
     top: 28.1769%;
     transform: rotate(71.6092deg);
   }
+
   58% {
     left: 50.6024%;
     top: 29.4468%;
     transform: rotate(59.0771deg);
   }
+
   59% {
     left: 52.631%;
     top: 30.3055%;
     transform: rotate(47.3188deg);
   }
+
   60% {
     left: 54.7889%;
     top: 30.7523%;
     transform: rotate(36.9393deg);
   }
+
   61% {
     left: 56.9926%;
     top: 30.8363%;
     transform: rotate(28.1606deg);
   }
+
   62% {
     left: 59.1863%;
     top: 30.6111%;
     transform: rotate(20.468deg);
   }
+
   63% {
     left: 61.3335%;
     top: 30.1074%;
     transform: rotate(13.534deg);
   }
+
   64% {
     left: 63.4095%;
     top: 29.3628%;
     transform: rotate(7.0097deg);
   }
+
   65% {
     left: 65.3875%;
     top: 28.3874%;
     transform: rotate(0.343592deg);
   }
+
   66% {
     left: 67.2357%;
     top: 27.1842%;
     transform: rotate(-6.45277deg);
   }
+
   67% {
     left: 68.9292%;
     top: 25.7712%;
     transform: rotate(-12.546deg);
   }
+
   68% {
     left: 70.4824%;
     top: 24.2045%;
     transform: rotate(-17.0409deg);
   }
+
   69% {
     left: 71.9349%;
     top: 22.5434%;
     transform: rotate(-19.6345deg);
   }
+
   70% {
     left: 73.3404%;
     top: 20.8422%;
     transform: rotate(-20.2197deg);
   }
+
   71% {
     left: 74.7587%;
     top: 19.1518%;
     transform: rotate(-18.7627deg);
   }
+
   72% {
     left: 76.2487%;
     top: 17.5245%;
     transform: rotate(-15.5315deg);
   }
+
   73% {
     left: 77.848%;
     top: 16.0047%;
     transform: rotate(-11.6145deg);
   }
+
   74% {
     left: 79.5458%;
     top: 14.5956%;
     transform: rotate(-8.06087deg);
   }
+
   100% {
     left: 130%;
     top: 7.3926%;
@@ -1767,51 +1869,61 @@ img {
     top: 37.176396%;
     transform: rotate(16.276156deg);
   }
+
   10% {
     left: -13.854378%;
     top: 33.233398%;
     transform: rotate(16.039748deg);
   }
+
   20% {
     left: 2.257137%;
     top: 29.157553%;
     transform: rotate(17.754988deg);
   }
+
   30% {
     left: 18.589484%;
     top: 26.192103%;
     transform: rotate(22.991709deg);
   }
+
   40% {
     left: 35.170161%;
     top: 25.111507%;
     transform: rotate(27.354531deg);
   }
+
   50% {
     left: 51.783859%;
     top: 24.658357%;
     transform: rotate(27.762498deg);
   }
+
   60% {
     left: 68.380506%;
     top: 23.813924%;
     transform: rotate(24.525491deg);
   }
+
   70% {
     left: 84.825805%;
     top: 21.491616%;
     transform: rotate(17.401488deg);
   }
+
   80% {
     left: 100.681662%;
     top: 16.594641%;
     transform: rotate(7.287272deg);
   }
+
   90% {
     left: 115.314712%;
-    top: 8.729870%;
+    top: 8.72987%;
     transform: rotate(1.910719deg);
   }
+
   100% {
     left: 130%;
     top: 0.947154%;
@@ -1826,51 +1938,61 @@ img {
     top: 47.176396%;
     transform: rotate(16.276156deg);
   }
+
   10% {
     left: -13.854378%;
     top: 13.233398%;
     transform: rotate(16.039748deg);
   }
+
   20% {
     left: 2.257137%;
     top: 9.157553%;
     transform: rotate(17.754988deg);
   }
+
   30% {
     left: 18.589484%;
     top: 6.192103%;
     transform: rotate(22.991709deg);
   }
+
   40% {
     left: 35.170161%;
     top: 5.111507%;
     transform: rotate(27.354531deg);
   }
+
   50% {
     left: 51.783859%;
     top: 4.658357%;
     transform: rotate(27.762498deg);
   }
+
   60% {
     left: 68.380506%;
     top: 3.813924%;
     transform: rotate(24.525491deg);
   }
+
   70% {
     left: 84.825805%;
     top: 1.491616%;
     transform: rotate(17.401488deg);
   }
+
   80% {
     left: 100.681662%;
     top: -4.594641%;
     transform: rotate(7.287272deg);
   }
+
   90% {
     left: 115.314712%;
-    top: -12.729870%;
+    top: -12.72987%;
     transform: rotate(1.910719deg);
   }
+
   100% {
     left: 130%;
     top: -20.947154%;
@@ -2228,51 +2350,61 @@ img {
     top: 122%;
     transform: rotate(-7deg);
   }
+
   10% {
     left: -16%;
     top: 111%;
     transform: rotate(-8deg);
   }
+
   20% {
     left: -1%;
     top: 100%;
     transform: rotate(-1deg);
   }
+
   30% {
     left: 14%;
     top: 94%;
     transform: rotate(23deg);
   }
+
   40% {
     left: 32%;
     top: 96%;
     transform: rotate(25deg);
   }
+
   50% {
     left: 48%;
     top: 91%;
     transform: rotate(15deg);
   }
+
   60% {
     left: 63%;
     top: 88%;
     transform: rotate(25deg);
   }
+
   70% {
     left: 81%;
     top: 88%;
     transform: rotate(12deg);
   }
+
   80% {
     left: 96%;
     top: 78%;
     transform: rotate(21deg);
   }
+
   90% {
     left: 113%;
     top: 83%;
     transform: rotate(47deg);
   }
+
   100% {
     left: 130%;
     top: 88%;
@@ -3231,61 +3363,60 @@ iPad (768x1024 -- 47.86%)
 }
 
 @media only screen and (min-width: 1024px) { /* this is for "col-lg" classes */
-
-/* Cloud Animation for 1024px */
-  @keyframes cloud1-move-right{
-    from {transform: translate(900px, 0px);}
-    to {transform: translate(1830px, 0px);}
+  /* Cloud Animation for 1024px */
+  @keyframes cloud1-move-right {
+    from { transform: translate(900px, 0); }
+    to { transform: translate(1830px, 0); }
   }
 
-  @keyframes cloud2-move-right{
-    from {transform: translate(-200px, 422px);}
-    to {transform: translate(841px, 422px);}
+  @keyframes cloud2-move-right {
+    from { transform: translate(-200px, 422px); }
+    to { transform: translate(841px, 422px); }
   }
 
-  @keyframes cloud3-move-right{
-    from {transform: translate(292px, 53px);}
-    to {transform: translate(1002px, 53px);}
+  @keyframes cloud3-move-right {
+    from { transform: translate(292px, 53px); }
+    to { transform: translate(1002px, 53px); }
   }
 
-  @keyframes cloud4-move-left{
-    from {transform: translate(1608px, 420px);}
-    to {transform: translate(1008px, 420px);}
+  @keyframes cloud4-move-left {
+    from { transform: translate(1608px, 420px); }
+    to { transform: translate(1008px, 420px); }
   }
 
-  @keyframes cloud5-move-left{
-    from {transform: translate(1358px, 140px);}
-    to {transform: translate(588px, 140px);}
+  @keyframes cloud5-move-left {
+    from { transform: translate(1358px, 140px); }
+    to { transform: translate(588px, 140px); }
   }
 
-  @keyframes cloud6-move-right{
-    from {transform: translate(-100px, 609px);}
-    to {transform: translate(830px, 609px);}
+  @keyframes cloud6-move-right {
+    from { transform: translate(-100px, 609px); }
+    to { transform: translate(830px, 609px); }
   }
 
-  @keyframes cloud7-move-left{
-    from {transform: translate(788px, 469px);}
-    to {transform: translate(188px, 469px);}
+  @keyframes cloud7-move-left {
+    from { transform: translate(788px, 469px); }
+    to { transform: translate(188px, 469px); }
   }
 
-  @keyframes cloud8-move-left{
-    from {transform: translate(1700px, 283px);}
-    to {transform: translate(300px, 283px);}  /* 1700px to the right of screen and 283px down the screen */
+  @keyframes cloud8-move-left {
+    from { transform: translate(1700px, 283px); }
+    to { transform: translate(300px, 283px); }  /* 1700px to the right of screen and 283px down the screen */
   }
 
-  @keyframes cloud9-move-right{
-    from {transform: translate(160px, 143px);}
-    to {transform: translate(1030px, 143px);}  /* 1130px to the right of screen and 143px down the screen */
+  @keyframes cloud9-move-right {
+    from { transform: translate(160px, 143px); }
+    to { transform: translate(1030px, 143px); }  /* 1130px to the right of screen and 143px down the screen */
   }
 
-  @keyframes cloud10-move-left{
-    from {transform: translate(1570px, 459px);}
-    to {transform: translate(430px, 459px);}
+  @keyframes cloud10-move-left {
+    from { transform: translate(1570px, 459px); }
+    to { transform: translate(430px, 459px); }
   }
 
-  @keyframes cloud11-move-right{
-    from {transform: translate(200px, 465px);}
-    to {transform: translate(1000px, 465px);}
+  @keyframes cloud11-move-right {
+    from { transform: translate(200px, 465px); }
+    to { transform: translate(1000px, 465px); }
   }
 
   #clouds {
@@ -3592,18 +3723,18 @@ iPad (768x1024 -- 47.86%)
     float: left;
   }
 
- .projectnav {
-   width: 95%;
-   margin: auto;
- }
+  .projectnav {
+    width: 95%;
+    margin: auto;
+  }
 
- .projectnav > #nextproject {
-   font-size: 1.4em;
- }
+  .projectnav > #nextproject {
+    font-size: 1.4em;
+  }
 
- .projectnav > #prevproject {
-   font-size: 1.4em;
- }
+  .projectnav > #prevproject {
+    font-size: 1.4em;
+  }
 
   /* ----- About Me Page ------ */
 
@@ -3638,7 +3769,7 @@ iPad (768x1024 -- 47.86%)
 
   #aboutme > ul > li {
     padding: 3px 0;
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .button-primary {
@@ -3656,7 +3787,7 @@ iPad (768x1024 -- 47.86%)
 
   .button-secondary-container {
     margin-left: 3em; /* spacing to the left of secondary button */
-    padding: 25px 0 20px 0;
+    padding: 25px 0 20px;
   }
 
   .hobbies-container {
@@ -3675,13 +3806,13 @@ iPad (768x1024 -- 47.86%)
     font-size: 2.2em;
     margin-top: 30px;
     margin-bottom: 30px;
-    }
+  }
 
   #email-address {
-      font-size: 1.7em;
-      width: 50%;
-      margin-bottom: 50px;
-      padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
+    font-size: 1.7em;
+    width: 50%;
+    margin-bottom: 50px;
+    padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
   }
 
   .social-media {
@@ -3694,12 +3825,11 @@ iPad (768x1024 -- 47.86%)
     height: 40px;
   }
 
-
   /* ----- Typography for Media query for 1024px+ ------ */
 
   h1 {
     font-size: 3.5em;
-    margin: 0 0 50px 0;
+    margin: 0 0 50px;
   }
 
   h2 {
@@ -3711,7 +3841,7 @@ iPad (768x1024 -- 47.86%)
   h3 {
     font-size: 1.8em;
     font-weight: 300;
-    margin:0;
+    margin: 0;
     padding-bottom: 5px;
     line-height: 1.7;
     letter-spacing: 1px;
@@ -3741,17 +3871,17 @@ iPad (768x1024 -- 47.86%)
   h5 {
     font-size: 1em;
     font-weight: 300;
-    margin: 0 0 3px 0;
-    letter-spacing: .08em;
+    margin: 0 0 3px;
+    letter-spacing: 0.08em;
   }
 
-    .project-info {
-      display: none;
-    }
+  .project-info {
+    display: none;
+  }
 
-    header {
-      background-color: #e0f3ff;
-    }
+  header {
+    background-color: #e0f3ff;
+  }
 
   #my-story {
     border-bottom: 0;
@@ -3764,956 +3894,6 @@ iPad (768x1024 -- 47.86%)
   }
 
   /* ------- Planes for media queries 1024px or more ----------  */
-  #home .grid-container {
-    z-index: 1;
-  }
-
-  @keyframes plane-fly-swirl {
-    0% {
-      left: -30%;
-      top: 86.4044%;
-      transform: rotate(391.355deg);
-    }
-    30% {
-      left: 35.952%;
-      top: 82.8411%;
-      transform: rotate(387.253deg);
-    }
-    31% {
-      left: 38.1571%;
-      top: 82.7569%;
-      transform: rotate(388.346deg);
-    }
-    32% {
-      left: 40.3634%;
-      top: 82.7138%;
-      transform: rotate(389.008deg);
-    }
-    33% {
-      left: 42.5698%;
-      top: 82.6805%;
-      transform: rotate(388.675deg);
-    }
-    34% {
-      left: 44.7754%;
-      top: 82.6117%;
-      transform: rotate(387.07deg);
-    }
-    35% {
-      left: 46.9763%;
-      top: 82.4549%;
-      transform: rotate(383.938deg);
-    }
-    36% {
-      left: 49.1605%;
-      top: 82.146%;
-      transform: rotate(378.804deg);
-    }
-    37% {
-      left: 51.2968%;
-      top: 81.5998%;
-      transform: rotate(370.816deg);
-    }
-    38% {
-      left: 53.3087%;
-      top: 80.7028%;
-      transform: rotate(359.057deg);
-    }
-    39% {
-      left: 55.0453%;
-      top: 79.3525%;
-      transform: rotate(344.065deg);
-    }
-    40% {
-      left: 56.3382%;
-      top: 77.5728%;
-      transform: rotate(328.518deg);
-    }
-    41% {
-      left: 57.1286%;
-      top: 75.5185%;
-      transform: rotate(314.213deg);
-    }
-    42% {
-      left: 57.4106%;
-      top: 73.3388%;
-      transform: rotate(302.147deg);
-    }
-    43% {
-      left: 57.2928%;
-      top: 71.1398%;
-      transform: rotate(290.739deg);
-    }
-    44% {
-      left: 56.7056%;
-      top: 69.0157%;
-      transform: rotate(279.939deg);
-    }
-    45% {
-      left: 55.7856%;
-      top: 67.0125%;
-      transform: rotate(271.015deg);
-    }
-    46% {
-      left: 54.5752%;
-      top: 65.1699%;
-      transform: rotate(261.822deg);
-    }
-    47% {
-      left: 53.0708%;
-      top: 63.56%;
-      transform: rotate(249.502deg);
-    }
-    48% {
-      left: 51.21%;
-      top: 62.3956%;
-      transform: rotate(224.409deg);
-    }
-    49% {
-      left: 49.0188%;
-      top: 62.5189%;
-      transform: rotate(186.473deg);
-    }
-    50% {
-      left: 47.4469%;
-      top: 64.0339%;
-      transform: rotate(156.656deg);
-    }
-    51% {
-      left: 46.4356%;
-      top: 65.9901%;
-      transform: rotate(141.826deg);
-    }
-    52% {
-      left: 45.8162%;
-      top: 68.1056%;
-      transform: rotate(131.474deg);
-    }
-    53% {
-      left: 45.5621%;
-      top: 70.2932%;
-      transform: rotate(122.016deg);
-    }
-    54% {
-      left: 45.6617%;
-      top: 72.4949%;
-      transform: rotate(110.728deg);
-    }
-    55% {
-      left: 46.2673%;
-      top: 74.6124%;
-      transform: rotate(97.5906deg);
-    }
-    56% {
-      left: 47.33%;
-      top: 76.5405%;
-      transform: rotate(84.5715deg);
-    }
-    57% {
-      left: 48.8031%;
-      top: 78.1769%;
-      transform: rotate(71.6092deg);
-    }
-    58% {
-      left: 50.6024%;
-      top: 79.4468%;
-      transform: rotate(59.0771deg);
-    }
-    59% {
-      left: 52.631%;
-      top: 80.3055%;
-      transform: rotate(47.3188deg);
-    }
-    60% {
-      left: 54.7889%;
-      top: 80.7523%;
-      transform: rotate(36.9393deg);
-    }
-    61% {
-      left: 56.9926%;
-      top: 80.8363%;
-      transform: rotate(28.1606deg);
-    }
-    62% {
-      left: 59.1863%;
-      top: 80.6111%;
-      transform: rotate(20.468deg);
-    }
-    63% {
-      left: 61.3335%;
-      top: 80.1074%;
-      transform: rotate(13.534deg);
-    }
-    64% {
-      left: 63.4095%;
-      top: 79.3628%;
-      transform: rotate(7.0097deg);
-    }
-    65% {
-      left: 65.3875%;
-      top: 78.3874%;
-      transform: rotate(0.343592deg);
-    }
-    66% {
-      left: 67.2357%;
-      top: 77.1842%;
-      transform: rotate(-6.45277deg);
-    }
-    67% {
-      left: 68.9292%;
-      top: 75.7712%;
-      transform: rotate(-12.546deg);
-    }
-    68% {
-      left: 70.4824%;
-      top: 74.2045%;
-      transform: rotate(-17.0409deg);
-    }
-    69% {
-      left: 71.9349%;
-      top: 72.5434%;
-      transform: rotate(-19.6345deg);
-    }
-    70% {
-      left: 73.3404%;
-      top: 70.8422%;
-      transform: rotate(-20.2197deg);
-    }
-    71% {
-      left: 74.7587%;
-      top: 69.1518%;
-      transform: rotate(-18.7627deg);
-    }
-    72% {
-      left: 76.2487%;
-      top: 67.5245%;
-      transform: rotate(-15.5315deg);
-    }
-    73% {
-      left: 77.848%;
-      top: 66.0047%;
-      transform: rotate(-11.6145deg);
-    }
-    74% {
-      left: 79.5458%;
-      top: 64.5956%;
-      transform: rotate(-8.06087deg);
-    }
-    100% {
-      left: 130%;
-      top: 37.3926%;
-      transform: rotate(1.51787deg);
-    }
-  }
-
-  /* same pattern as plane-fly-swirl but 40% higher in the screen */
-  @keyframes plane-fly-swirl_2 {
-    0% {
-      left: -30%;
-      top: 36.4044%;
-      transform: rotate(391.355deg);
-    }
-    30% {
-      left: 35.952%;
-      top: 32.8411%;
-      transform: rotate(387.253deg);
-    }
-    31% {
-      left: 38.1571%;
-      top: 32.7569%;
-      transform: rotate(388.346deg);
-    }
-    32% {
-      left: 40.3634%;
-      top: 32.7138%;
-      transform: rotate(389.008deg);
-    }
-    33% {
-      left: 42.5698%;
-      top: 32.6805%;
-      transform: rotate(388.675deg);
-    }
-    34% {
-      left: 44.7754%;
-      top: 32.6117%;
-      transform: rotate(387.07deg);
-    }
-    35% {
-      left: 46.9763%;
-      top: 32.4549%;
-      transform: rotate(383.938deg);
-    }
-    36% {
-      left: 49.1605%;
-      top: 32.146%;
-      transform: rotate(378.804deg);
-    }
-    37% {
-      left: 51.2968%;
-      top: 31.5998%;
-      transform: rotate(370.816deg);
-    }
-    38% {
-      left: 53.3087%;
-      top: 30.7028%;
-      transform: rotate(359.057deg);
-    }
-    39% {
-      left: 55.0453%;
-      top: 29.3525%;
-      transform: rotate(344.065deg);
-    }
-    40% {
-      left: 56.3382%;
-      top: 27.5728%;
-      transform: rotate(328.518deg);
-    }
-    41% {
-      left: 57.1286%;
-      top: 25.5185%;
-      transform: rotate(314.213deg);
-    }
-    42% {
-      left: 57.4106%;
-      top: 23.3388%;
-      transform: rotate(302.147deg);
-    }
-    43% {
-      left: 57.2928%;
-      top: 21.1398%;
-      transform: rotate(290.739deg);
-    }
-    44% {
-      left: 56.7056%;
-      top: 19.0157%;
-      transform: rotate(279.939deg);
-    }
-    45% {
-      left: 55.7856%;
-      top: 17.0125%;
-      transform: rotate(271.015deg);
-    }
-    46% {
-      left: 54.5752%;
-      top: 15.1699%;
-      transform: rotate(261.822deg);
-    }
-    47% {
-      left: 53.0708%;
-      top: 13.56%;
-      transform: rotate(249.502deg);
-    }
-    48% {
-      left: 51.21%;
-      top: 12.3956%;
-      transform: rotate(224.409deg);
-    }
-    49% {
-      left: 49.0188%;
-      top: 12.5189%;
-      transform: rotate(186.473deg);
-    }
-    50% {
-      left: 47.4469%;
-      top: 14.0339%;
-      transform: rotate(156.656deg);
-    }
-    51% {
-      left: 46.4356%;
-      top: 15.9901%;
-      transform: rotate(141.826deg);
-    }
-    52% {
-      left: 45.8162%;
-      top: 18.1056%;
-      transform: rotate(131.474deg);
-    }
-    53% {
-      left: 45.5621%;
-      top: 20.2932%;
-      transform: rotate(122.016deg);
-    }
-    54% {
-      left: 45.6617%;
-      top: 22.4949%;
-      transform: rotate(110.728deg);
-    }
-    55% {
-      left: 46.2673%;
-      top: 24.6124%;
-      transform: rotate(97.5906deg);
-    }
-    56% {
-      left: 47.33%;
-      top: 26.5405%;
-      transform: rotate(84.5715deg);
-    }
-    57% {
-      left: 48.8031%;
-      top: 28.1769%;
-      transform: rotate(71.6092deg);
-    }
-    58% {
-      left: 50.6024%;
-      top: 29.4468%;
-      transform: rotate(59.0771deg);
-    }
-    59% {
-      left: 52.631%;
-      top: 30.3055%;
-      transform: rotate(47.3188deg);
-    }
-    60% {
-      left: 54.7889%;
-      top: 30.7523%;
-      transform: rotate(36.9393deg);
-    }
-    61% {
-      left: 56.9926%;
-      top: 30.8363%;
-      transform: rotate(28.1606deg);
-    }
-    62% {
-      left: 59.1863%;
-      top: 30.6111%;
-      transform: rotate(20.468deg);
-    }
-    63% {
-      left: 61.3335%;
-      top: 30.1074%;
-      transform: rotate(13.534deg);
-    }
-    64% {
-      left: 63.4095%;
-      top: 29.3628%;
-      transform: rotate(7.0097deg);
-    }
-    65% {
-      left: 65.3875%;
-      top: 28.3874%;
-      transform: rotate(0.343592deg);
-    }
-    66% {
-      left: 67.2357%;
-      top: 27.1842%;
-      transform: rotate(-6.45277deg);
-    }
-    67% {
-      left: 68.9292%;
-      top: 25.7712%;
-      transform: rotate(-12.546deg);
-    }
-    68% {
-      left: 70.4824%;
-      top: 24.2045%;
-      transform: rotate(-17.0409deg);
-    }
-    69% {
-      left: 71.9349%;
-      top: 22.5434%;
-      transform: rotate(-19.6345deg);
-    }
-    70% {
-      left: 73.3404%;
-      top: 20.8422%;
-      transform: rotate(-20.2197deg);
-    }
-    71% {
-      left: 74.7587%;
-      top: 19.1518%;
-      transform: rotate(-18.7627deg);
-    }
-    72% {
-      left: 76.2487%;
-      top: 17.5245%;
-      transform: rotate(-15.5315deg);
-    }
-    73% {
-      left: 77.848%;
-      top: 16.0047%;
-      transform: rotate(-11.6145deg);
-    }
-    74% {
-      left: 79.5458%;
-      top: 14.5956%;
-      transform: rotate(-8.06087deg);
-    }
-    100% {
-      left: 130%;
-      top: 7.3926%;
-      transform: rotate(1.51787deg);
-    }
-  }
-
-  @keyframes plane-fly-2 {
-    0% {
-      left: -30%;
-      top: 37.176396%;
-      transform: rotate(16.276156deg);
-    }
-    10% {
-      left: -13.854378%;
-      top: 33.233398%;
-      transform: rotate(16.039748deg);
-    }
-    20% {
-      left: 2.257137%;
-      top: 29.157553%;
-      transform: rotate(17.754988deg);
-    }
-    30% {
-      left: 18.589484%;
-      top: 26.192103%;
-      transform: rotate(22.991709deg);
-    }
-    40% {
-      left: 35.170161%;
-      top: 25.111507%;
-      transform: rotate(27.354531deg);
-    }
-    50% {
-      left: 51.783859%;
-      top: 24.658357%;
-      transform: rotate(27.762498deg);
-    }
-    60% {
-      left: 68.380506%;
-      top: 23.813924%;
-      transform: rotate(24.525491deg);
-    }
-    70% {
-      left: 84.825805%;
-      top: 21.491616%;
-      transform: rotate(17.401488deg);
-    }
-    80% {
-      left: 100.681662%;
-      top: 16.594641%;
-      transform: rotate(7.287272deg);
-    }
-    90% {
-      left: 115.314712%;
-      top: 8.729870%;
-      transform: rotate(1.910719deg);
-    }
-    100% {
-      left: 130%;
-      top: 0.947154%;
-      transform: rotate(2.077892deg);
-    }
-  }
-
-  @keyframes plane-fly-3 {
-    0% {
-      left: -30%;
-      top: 22%;
-      transform: rotate(36deg);
-    }
-    10% {
-      left: -12%;
-      top: 24%;
-      transform: rotate(37deg);
-    }
-    20% {
-      left: 6%;
-      top: 26%;
-      transform: rotate(30deg);
-    }
-    30% {
-      left: 24%;
-      top: 24%;
-      transform: rotate(16deg);
-    }
-    40% {
-      left: 41%;
-      top: 17%;
-      transform: rotate(10deg);
-    }
-    50% {
-      left: 58%;
-      top: 11%;
-      transform: rotate(6deg);
-    }
-    60% {
-      left: 74%;
-      top: 2%;
-      transform: rotate(-3deg);
-    }
-    70% {
-      left: 89%;
-      top: -9%;
-      transform: rotate(-10deg);
-    }
-    80% {
-      left: 103%;
-      top: -21%;
-      transform: rotate(-11deg);
-    }
-    90% {
-      left: 116%;
-      top: -33%;
-      transform: rotate(-11deg);
-    }
-    100% {
-      left: 130%;
-      top: -45%;
-      transform: rotate(-11deg);
-    }
-  }
-
-  @keyframes plane-fly-4 {
-    0% {
-      left: -30%;
-      top: 112%;
-      transform: rotate(-7deg);
-    }
-    10% {
-      left: -16%;
-      top: 101%;
-      transform: rotate(-8deg);
-    }
-    20% {
-      left: -1%;
-      top: 90%;
-      transform: rotate(-1deg);
-    }
-    30% {
-      left: 14%;
-      top: 84%;
-      transform: rotate(23deg);
-    }
-    40% {
-      left: 32%;
-      top: 86%;
-      transform: rotate(25deg);
-    }
-    50% {
-      left: 48%;
-      top: 81%;
-      transform: rotate(15deg);
-    }
-    60% {
-      left: 63%;
-      top: 78%;
-      transform: rotate(25deg);
-    }
-    70% {
-      left: 81%;
-      top: 78%;
-      transform: rotate(12deg);
-    }
-    80% {
-      left: 96%;
-      top: 68%;
-      transform: rotate(21deg);
-    }
-    90% {
-      left: 113%;
-      top: 73%;
-      transform: rotate(47deg);
-    }
-    100% {
-      left: 130%;
-      top: 78%;
-      transform: rotate(48deg);
-    }
-  }
-
-  /* same pattern as plane-fly-4 but 50% higher in the screen */
-  @keyframes plane-fly-4_1 {
-    0% {
-      left: -30%;
-      top: 62%;
-      transform: rotate(-7deg);
-    }
-    10% {
-      left: -16%;
-      top: 51%;
-      transform: rotate(-8deg);
-    }
-    20% {
-      left: -1%;
-      top: 40%;
-      transform: rotate(-1deg);
-    }
-    30% {
-      left: 14%;
-      top: 34%;
-      transform: rotate(23deg);
-    }
-    40% {
-      left: 32%;
-      top: 36%;
-      transform: rotate(25deg);
-    }
-    50% {
-      left: 48%;
-      top: 31%;
-      transform: rotate(15deg);
-    }
-    60% {
-      left: 63%;
-      top: 28%;
-      transform: rotate(25deg);
-    }
-    70% {
-      left: 81%;
-      top: 28%;
-      transform: rotate(12deg);
-    }
-    80% {
-      left: 96%;
-      top: 18%;
-      transform: rotate(21deg);
-    }
-    90% {
-      left: 113%;
-      top: 23%;
-      transform: rotate(47deg);
-    }
-    100% {
-      left: 130%;
-      top: 28%;
-      transform: rotate(48deg);
-    }
-  }
-
-  /* same pattern as plane-fly-4 but 10% lower in the screen */
-  @keyframes plane-fly-4_2 {
-    0% {
-      left: -30%;
-      top: 122%;
-      transform: rotate(-7deg);
-    }
-    10% {
-      left: -16%;
-      top: 111%;
-      transform: rotate(-8deg);
-    }
-    20% {
-      left: -1%;
-      top: 100%;
-      transform: rotate(-1deg);
-    }
-    30% {
-      left: 14%;
-      top: 94%;
-      transform: rotate(23deg);
-    }
-    40% {
-      left: 32%;
-      top: 96%;
-      transform: rotate(25deg);
-    }
-    50% {
-      left: 48%;
-      top: 91%;
-      transform: rotate(15deg);
-    }
-    60% {
-      left: 63%;
-      top: 88%;
-      transform: rotate(25deg);
-    }
-    70% {
-      left: 81%;
-      top: 88%;
-      transform: rotate(12deg);
-    }
-    80% {
-      left: 96%;
-      top: 78%;
-      transform: rotate(21deg);
-    }
-    90% {
-      left: 113%;
-      top: 83%;
-      transform: rotate(47deg);
-    }
-    100% {
-      left: 130%;
-      top: 88%;
-      transform: rotate(48deg);
-    }
-  }
-
-  /* same pattern as plane-fly-2 but 40% lower in the screen */
-  @keyframes plane-fly-2_1 {
-    0% {
-      left: -30%;
-      top: 47.176396%;
-      transform: rotate(16.276156deg);
-    }
-    10% {
-      left: -13.854378%;
-      top: 13.233398%;
-      transform: rotate(16.039748deg);
-    }
-    20% {
-      left: 2.257137%;
-      top: 9.157553%;
-      transform: rotate(17.754988deg);
-    }
-    30% {
-      left: 18.589484%;
-      top: 6.192103%;
-      transform: rotate(22.991709deg);
-    }
-    40% {
-      left: 35.170161%;
-      top: 5.111507%;
-      transform: rotate(27.354531deg);
-    }
-    50% {
-      left: 51.783859%;
-      top: 4.658357%;
-      transform: rotate(27.762498deg);
-    }
-    60% {
-      left: 68.380506%;
-      top: 3.813924%;
-      transform: rotate(24.525491deg);
-    }
-    70% {
-      left: 84.825805%;
-      top: 1.491616%;
-      transform: rotate(17.401488deg);
-    }
-    80% {
-      left: 100.681662%;
-      top: -4.594641%;
-      transform: rotate(7.287272deg);
-    }
-    90% {
-      left: 115.314712%;
-      top: -12.729870%;
-      transform: rotate(1.910719deg);
-    }
-    100% {
-      left: 130%;
-      top: -20.947154%;
-      transform: rotate(2.077892deg);
-    }
-  }
-
-  /* same pattern as plane-fly-2 but 90% lower in the screen */
-  @keyframes plane-fly-2_2 {
-    0% {
-      left: -30%;
-      top: 127.176396%;
-      transform: rotate(16.276156deg);
-    }
-    10% {
-      left: -13.854378%;
-      top: 123.233398%;
-      transform: rotate(16.039748deg);
-    }
-    20% {
-      left: 2.257137%;
-      top: 119.157553%;
-      transform: rotate(17.754988deg);
-    }
-    30% {
-      left: 18.589484%;
-      top: 116.192103%;
-      transform: rotate(22.991709deg);
-    }
-    40% {
-      left: 35.170161%;
-      top: 115.111507%;
-      transform: rotate(27.354531deg);
-    }
-    50% {
-      left: 51.783859%;
-      top: 114.658357%;
-      transform: rotate(27.762498deg);
-    }
-    60% {
-      left: 68.380506%;
-      top: 113.813924%;
-      transform: rotate(24.525491deg);
-    }
-    70% {
-      left: 84.825805%;
-      top: 111.491616%;
-      transform: rotate(17.401488deg);
-    }
-    80% {
-      left: 100.681662%;
-      top: 106.594641%;
-      transform: rotate(7.287272deg);
-    }
-    90% {
-      left: 115.314712%;
-      top: 98.729870%;
-      transform: rotate(1.910719deg);
-    }
-    100% {
-      left: 130%;
-      top: 90.947154%;
-      transform: rotate(2.077892deg);
-    }
-  }
-
-  /* same pattern as plane-fly-3 but 30% lower in the screen */
-  @keyframes plane-fly-3_1 {
-    0% {
-      left: -30%;
-      top: 52%;
-      transform: rotate(36deg);
-    }
-    10% {
-      left: -12%;
-      top: 54%;
-      transform: rotate(37deg);
-    }
-    20% {
-      left: 6%;
-      top: 56%;
-      transform: rotate(30deg);
-    }
-    30% {
-      left: 24%;
-      top: 54%;
-      transform: rotate(16deg);
-    }
-    40% {
-      left: 41%;
-      top: 47%;
-      transform: rotate(10deg);
-    }
-    50% {
-      left: 58%;
-      top: 41%;
-      transform: rotate(6deg);
-    }
-    60% {
-      left: 74%;
-      top: 32%;
-      transform: rotate(-3deg);
-    }
-    70% {
-      left: 89%;
-      top: 21%;
-      transform: rotate(-10deg);
-    }
-    80% {
-      left: 103%;
-      top: 9%;
-      transform: rotate(-11deg);
-    }
-    90% {
-      left: 116%;
-      top: -3%;
-      transform: rotate(-11deg);
-    }
-    100% {
-      left: 130%;
-      top: -15%;
-      transform: rotate(-11deg);
-    }
-  }
-
   #plane1 {
     width: 85px;
     position: absolute;
@@ -4849,26 +4029,23 @@ iPad (768x1024 -- 47.86%)
     animation-iteration-count: 1;
     animation-timing-function: linear;
   }
-
 }
 
-@media only screen and (min-width:1366px)  { /* --- landscape mode for iPad Pro. 14.5% of USA uses this screen size (1366x768)--- */
-
-
+@media only screen and (min-width: 1366px) { /* --- landscape mode for iPad Pro. 14.5% of USA uses this screen size (1366x768)--- *
   /* ------ Home page for screen size 1366px ----- */
   .container > h2 {
     font-size: 3.3em;
-    margin-top: 0px;
+    margin-top: 0;
     letter-spacing: 0.045em;
   }
 
   .container > h2 {       /* --- used for "I love to design..." --- */
     font-size: 2.7em;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 100px;
     line-height: 2.5;
     font-weight: normal;
-    word-spacing: .3em;
+    word-spacing: 0.3em;
     font-family: 'Homemade Apple', sans-serif;
   }
 
@@ -4877,12 +4054,13 @@ iPad (768x1024 -- 47.86%)
     font-size: 1.35em;
     max-width: 95%;
     margin-bottom: 110px;
-    word-spacing: .33em;
+    word-spacing: 0.33em;
   }
 
   .parent {
     position: relative;
     margin-bottom: 100px;
+
     /* To change the size of the "unroll triangle", change all of the 50% numbers
        in this clip-path AND in the .parent:before/after width & height below.
        Note: Smaller values make a bigger triangle. */
@@ -4894,7 +4072,7 @@ iPad (768x1024 -- 47.86%)
     clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 0 100%, 0 0);
   }
 
-  .parent:before {
+  .parent::before {
     content: "";
     position: absolute;
     z-index: 10;
@@ -4906,7 +4084,7 @@ iPad (768x1024 -- 47.86%)
     background: white;
   }
 
-  .parent:after {
+  .parent::after {
     content: "";
     position: absolute;
     z-index: 10;
@@ -4918,12 +4096,12 @@ iPad (768x1024 -- 47.86%)
     background: white;
   }
 
-  .parent.unroll:before {
+  .parent.unroll::before {
     width: 0;
     height: 0;
   }
 
-  .parent.unroll:after {
+  .parent.unroll::after {
     width: 0;
     height: 0;
   }
@@ -4934,7 +4112,6 @@ iPad (768x1024 -- 47.86%)
     justify-content: space-between;
   }
 
-
   /* ------ Busy Bee project for screen size 1366px ----- */
 
   .width90auto {
@@ -4942,18 +4119,18 @@ iPad (768x1024 -- 47.86%)
   }
 
   h2 {
-   font-size: 2em;
+    font-size: 2em;
   }
 
   h3 {
-   font-size: 1.7em;
+    font-size: 1.7em;
   }
 
   p {
-   font-size: 1.15em;
-   margin-top: .5em;
-   line-height: 1.6;
-   margin-bottom: 1.5em;
+    font-size: 1.15em;
+    margin-top: 0.5em;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
   }
 
   .text-right > h3 {
@@ -4973,27 +4150,27 @@ iPad (768x1024 -- 47.86%)
   }
 
   .projectnav {
-     width: 70%;
-     margin: auto;
+    width: 70%;
+    margin: auto;
   }
 
   .projectnav > #nextproject {
-   font-size: 1.6em;
-   padding: 30px 15px 75px 0;
- }
+    font-size: 1.6em;
+    padding: 30px 15px 75px 0;
+  }
 
- .projectnav > #prevproject {
-   font-size: 1.6em;
-   padding: 30px 0 75px 15px;
- }
+  .projectnav > #prevproject {
+    font-size: 1.6em;
+    padding: 30px 0 75px 15px;
+  }
 
- /* ------ TerraCare project for screen size 1366px ----- */
+  /* ------ TerraCare project for screen size 1366px ----- */
 
- #TCphotos-parent {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
- }
+  #TCphotos-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
   /* ----- About Me page for 1366px ----- */
   #about-main {
@@ -5077,13 +4254,13 @@ iPad (768x1024 -- 47.86%)
     margin-top: 2.4em;
     margin-bottom: 1.3em;
     line-height: 1.65;
-    }
+  }
 
   #email-address {
-      font-size: 2.4em;
-      width: 50%;
-      margin-bottom: 2.5em;
-      padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
+    font-size: 2.4em;
+    width: 50%;
+    margin-bottom: 2.5em;
+    padding-left: 5vw;  /* 5% to the leff of screen for 812px size */
   }
 
   .social-media {
@@ -5096,8 +4273,7 @@ iPad (768x1024 -- 47.86%)
     width: 45px;
     height: 45px;
   }
-
 }
 
-@media only screen and (min-width:1920px)  { /* --- 21.6% of USA uses this screen size (1920x1080)--- */
+@media only screen and (min-width: 1920px) { /* --- 21.6% of USA uses this screen size (1920x1080)--- */
 }
