@@ -575,30 +575,7 @@ footer {
 
 /* animation of "fly home" text */
 .flyhome {
-  text-decoration: none;
-  color: #fff;
-  font-size: 11px;
-  letter-spacing: 0.07em;
-  width: 200px;
-  position: absolute;
-  bottom: -15px; /* the higher the number, the lower the words appear next to logo */
-  left: -55px;
-  transform-origin: top left;
-  transition: all 0.3s ease;
-}
-
-.logo:hover .flyhome {
-  left: 13px;
-}
-
-/* animation of logo plane */
-.logo img {
-  transform: translate(0, 0);
-  transition: all 0.3s ease;
-}
-
-.logo:hover img {
-  transform: translate(8px, -10px);
+  display: none;
 }
 
 .navtoggle > a {
@@ -806,10 +783,10 @@ p {
 .nav-link {   /* styling for navigation links (Work, About, Contact) */
   color: #ff7f50;
   text-decoration: none;
-  font-size: 1.35em;
+  font-size: 1.5em;
   font-weight: 500;
   transition-duration: 0.2s;
-  margin-top: 2px;
+  margin-top: 5px;
   letter-spacing: 0.05em;
 }
 
@@ -832,7 +809,7 @@ p {
 
 .subnav {
   display: block;
-  font-size: 0.85em;
+  font-size: 1em;
   font-weight: 400;
 }
 
@@ -2656,10 +2633,12 @@ iPad (768x1024 -- 47.86%)
   /* ------ TerraCare project for screen size 375px ----- */
   .img50-left {
     margin: 1em 0;
+    padding-bottom: 15px;
   }
 
   .img50-right {
     margin: 1em 0;
+    padding-bottom: 15px;
   }
 
   /* ---- About Me page for screen size 375px ----- */
@@ -3123,7 +3102,7 @@ iPad (768x1024 -- 47.86%)
   nav > ul > li.dropdown-parent:hover ul {
     display: block;
     position: absolute;
-    top: 25px;
+    top: 40px;
     left: 0;
     width: 170px;
   }
@@ -3539,6 +3518,35 @@ iPad (768x1024 -- 47.86%)
     background-color: white;
   }
 
+  /* animation of "fly home" text */
+  .flyhome {
+    display: inherit;
+    text-decoration: none;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 0.07em;
+    width: 200px;
+    position: absolute;
+    bottom: -15px; /* the higher the number, the lower the words appear next to logo */
+    left: -55px;
+    transform-origin: top left;
+    transition: all 0.3s ease;
+  }
+
+  .logo:hover .flyhome {
+    left: 13px;
+  }
+
+  /* animation of logo plane */
+  .logo img {
+    transform: translate(0, 0);
+    transition: all 0.3s ease;
+  }
+
+  .logo:hover img {
+    transform: translate(8px, -10px);
+  }
+
   #about-main {
     max-width: 1024px;
     margin: auto;
@@ -3641,6 +3649,11 @@ iPad (768x1024 -- 47.86%)
   }
 
   /* ------ TerraCare project for screen size 1024px ----- */
+
+  img {
+    padding: 0;
+  }
+
   .img50-left {
     width: 48%;
     max-width: 600px;
@@ -4033,6 +4046,7 @@ iPad (768x1024 -- 47.86%)
 
 @media only screen and (min-width: 1366px) { /* --- landscape mode for iPad Pro. 14.5% of USA uses this screen size (1366x768)--- *
   /* ------ Home page for screen size 1366px ----- */
+
   .container > h2 {
     font-size: 3.3em;
     margin-top: 0;
