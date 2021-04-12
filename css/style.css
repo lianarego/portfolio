@@ -132,11 +132,11 @@ a.anchor {
   padding: 0 0 30px 15px;
 }
 
-#img-left {      /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
+.img-left {      /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
   margin: 1em 0;
 }
 
-#img-right {     /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
+.img-right {     /* ---- specific for TerraCare's user persona, competitive analysis, and wireframe images ---- */
   margin: 1em 0;
 }
 
@@ -3208,21 +3208,6 @@ iPad (768x1024 -- 47.86%)
     display: none;
   }
 
-  .project-hover:hover {
-    opacity: 1;
-    transition: opacity 0.15s;
-  }
-
-  .project-hover:hover > .project-hover-child {
-    animation-name: slide-up-fade-in;
-    animation-iteration-count: 1;
-    animation-duration: 0.65s;
-  }
-
-  .project-info {
-    display: none;
-  }
-
   /* ------ Busy Bee project for screen size 812px ----- */
 
   h2 {
@@ -3585,6 +3570,17 @@ iPad (768x1024 -- 47.86%)
     word-spacing: 0.3em;
   }
 
+  .project-hover:hover {
+    opacity: 1;
+    transition: opacity 0.15s;
+  }
+
+  .project-hover:hover > .project-hover-child {
+    animation-name: slide-up-fade-in;
+    animation-iteration-count: 1;
+    animation-duration: 0.65s;
+  }
+
   header {
     text-align: unset;
     font-size: 18px;
@@ -3622,7 +3618,7 @@ iPad (768x1024 -- 47.86%)
 
   nav > ul > li.dropdown-parent ul {
     display: none;
-    padding-left: 32px;
+    padding-left: 20px;
     padding-bottom: 15px;
   }
 
