@@ -207,7 +207,7 @@ a.anchor {
   font-size: 0.85em;
   margin: 0;
   letter-spacing: 0.015em;
-  word-spacing: 0.07em;
+  word-spacing: 0.05em;
 }
 
 #aboutme > h3 {
@@ -245,7 +245,7 @@ a.anchor {
   margin-top: 30px;
   margin-bottom: 20px;
   line-height: 2.7;
-  letter-spacing: 0.045em;
+  letter-spacing: 0;
   font-family: 'Homemade Apple', sans-serif;
 }
 
@@ -2578,7 +2578,7 @@ iPad (768x1024 -- 47.86%)
   }
 
   .container > h2 {       /* --- used for "I create high-performing..." --- */
-    font-size: 1em;
+    font-size: 1.1em;
     margin-top: 0;
     margin-bottom: 40px;
     max-width: 1200px;
@@ -3557,8 +3557,8 @@ iPad (768x1024 -- 47.86%)
     margin-bottom: 100px;
     line-height: 2.2;
     font-weight: normal;
-    word-spacing: 0.46em;
-    font-family: 'Homemade Apple', sans-serid;
+    word-spacing: 0.4em;
+    font-family: 'Homemade Apple', sans-serif;
   }
 
   .container > h5 {
@@ -3567,7 +3567,7 @@ iPad (768x1024 -- 47.86%)
     max-width: 90%;
     margin: auto;
     margin-bottom: 110px;
-    word-spacing: 0.3em;
+    word-spacing: 0.07em;
   }
 
   .project-hover:hover {
@@ -4046,7 +4046,7 @@ iPad (768x1024 -- 47.86%)
   .container > h2 {
     font-size: 3.3em;
     margin-top: 0;
-    letter-spacing: 0.045em;
+    letter-spacing: 0;
   }
 
   .container > h2 {       /* --- used for "I love to design..." --- */
@@ -4064,7 +4064,7 @@ iPad (768x1024 -- 47.86%)
     font-size: 1.35em;
     max-width: 95%;
     margin-bottom: 110px;
-    word-spacing: 0.33em;
+    word-spacing: 0.1em;
   }
 
   .parent {
